@@ -1,0 +1,8 @@
+ItemDatabase
+f=core/databases/ItemDatabase.gd
+p=Repository for all items in the game.
+r=Providing item data and presence verification within the registry.
+api=get_resource(id: String) -> ItemData,get_entry(id: String) -> Dictionary,get_value(id: String, key: String, default = null),has_entry(id: String) -> bool,get_all_ids() -> Array,get_all() -> Array
+data=RESOURCES_DIR: unmarked,_items_resources: Dictionary
+dep=ItemData
+use=CraftingSystem,WorldMap

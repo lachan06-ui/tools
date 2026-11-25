@@ -1,0 +1,8 @@
+DefaultEnemyBehavior
+f=scenes/Characters/Enemies/DefaultEnemyBehavior.gd
+p=Implementation of standard patrol and chase behaviors.
+r=Handling patrol and chase logic.
+api=get_debug_relation_observation(owner: Enemy, target: Entity) -> Dictionary,decide_movement(owner: Enemy, target: Entity) -> Vector3,get_debug_candidate_observations(owner: Enemy, candidates: Array) -> Array[Dictionary],decide_target(owner: Enemy, candidates: Array) -> Entity,decide_skill(owner: Enemy, target: Entity) -> String,get_debug_skill_observation(owner: Enemy, target: Entity) -> Array[Dictionary],should_retreat(owner: Enemy) -> bool
+data=Enemy: unmarked,skill_system: EnemySkillSystem
+dep=Enemy,EnemySkillSystem,UtilityScoringEngine,SpeciesDatabase,Entity,SpeciesDefinition,SpeciesRelation,PoisonArea,PoisonAvoidance,SpatialRegionResolver,TerritoryState,EnemySkill,GroupSkillState
+use=BehaviorRegistry,Enemy

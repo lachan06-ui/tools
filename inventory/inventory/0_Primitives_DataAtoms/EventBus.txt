@@ -1,0 +1,7 @@
+EventBus
+f=core/autoload/EventBus.gd
+p=Central signal bus for decoupled communication across the game engine.
+r=Centralized signaling for entity, combat, ecosystem, world, quest, time, and UI events.
+sig=entity_died(entity: Node),entity_spawned(entity: Node),damage_dealt(event: DamageEvent),player_died(),distress_signal_triggered(position: Vector3),species_population_changed(map_id: String, species_id: String, new_pop: int),map_changed(from_id: String, to_id: String),quest_completed(quest_id: String),quest_failed(quest_id: String),day_passed(day_number: int),hud_refresh_requested(),map_reading_toggled(is_open: bool),recipe_discovered(recipe_id: String),crafting_started(recipe_id: String, duration: float),crafting_completed(recipe_id: String, success: bool, result_item: Dictionary),crafting_interrupted(recipe_id: String),settlement_upgraded(settlement_id: String, new_tier: int)
+dep=Entity,DamageEvent
+use=CraftingSystem,CraftingUI,Enemy,LogisticsNPC,MapKnowledgeManager,MapReadingModeUI,PlayerCombat,PlayerMovement

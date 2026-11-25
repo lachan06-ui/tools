@@ -1,0 +1,7 @@
+EconomyManager
+f=core/autoload/EconomyManager.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=add_gold(amount: int) -> void,spend_gold(amount: int) -> bool,add_reputation(amount: int) -> void,get_gold() -> int,get_reputation() -> int,load_economy_data(data: Dictionary) -> void
+data=gold: int,reputation: int
+use=GameState,QuestManager

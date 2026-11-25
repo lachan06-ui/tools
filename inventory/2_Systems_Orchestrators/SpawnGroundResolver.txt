@@ -1,0 +1,7 @@
+SpawnGroundResolver
+f=core/systems/ecology/SpawnGroundResolver.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=resolve_ground(world: World3D, xz_position: Vector3) -> Dictionary,is_slope_valid(normal: Vector3, max_slope_degrees: float) -> bool
+data=GROUND_RAY_HEIGHT: float,GROUND_RAY_DEPTH: float,GROUND_OFFSET: float,DEFAULT_GROUND_COLLISION_MASK: int,collision_mask: int
+use=SpawnLocationResolver

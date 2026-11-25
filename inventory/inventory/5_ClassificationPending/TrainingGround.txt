@@ -1,0 +1,6 @@
+TrainingGround
+f=scenes/World/TrainingGround/TrainingGround.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+prop=player_scene: PackedScene,player_script: Script,enemy_scene: PackedScene,enemy_script: Script,spell_ui_scene: PackedScene
+dep=Player,Enemy,SpellUI,Village

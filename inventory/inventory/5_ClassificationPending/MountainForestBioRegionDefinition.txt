@@ -1,0 +1,6 @@
+MountainForestBioRegionDefinition
+f=core/systems/ecology/MountainForestBioRegionDefinition.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+prop=altitude_min: float,altitude_max: float
+dep=ForestBioRegionDefinition

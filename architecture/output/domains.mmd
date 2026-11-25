@@ -1,0 +1,51 @@
+flowchart LR
+  combat["combat (5)"]
+  core["core (6)"]
+  crafting["crafting (2)"]
+  ecology["ecology (31)"]
+  enemy["enemy (15)"]
+  feedback["feedback (4)"]
+  item["item (5)"]
+  map["map (17)"]
+  npc["npc (2)"]
+  player["player (9)"]
+  quest["quest (2)"]
+  save["save (2)"]
+  spell["spell (3)"]
+  status["status (3)"]
+  time["time (1)"]
+  core -->|"9"| ecology
+  core -->|"3"| enemy
+  core -.->|"region_changed"| map
+  core -->|"2"| player
+  core -.->|"spell_discovered"| player
+  core -->|"3"| status
+  crafting -.->|"crafting_completed, crafting_started"| player
+  ecology -->|"4"| core
+  ecology -->|"6"| enemy
+  ecology -->|"3"| map
+  ecology -.->|"swarm_event_requested"| map
+  enemy -->|"4"| combat
+  enemy -->|"7"| core
+  enemy -->|"21"| ecology
+  enemy -->|"2"| map
+  enemy -->|"2"| player
+  map -->|"5"| combat
+  map -->|"5"| core
+  map -->|"15"| ecology
+  map -.->|"spawn_requested"| ecology
+  map -->|"5"| enemy
+  map -->|"3"| player
+  player -->|"9"| combat
+  player -->|"5"| core
+  player -.->|"crafting_interrupted"| crafting
+  player -->|"2"| enemy
+  player -->|"2"| map
+  player -->|"2"| npc
+  quest -->|"4"| ecology
+  quest -->|"2"| enemy
+  save -->|"4"| core
+  save -->|"2"| ecology
+  save -->|"2"| quest
+  spell -->|"2"| core
+  spell -.->|"spell_discovered"| player

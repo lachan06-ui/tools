@@ -1,0 +1,506 @@
+[autoload_use] core/autoload/GameState.gd -> core/autoload/EconomyManager.gd @core/autoload/GameState.gd:117
+[autoload_use] core/autoload/GameState.gd -> core/autoload/SpellMasteryManager.gd @core/autoload/GameState.gd:92
+[autoload_use] core/autoload/GameState.gd -> core/autoload/WorldState.gd @core/autoload/GameState.gd:706
+[autoload_use] core/autoload/GameState.gd -> core/databases/SpeciesDatabase.gd @core/autoload/GameState.gd:586
+[autoload_use] core/autoload/SaveManager.gd -> core/autoload/WorldManager.gd @core/autoload/SaveManager.gd:18
+[autoload_use] core/autoload/SaveManager.gd -> core/systems/ecology/EcologyManager.gd @core/autoload/SaveManager.gd:21
+[autoload_use] core/autoload/SaveManager.gd -> scenes/Utils/CraftingSystem.gd @core/autoload/SaveManager.gd:24
+[autoload_use] core/autoload/SaveManager.gd -> scenes/Utils/MapKnowledgeManager.gd @core/autoload/SaveManager.gd:27
+[autoload_use] core/autoload/SpellMasteryManager.gd -> core/autoload/GameState.gd @core/autoload/SpellMasteryManager.gd:63
+[autoload_use] core/autoload/TimeSystem.gd -> core/databases/MapDatabase.gd @core/autoload/TimeSystem.gd:53
+[autoload_use] core/autoload/TimeSystem.gd -> core/systems/ecology/EcologyManager.gd @core/autoload/TimeSystem.gd:51
+[autoload_use] core/autoload/TimeSystem.gd -> scenes/Quest/QuestGenerator.gd @core/autoload/TimeSystem.gd:54
+[autoload_use] core/autoload/WorldManager.gd -> core/databases/SpeciesDatabase.gd (get_node) @core/autoload/WorldManager.gd:1048
+[autoload_use] core/autoload/WorldManager.gd -> core/systems/ecology/EcologyManager.gd (get_node) @core/autoload/WorldManager.gd:853
+[autoload_use] core/databases/EnemyDatabase.gd -> core/databases/SpeciesDatabase.gd (get_node) @core/databases/EnemyDatabase.gd:79
+[autoload_use] core/databases/SpeciesDefinition.gd -> core/databases/EnemyDatabase.gd (get_node) @core/databases/SpeciesDefinition.gd:131
+[autoload_use] core/systems/ecology/EcologyManager.gd -> core/autoload/WorldManager.gd (get_node) @core/systems/ecology/EcologyManager.gd:159
+[autoload_use] core/systems/ecology/EcologyManager.gd -> core/databases/BiomeDatabase.gd (get_node) @core/systems/ecology/EcologyManager.gd:922
+[autoload_use] core/systems/ecology/EcologyManager.gd -> core/databases/MapDatabase.gd (get_node) @core/systems/ecology/EcologyManager.gd:184
+[autoload_use] core/systems/ecology/EcologyManager.gd -> core/databases/SpeciesDatabase.gd (get_node) @core/systems/ecology/EcologyManager.gd:145
+[autoload_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @core/systems/ecology/EcologyManager.gd:195
+[autoload_use] core/systems/ecology/EcologySimulation.gd -> scenes/Quest/QuestGenerator.gd (get_node) @core/systems/ecology/EcologySimulation.gd:319
+[autoload_use] core/systems/ecology/GroupPoisonState.gd -> core/databases/SpeciesDatabase.gd (get_node) @core/systems/ecology/GroupPoisonState.gd:74
+[autoload_use] core/systems/ecology/NutrientCycle.gd -> core/systems/ecology/EcologyManager.gd (get_node) @core/systems/ecology/NutrientCycle.gd:26
+[autoload_use] core/systems/ecology/SpatialRegionResolver.gd -> core/autoload/WorldManager.gd (get_node) @core/systems/ecology/SpatialRegionResolver.gd:135
+[autoload_use] core/systems/ecology/SpeciesRelation.gd -> core/databases/SpeciesDatabase.gd (get_node) @core/systems/ecology/SpeciesRelation.gd:68
+[autoload_use] core/systems/ecology/SpeciesRelation.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @core/systems/ecology/SpeciesRelation.gd:211
+[autoload_use] scenes/Characters/Enemies/Corpse.gd -> core/autoload/TimeSystem.gd (get_node) @scenes/Characters/Enemies/Corpse.gd:204
+[autoload_use] scenes/Characters/Enemies/Corpse.gd -> core/autoload/WorldManager.gd (get_node) @scenes/Characters/Enemies/Corpse.gd:70
+[autoload_use] scenes/Characters/Enemies/Corpse.gd -> core/systems/ecology/EcologyManager.gd (get_node) @scenes/Characters/Enemies/Corpse.gd:231
+[autoload_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/databases/SpeciesDatabase.gd (get_node) @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:19
+[autoload_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:126
+[autoload_use] scenes/Characters/Enemies/Enemy.gd -> core/autoload/WorldManager.gd (get_node) @scenes/Characters/Enemies/Enemy.gd:354
+[autoload_use] scenes/Characters/Enemies/Enemy.gd -> core/databases/EnemyDatabase.gd (get_node) @scenes/Characters/Enemies/Enemy.gd:69
+[autoload_use] scenes/Characters/Enemies/EnemyAI.gd -> core/autoload/WorldManager.gd (get_node) @scenes/Characters/Enemies/EnemyAI.gd:128
+[autoload_use] scenes/Characters/Enemies/EnemyAI.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @scenes/Characters/Enemies/EnemyAI.gd:81
+[autoload_use] scenes/Characters/Enemies/EnemySkillSystem.gd -> scenes/Systems/Combat/DamageSystem.gd (get_node) @scenes/Characters/Enemies/EnemySkillSystem.gd:48
+[autoload_use] scenes/Characters/NPC/LogisticsNPC.gd -> core/autoload/EventBus.gd @scenes/Characters/NPC/LogisticsNPC.gd:89
+[autoload_use] scenes/Characters/NPC/LogisticsNPC.gd -> core/autoload/WorldManager.gd @scenes/Characters/NPC/LogisticsNPC.gd:31
+[autoload_use] scenes/Characters/Player/Player.gd -> scenes/Systems/Interaction/InteractionSystem.gd @scenes/Characters/Player/Player.gd:190
+[autoload_use] scenes/Characters/Player/Player.gd -> scenes/Systems/Targeting/TargetSystem.gd @scenes/Characters/Player/Player.gd:53
+[autoload_use] scenes/Characters/Player/PlayerCombat.gd -> core/autoload/EventBus.gd @scenes/Characters/Player/PlayerCombat.gd:289
+[autoload_use] scenes/Characters/Player/PlayerCombat.gd -> core/autoload/GameState.gd @scenes/Characters/Player/PlayerCombat.gd:43
+[autoload_use] scenes/Characters/Player/PlayerCombat.gd -> scenes/Systems/Combat/AttachSystem.gd @scenes/Characters/Player/PlayerCombat.gd:28
+[autoload_use] scenes/Characters/Player/PlayerCombat.gd -> scenes/Systems/Combat/DamageSystem.gd @scenes/Characters/Player/PlayerCombat.gd:44
+[autoload_use] scenes/Characters/Player/PlayerCombat.gd -> scenes/Systems/Targeting/TargetSystem.gd @scenes/Characters/Player/PlayerCombat.gd:35
+[autoload_use] scenes/Characters/Player/PlayerMovement.gd -> core/autoload/EventBus.gd @scenes/Characters/Player/PlayerMovement.gd:29
+[autoload_use] scenes/Characters/Player/PlayerMovement.gd -> core/autoload/GameState.gd @scenes/Characters/Player/PlayerMovement.gd:72
+[autoload_use] scenes/Characters/Player/PlayerMovement.gd -> scenes/Systems/Combat/AttachSystem.gd @scenes/Characters/Player/PlayerMovement.gd:110
+[autoload_use] scenes/Characters/Player/PlayerSpell.gd -> core/autoload/GameState.gd @scenes/Characters/Player/PlayerSpell.gd:36
+[autoload_use] scenes/Characters/Player/PlayerSpell.gd -> scenes/Systems/Combat/DamageSystem.gd @scenes/Characters/Player/PlayerSpell.gd:258
+[autoload_use] scenes/Characters/Player/Spell/SpellUI.gd -> core/autoload/GameState.gd @scenes/Characters/Player/Spell/SpellUI.gd:101
+[autoload_use] scenes/Map/EnemySpawner.gd -> core/autoload/WorldManager.gd @scenes/Map/EnemySpawner.gd:34
+[autoload_use] scenes/Map/EnemySpawner.gd -> core/databases/MapDatabase.gd @scenes/Map/EnemySpawner.gd:206
+[autoload_use] scenes/Map/EnemySpawner.gd -> core/databases/SpeciesDatabase.gd @scenes/Map/EnemySpawner.gd:27
+[autoload_use] scenes/Map/EnemySpawner.gd -> core/systems/ecology/EcologyManager.gd @scenes/Map/EnemySpawner.gd:26
+[autoload_use] scenes/Map/InteractionObject.gd -> scenes/Systems/Combat/DamageSystem.gd @scenes/Map/InteractionObject.gd:54
+[autoload_use] scenes/Map/ObjectGenerator.gd -> core/autoload/WorldManager.gd @scenes/Map/ObjectGenerator.gd:30
+[autoload_use] scenes/Quest/QuestGenerator.gd -> core/autoload/TimeSystem.gd @scenes/Quest/QuestGenerator.gd:162
+[autoload_use] scenes/Quest/QuestGenerator.gd -> core/databases/EnemyDatabase.gd @scenes/Quest/QuestGenerator.gd:51
+[autoload_use] scenes/Quest/QuestGenerator.gd -> core/databases/MapDatabase.gd @scenes/Quest/QuestGenerator.gd:34
+[autoload_use] scenes/Quest/QuestGenerator.gd -> core/databases/SpeciesDatabase.gd @scenes/Quest/QuestGenerator.gd:43
+[autoload_use] scenes/Quest/QuestGenerator.gd -> core/systems/ecology/EcologyManager.gd @scenes/Quest/QuestGenerator.gd:36
+[autoload_use] scenes/Quest/QuestGenerator.gd -> scenes/Quest/QuestManager.gd @scenes/Quest/QuestGenerator.gd:69
+[autoload_use] scenes/Quest/QuestManager.gd -> core/autoload/EconomyManager.gd @scenes/Quest/QuestManager.gd:136
+[autoload_use] scenes/Quest/QuestManager.gd -> core/autoload/GameState.gd @scenes/Quest/QuestManager.gd:98
+[autoload_use] scenes/Systems/FireAgent.gd -> core/systems/ecology/EcologyManager.gd (get_node) @scenes/Systems/FireAgent.gd:53
+[autoload_use] scenes/Systems/Interaction/InteractionSystem.gd -> scenes/Systems/Combat/AttachSystem.gd @scenes/Systems/Interaction/InteractionSystem.gd:25
+[autoload_use] scenes/Systems/SaveSystem.gd -> core/autoload/GameState.gd @scenes/Systems/SaveSystem.gd:73
+[autoload_use] scenes/Systems/SaveSystem.gd -> core/autoload/TimeSystem.gd @scenes/Systems/SaveSystem.gd:29
+[autoload_use] scenes/Systems/SaveSystem.gd -> core/autoload/WorldManager.gd @scenes/Systems/SaveSystem.gd:26
+[autoload_use] scenes/Systems/SaveSystem.gd -> core/autoload/WorldState.gd @scenes/Systems/SaveSystem.gd:25
+[autoload_use] scenes/Systems/SaveSystem.gd -> core/systems/ecology/EcologyManager.gd @scenes/Systems/SaveSystem.gd:28
+[autoload_use] scenes/Systems/SaveSystem.gd -> scenes/Quest/QuestGenerator.gd @scenes/Systems/SaveSystem.gd:30
+[autoload_use] scenes/Systems/SaveSystem.gd -> scenes/Quest/QuestManager.gd @scenes/Systems/SaveSystem.gd:27
+[autoload_use] scenes/Systems/SpawnController.gd -> core/autoload/WorldManager.gd (get_node) @scenes/Systems/SpawnController.gd:58
+[autoload_use] scenes/Systems/SpawnController.gd -> core/databases/EnemyDatabase.gd (get_node) @scenes/Systems/SpawnController.gd:77
+[autoload_use] scenes/Systems/SpawnController.gd -> core/systems/ecology/EcologyManager.gd @scenes/Systems/SpawnController.gd:134
+[autoload_use] scenes/Systems/SpawnController.gd -> core/systems/ecology/EcologyManager.gd (get_node) @scenes/Systems/SpawnController.gd:17
+[autoload_use] scenes/Systems/SpawnLocationResolver.gd -> core/systems/ecology/EcologyManager.gd (get_node) @scenes/Systems/SpawnLocationResolver.gd:125
+[autoload_use] scenes/Systems/SpawnLocationResolver.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @scenes/Systems/SpawnLocationResolver.gd:287
+[autoload_use] scenes/Systems/Targeting/TargetSystem.gd -> scenes/Systems/Indicator/IndicatorManager.gd @scenes/Systems/Targeting/TargetSystem.gd:44
+[autoload_use] scenes/UI/Crafting/CraftingUI.gd -> core/autoload/EventBus.gd @scenes/UI/Crafting/CraftingUI.gd:20
+[autoload_use] scenes/UI/Crafting/CraftingUI.gd -> scenes/Utils/CraftingSystem.gd @scenes/UI/Crafting/CraftingUI.gd:50
+[autoload_use] scenes/UI/EcologyObservationUI.gd -> core/autoload/WorldManager.gd @scenes/UI/EcologyObservationUI.gd:143
+[autoload_use] scenes/UI/EcologyObservationUI.gd -> core/systems/ecology/EcologyManager.gd @scenes/UI/EcologyObservationUI.gd:29
+[autoload_use] scenes/UI/EcologyObservationUI.gd -> core/systems/ecology/SpatialRegionResolver.gd @scenes/UI/EcologyObservationUI.gd:155
+[autoload_use] scenes/UI/Map/MapReadingModeUI.gd -> core/autoload/EventBus.gd @scenes/UI/Map/MapReadingModeUI.gd:19
+[autoload_use] scenes/UI/Map/MapReadingModeUI.gd -> scenes/Utils/MapKnowledgeManager.gd @scenes/UI/Map/MapReadingModeUI.gd:58
+[autoload_use] scenes/Utils/CraftingSystem.gd -> core/autoload/EventBus.gd @scenes/Utils/CraftingSystem.gd:23
+[autoload_use] scenes/Utils/MapKnowledgeManager.gd -> core/autoload/EventBus.gd @scenes/Utils/MapKnowledgeManager.gd:38
+[autoload_use] scenes/World/Debug/DebugEcologyView.gd -> core/autoload/TimeSystem.gd @scenes/World/Debug/DebugEcologyView.gd:428
+[autoload_use] scenes/World/Debug/DebugEcologyView.gd -> core/autoload/WorldManager.gd (get_node) @scenes/World/Debug/DebugEcologyView.gd:43
+[autoload_use] scenes/World/Debug/DebugEcologyView.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/Debug/DebugEcologyView.gd:60
+[autoload_use] scenes/World/Debug/DebugEcologyView.gd -> core/systems/ecology/SpatialRegionResolver.gd @scenes/World/Debug/DebugEcologyView.gd:578
+[autoload_use] scenes/World/Debug/DebugPanel.gd -> core/autoload/TimeSystem.gd @scenes/World/Debug/DebugPanel.gd:294
+[autoload_use] scenes/World/Debug/DebugPanel.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/Debug/DebugPanel.gd:285
+[autoload_use] scenes/World/Debug/DebugPanel.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @scenes/World/Debug/DebugPanel.gd:535
+[autoload_use] scenes/World/Debug/DebugPanel.gd -> scenes/Systems/Targeting/TargetSystem.gd (get_node) @scenes/World/Debug/DebugPanel.gd:314
+[autoload_use] scenes/World/Debug/DebugPanelActions.gd -> core/autoload/TimeSystem.gd @scenes/World/Debug/DebugPanelActions.gd:317
+[autoload_use] scenes/World/Debug/DebugPanelActions.gd -> core/autoload/WorldManager.gd (get_node) @scenes/World/Debug/DebugPanelActions.gd:19
+[autoload_use] scenes/World/Debug/DebugPanelActions.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/Debug/DebugPanelActions.gd:193
+[autoload_use] scenes/World/Debug/DebugPanelActions.gd -> core/systems/ecology/EcologyManager.gd (get_node) @scenes/World/Debug/DebugPanelActions.gd:18
+[autoload_use] scenes/World/Debug/DebugPanelActions.gd -> scenes/Systems/Targeting/TargetSystem.gd (get_node) @scenes/World/Debug/DebugPanelActions.gd:21
+[autoload_use] scenes/World/Debug/DebugPoisonActions.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/Debug/DebugPoisonActions.gd:63
+[autoload_use] scenes/World/Debug/DebugPoisonActions.gd -> scenes/Systems/Targeting/TargetSystem.gd (get_node) @scenes/World/Debug/DebugPoisonActions.gd:47
+[autoload_use] scenes/World/Debug/DebugPoisonView.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/Debug/DebugPoisonView.gd:177
+[autoload_use] scenes/World/Debug/DebugPoisonView.gd -> scenes/Systems/Targeting/TargetSystem.gd @scenes/World/Debug/DebugPoisonView.gd:202
+[autoload_use] scenes/World/Debug/DebugSpawnView.gd -> core/autoload/WorldManager.gd (get_node) @scenes/World/Debug/DebugSpawnView.gd:104
+[autoload_use] scenes/World/Debug/DebugSpawnView.gd -> core/databases/SpeciesDatabase.gd (get_node) @scenes/World/Debug/DebugSpawnView.gd:57
+[autoload_use] scenes/World/Debug/DebugSpawnView.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/Debug/DebugSpawnView.gd:14
+[autoload_use] scenes/World/Debug/DebugTerritoryOverlay.gd -> core/autoload/WorldManager.gd (get_node) @scenes/World/Debug/DebugTerritoryOverlay.gd:27
+[autoload_use] scenes/World/Debug/DebugTerritoryOverlay.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/Debug/DebugTerritoryOverlay.gd:104
+[autoload_use] scenes/World/Debug/DebugTimeView.gd -> core/autoload/TimeSystem.gd @scenes/World/Debug/DebugTimeView.gd:6
+[autoload_use] scenes/World/Debug/DebugUtilityView.gd -> scenes/Systems/Targeting/TargetSystem.gd (get_node) @scenes/World/Debug/DebugUtilityView.gd:21
+[autoload_use] scenes/World/SpatialArea3D.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @scenes/World/SpatialArea3D.gd:27
+[autoload_use] scenes/World/SpatialBioRegion3D.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @scenes/World/SpatialBioRegion3D.gd:36
+[autoload_use] scenes/World/WorldMap/WorldMap.gd -> core/autoload/WorldManager.gd @scenes/World/WorldMap/WorldMap.gd:152
+[autoload_use] scenes/World/WorldMap/WorldMap.gd -> core/databases/SpeciesDatabase.gd @scenes/World/WorldMap/WorldMap.gd:87
+[autoload_use] scenes/World/WorldMap/WorldMap.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/WorldMap/WorldMap.gd:86
+[autoload_use] scenes/World/WorldMap/WorldMap.gd -> core/systems/ecology/EcologyManager.gd (get_node) @scenes/World/WorldMap/WorldMap.gd:25
+[autoload_use] scenes/World/WorldMap/WorldMap.gd -> core/systems/ecology/SpatialRegionResolver.gd (get_node) @scenes/World/WorldMap/WorldMap.gd:42
+[autoload_use] scenes/World/WorldRoot/WorldRoot.gd -> core/autoload/TimeSystem.gd @scenes/World/WorldRoot/WorldRoot.gd:205
+[autoload_use] scenes/World/WorldRoot/WorldRoot.gd -> core/autoload/WorldManager.gd @scenes/World/WorldRoot/WorldRoot.gd:89
+[autoload_use] scenes/World/WorldRoot/WorldRoot.gd -> core/systems/ecology/EcologyManager.gd @scenes/World/WorldRoot/WorldRoot.gd:74
+[class_use] core/autoload/EventBus.gd -> scenes/Systems/Combat/DamageEvent.gd @core/autoload/EventBus.gd:15
+[class_use] core/autoload/GameState.gd -> core/databases/EnemyStats.gd @core/autoload/GameState.gd:583
+[class_use] core/autoload/GameState.gd -> core/databases/SpeciesDefinition.gd @core/autoload/GameState.gd:586
+[class_use] core/autoload/WorldManager.gd -> core/databases/SpeciesDefinition.gd @core/autoload/WorldManager.gd:1051
+[class_use] core/autoload/WorldManager.gd -> core/systems/ecology/EnvironmentState.gd @core/autoload/WorldManager.gd:884
+[class_use] core/autoload/WorldManager.gd -> core/systems/ecology/GroupSkillState.gd @core/autoload/WorldManager.gd:312
+[class_use] core/autoload/WorldManager.gd -> core/systems/ecology/SpeciesRelation.gd @core/autoload/WorldManager.gd:313
+[class_use] core/components/StatusComponent.gd -> core/components/PoisonStatusEffect.gd @core/components/StatusComponent.gd:38
+[class_use] core/components/StatusComponent.gd -> core/components/StatusEffect.gd @core/components/StatusComponent.gd:22
+[class_use] core/databases/BiomeDatabase.gd -> core/systems/ecology/EnvironmentState.gd @core/databases/BiomeDatabase.gd:33
+[class_use] core/databases/DropEntry.gd -> core/databases/ItemData.gd @core/databases/DropEntry.gd:4
+[class_use] core/databases/DropTable.gd -> core/databases/DropEntry.gd @core/databases/DropTable.gd:4
+[class_use] core/databases/EnemyDatabase.gd -> core/databases/EnemyStats.gd @core/databases/EnemyDatabase.gd:28
+[class_use] core/databases/EnemyDatabase.gd -> core/databases/SpeciesDefinition.gd @core/databases/EnemyDatabase.gd:103
+[class_use] core/databases/EnemyStats.gd -> core/databases/DropTable.gd @core/databases/EnemyStats.gd:34
+[class_use] core/databases/EnemyStats.gd -> core/databases/EnemySkill.gd @core/databases/EnemyStats.gd:33
+[class_use] core/databases/GenusDefinition.gd -> core/databases/SpeciesDefinition.gd @core/databases/GenusDefinition.gd:20
+[class_use] core/databases/ItemDatabase.gd -> core/databases/ItemData.gd @core/databases/ItemDatabase.gd:26
+[class_use] core/databases/SpeciesDatabase.gd -> core/databases/SpeciesDefinition.gd @core/databases/SpeciesDatabase.gd:28
+[class_use] core/databases/SpeciesDatabase.gd -> core/systems/ecology/EnvironmentState.gd @core/databases/SpeciesDatabase.gd:72
+[class_use] core/databases/SpeciesDefinition.gd -> core/databases/BehaviorProfile.gd @core/databases/SpeciesDefinition.gd:98
+[class_use] core/databases/SpeciesDefinition.gd -> core/databases/EnemyStats.gd @core/databases/SpeciesDefinition.gd:126
+[class_use] core/databases/SpeciesDefinition.gd -> core/databases/GenusDefinition.gd @core/databases/SpeciesDefinition.gd:17
+[class_use] core/databases/SpeciesDefinition.gd -> core/systems/ecology/EnvironmentState.gd @core/databases/SpeciesDefinition.gd:51
+[class_use] core/systems/ecology/BioRegionDefinition.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/BioRegionDefinition.gd:33
+[class_use] core/systems/ecology/BioRegionInstance.gd -> core/systems/ecology/BioRegionDefinition.gd @core/systems/ecology/BioRegionInstance.gd:11
+[class_use] core/systems/ecology/BioRegionInstance.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/BioRegionInstance.gd:40
+[class_use] core/systems/ecology/EcologyManager.gd -> core/databases/SpeciesDefinition.gd @core/systems/ecology/EcologyManager.gd:10
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/BioRegionDefinition.gd @core/systems/ecology/EcologyManager.gd:111
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/BioRegionInstance.gd @core/systems/ecology/EcologyManager.gd:111
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/EcologySerializer.gd @core/systems/ecology/EcologyManager.gd:906
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/EcologySimulation.gd @core/systems/ecology/EcologyManager.gd:72
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/EcologyManager.gd:10
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/GroupPoisonState.gd @core/systems/ecology/EcologyManager.gd:796
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/GroupSkillState.gd @core/systems/ecology/EcologyManager.gd:908
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/SpawnRequest.gd @core/systems/ecology/EcologyManager.gd:173
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/SpeciesRelation.gd @core/systems/ecology/EcologyManager.gd:907
+[class_use] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/SpeciesState.gd @core/systems/ecology/EcologyManager.gd:164
+[class_use] core/systems/ecology/EcologyManager.gd -> scenes/Systems/SpawnController.gd @core/systems/ecology/EcologyManager.gd:71
+[class_use] core/systems/ecology/EcologySerializer.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/EcologySerializer.gd:37
+[class_use] core/systems/ecology/EcologySerializer.gd -> core/systems/ecology/SpeciesState.gd @core/systems/ecology/EcologySerializer.gd:47
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/databases/EnemyStats.gd @core/systems/ecology/EcologySimulation.gd:297
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/databases/SpeciesDefinition.gd @core/systems/ecology/EcologySimulation.gd:69
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/EcologySimulation.gd:59
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/systems/ecology/GeneticDriftCalculator.gd @core/systems/ecology/EcologySimulation.gd:287
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/systems/ecology/GroupPoisonState.gd @core/systems/ecology/EcologySimulation.gd:773
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/systems/ecology/PopulationCalculator.gd @core/systems/ecology/EcologySimulation.gd:189
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/systems/ecology/SpawnRequest.gd @core/systems/ecology/EcologySimulation.gd:861
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/systems/ecology/SpeciesRelation.gd @core/systems/ecology/EcologySimulation.gd:714
+[class_use] core/systems/ecology/EcologySimulation.gd -> core/systems/ecology/SpeciesState.gd @core/systems/ecology/EcologySimulation.gd:68
+[class_use] core/systems/ecology/GeneticDriftCalculator.gd -> core/systems/ecology/SpeciesState.gd @core/systems/ecology/GeneticDriftCalculator.gd:11
+[class_use] core/systems/ecology/GroupPoisonState.gd -> core/databases/SpeciesDefinition.gd @core/systems/ecology/GroupPoisonState.gd:32
+[class_use] core/systems/ecology/NutrientCycle.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/NutrientCycle.gd:27
+[class_use] core/systems/ecology/PoisonAvoidance.gd -> core/systems/ecology/GroupPoisonState.gd @core/systems/ecology/PoisonAvoidance.gd:42
+[class_use] core/systems/ecology/PoisonAvoidance.gd -> scenes/World/PoisonArea.gd @core/systems/ecology/PoisonAvoidance.gd:17
+[class_use] core/systems/ecology/PopulationCalculator.gd -> core/databases/SpeciesDefinition.gd @core/systems/ecology/PopulationCalculator.gd:21
+[class_use] core/systems/ecology/PopulationCalculator.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/PopulationCalculator.gd:21
+[class_use] core/systems/ecology/PopulationCalculator.gd -> core/systems/ecology/GeneticDriftCalculator.gd @core/systems/ecology/PopulationCalculator.gd:27
+[class_use] core/systems/ecology/PopulationCalculator.gd -> core/systems/ecology/SpeciesState.gd @core/systems/ecology/PopulationCalculator.gd:21
+[class_use] core/systems/ecology/SpatialRegionResolver.gd -> core/systems/ecology/TerritoryState.gd @core/systems/ecology/SpatialRegionResolver.gd:14
+[class_use] core/systems/ecology/SpatialRegionResolver.gd -> scenes/World/SpatialArea3D.gd @core/systems/ecology/SpatialRegionResolver.gd:16
+[class_use] core/systems/ecology/SpawnRequest.gd -> core/databases/SpeciesDefinition.gd @core/systems/ecology/SpawnRequest.gd:15
+[class_use] core/systems/ecology/SpawnRequest.gd -> core/systems/ecology/EnvironmentState.gd @core/systems/ecology/SpawnRequest.gd:16
+[class_use] core/systems/ecology/SpawnRequest.gd -> core/systems/ecology/SpeciesState.gd @core/systems/ecology/SpawnRequest.gd:17
+[class_use] core/systems/ecology/SpeciesRelation.gd -> core/databases/SpeciesDefinition.gd @core/systems/ecology/SpeciesRelation.gd:71
+[class_use] core/systems/ecology/SpeciesRelation.gd -> scenes/Systems/Combat/DamageEvent.gd @core/systems/ecology/SpeciesRelation.gd:91
+[class_use] core/systems/ecology/UtilityScoringEngine.gd -> core/systems/ecology/SpeciesRelation.gd @core/systems/ecology/UtilityScoringEngine.gd:35
+[class_use] scenes/Characters/Enemies/Corpse.gd -> core/components/Targetable.gd @scenes/Characters/Enemies/Corpse.gd:42
+[class_use] scenes/Characters/Enemies/Corpse.gd -> core/systems/ecology/EnvironmentState.gd @scenes/Characters/Enemies/Corpse.gd:232
+[class_use] scenes/Characters/Enemies/Corpse.gd -> core/systems/ecology/NutrientCycle.gd @scenes/Characters/Enemies/Corpse.gd:147
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/databases/EnemySkill.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:223
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/databases/SpeciesDefinition.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:22
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/systems/ecology/GroupSkillState.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:247
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/systems/ecology/PoisonAvoidance.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:112
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/systems/ecology/SpeciesRelation.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:41
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/systems/ecology/TerritoryState.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:128
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> core/systems/ecology/UtilityScoringEngine.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:311
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:8
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> scenes/Characters/Enemies/EnemySkillSystem.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:9
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> scenes/Core/Entity.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:14
+[class_use] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> scenes/World/PoisonArea.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:90
+[class_use] scenes/Characters/Enemies/Enemy.gd -> core/components/Targetable.gd @scenes/Characters/Enemies/Enemy.gd:46
+[class_use] scenes/Characters/Enemies/Enemy.gd -> core/databases/EnemySkill.gd @scenes/Characters/Enemies/Enemy.gd:35
+[class_use] scenes/Characters/Enemies/Enemy.gd -> core/databases/EnemyStats.gd @scenes/Characters/Enemies/Enemy.gd:85
+[class_use] scenes/Characters/Enemies/Enemy.gd -> core/databases/SpeciesDefinition.gd @scenes/Characters/Enemies/Enemy.gd:171
+[class_use] scenes/Characters/Enemies/Enemy.gd -> scenes/Characters/Enemies/Corpse.gd @scenes/Characters/Enemies/Enemy.gd:320
+[class_use] scenes/Characters/Enemies/Enemy.gd -> scenes/Characters/Enemies/EnemyAI.gd @scenes/Characters/Enemies/Enemy.gd:47
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> core/databases/EnemySkill.gd @scenes/Characters/Enemies/EnemyAI.gd:227
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> core/systems/ecology/NutrientCycle.gd @scenes/Characters/Enemies/EnemyAI.gd:207
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> core/systems/ecology/PoisonAvoidance.gd @scenes/Characters/Enemies/EnemyAI.gd:236
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> core/systems/ecology/TerritoryState.gd @scenes/Characters/Enemies/EnemyAI.gd:76
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> scenes/Characters/Enemies/Corpse.gd @scenes/Characters/Enemies/EnemyAI.gd:42
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/Characters/Enemies/EnemyAI.gd:15
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> scenes/Characters/Enemies/EnemyBehavior.gd @scenes/Characters/Enemies/EnemyAI.gd:19
+[class_use] scenes/Characters/Enemies/EnemyAI.gd -> scenes/Core/Entity.gd @scenes/Characters/Enemies/EnemyAI.gd:24
+[class_use] scenes/Characters/Enemies/EnemyBehavior.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/Characters/Enemies/EnemyBehavior.gd:14
+[class_use] scenes/Characters/Enemies/EnemyBehavior.gd -> scenes/Characters/Enemies/EnemySkillSystem.gd @scenes/Characters/Enemies/EnemyBehavior.gd:15
+[class_use] scenes/Characters/Enemies/EnemyBehavior.gd -> scenes/Core/Entity.gd @scenes/Characters/Enemies/EnemyBehavior.gd:22
+[class_use] scenes/Characters/Enemies/EnemySkillSystem.gd -> scenes/Systems/Combat/DamageEvent.gd @scenes/Characters/Enemies/EnemySkillSystem.gd:12
+[class_use] scenes/Characters/Enemies/SkillRegistry.gd -> core/databases/EnemySkill.gd @scenes/Characters/Enemies/SkillRegistry.gd:33
+[class_use] scenes/Characters/Player/Player.gd -> scenes/Utils/CarryHelper.gd @scenes/Characters/Player/Player.gd:176
+[class_use] scenes/Characters/Player/PlayerCombat.gd -> scenes/Core/Entity.gd @scenes/Characters/Player/PlayerCombat.gd:44
+[class_use] scenes/Characters/Player/PlayerCombat.gd -> scenes/Systems/Combat/DamageEvent.gd @scenes/Characters/Player/PlayerCombat.gd:44
+[class_use] scenes/Characters/Player/PlayerSpell.gd -> scenes/Systems/Combat/DamageEvent.gd @scenes/Characters/Player/PlayerSpell.gd:258
+[class_use] scenes/Characters/Player/PlayerSpell.gd -> scenes/Systems/FireAgent.gd @scenes/Characters/Player/PlayerSpell.gd:314
+[class_use] scenes/Core/Entity.gd -> core/components/PoisonStatusEffect.gd @scenes/Core/Entity.gd:101
+[class_use] scenes/Core/Entity.gd -> core/components/StatusComponent.gd @scenes/Core/Entity.gd:35
+[class_use] scenes/Core/Entity.gd -> core/components/StatusEffect.gd @scenes/Core/Entity.gd:126
+[class_use] scenes/Core/Entity.gd -> core/systems/ecology/GroupPoisonState.gd @scenes/Core/Entity.gd:114
+[class_use] scenes/Map/EnemySpawner.gd -> core/databases/SpeciesDefinition.gd @scenes/Map/EnemySpawner.gd:27
+[class_use] scenes/Map/InteractionObject.gd -> core/components/Targetable.gd @scenes/Map/InteractionObject.gd:25
+[class_use] scenes/Map/InteractionObject.gd -> scenes/Core/Entity.gd @scenes/Map/InteractionObject.gd:51
+[class_use] scenes/Map/InteractionObject.gd -> scenes/Systems/Combat/DamageEvent.gd @scenes/Map/InteractionObject.gd:51
+[class_use] scenes/Quest/QuestGenerator.gd -> core/databases/EnemyStats.gd @scenes/Quest/QuestGenerator.gd:44
+[class_use] scenes/Quest/QuestGenerator.gd -> core/databases/SpeciesDefinition.gd @scenes/Quest/QuestGenerator.gd:43
+[class_use] scenes/Quest/QuestGenerator.gd -> core/systems/ecology/SpeciesState.gd @scenes/Quest/QuestGenerator.gd:40
+[class_use] scenes/Systems/Combat/DamageSystem.gd -> core/systems/ecology/SpeciesRelation.gd @scenes/Systems/Combat/DamageSystem.gd:65
+[class_use] scenes/Systems/Combat/DamageSystem.gd -> scenes/Core/Entity.gd @scenes/Systems/Combat/DamageSystem.gd:18
+[class_use] scenes/Systems/Combat/DamageSystem.gd -> scenes/Systems/Combat/DamageEvent.gd @scenes/Systems/Combat/DamageSystem.gd:14
+[class_use] scenes/Systems/FireAgent.gd -> core/systems/ecology/EnvironmentState.gd @scenes/Systems/FireAgent.gd:55
+[class_use] scenes/Systems/Interaction/InteractionSystem.gd -> scenes/Characters/Enemies/Corpse.gd @scenes/Systems/Interaction/InteractionSystem.gd:24
+[class_use] scenes/Systems/Interaction/InteractionSystem.gd -> scenes/Map/InteractionObject.gd @scenes/Systems/Interaction/InteractionSystem.gd:28
+[class_use] scenes/Systems/SpawnController.gd -> core/databases/EnemyStats.gd @scenes/Systems/SpawnController.gd:78
+[class_use] scenes/Systems/SpawnController.gd -> core/databases/SpeciesDefinition.gd @scenes/Systems/SpawnController.gd:43
+[class_use] scenes/Systems/SpawnController.gd -> core/systems/ecology/EnvironmentState.gd @scenes/Systems/SpawnController.gd:43
+[class_use] scenes/Systems/SpawnController.gd -> core/systems/ecology/SpeciesState.gd @scenes/Systems/SpawnController.gd:49
+[class_use] scenes/Systems/SpawnController.gd -> scenes/Systems/SpawnLocationResolver.gd @scenes/Systems/SpawnController.gd:14
+[class_use] scenes/Systems/SpawnLocationResolver.gd -> core/databases/SpeciesDefinition.gd @scenes/Systems/SpawnLocationResolver.gd:21
+[class_use] scenes/Systems/SpawnLocationResolver.gd -> core/systems/ecology/EnvironmentState.gd @scenes/Systems/SpawnLocationResolver.gd:54
+[class_use] scenes/Systems/SpawnLocationResolver.gd -> core/systems/ecology/SpawnGroundResolver.gd @scenes/Systems/SpawnLocationResolver.gd:16
+[class_use] scenes/Systems/SpawnLocationResolver.gd -> core/systems/ecology/TerritoryState.gd @scenes/Systems/SpawnLocationResolver.gd:73
+[class_use] scenes/Systems/Targeting/TargetSystem.gd -> core/components/Targetable.gd @scenes/Systems/Targeting/TargetSystem.gd:142
+[class_use] scenes/UI/EcologyObservationUI.gd -> core/systems/ecology/EnvironmentState.gd @scenes/UI/EcologyObservationUI.gd:252
+[class_use] scenes/UI/EcologyObservationUI.gd -> core/systems/ecology/SpeciesState.gd @scenes/UI/EcologyObservationUI.gd:295
+[class_use] scenes/UI/EcologyObservationUI.gd -> core/systems/ecology/TerritoryState.gd @scenes/UI/EcologyObservationUI.gd:349
+[class_use] scenes/World/Debug/DebugEcologyView.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/Debug/DebugEcologyView.gd:60
+[class_use] scenes/World/Debug/DebugEcologyView.gd -> core/systems/ecology/SpeciesState.gd @scenes/World/Debug/DebugEcologyView.gd:76
+[class_use] scenes/World/Debug/DebugEcologyView.gd -> core/systems/ecology/TerritoryState.gd @scenes/World/Debug/DebugEcologyView.gd:578
+[class_use] scenes/World/Debug/DebugEcologyView.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugEcologyView.gd:16
+[class_use] scenes/World/Debug/DebugEntityOverlay.gd -> core/systems/ecology/GroupPoisonState.gd @scenes/World/Debug/DebugEntityOverlay.gd:85
+[class_use] scenes/World/Debug/DebugEntityOverlay.gd -> scenes/Characters/Enemies/Corpse.gd @scenes/World/Debug/DebugEntityOverlay.gd:68
+[class_use] scenes/World/Debug/DebugEntityOverlay.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/World/Debug/DebugEntityOverlay.gd:82
+[class_use] scenes/World/Debug/DebugEntityOverlay.gd -> scenes/Core/Entity.gd @scenes/World/Debug/DebugEntityOverlay.gd:71
+[class_use] scenes/World/Debug/DebugObservationView.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugObservationView.gd:13
+[class_use] scenes/World/Debug/DebugPanel.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/Debug/DebugPanel.gd:285
+[class_use] scenes/World/Debug/DebugPanel.gd -> scenes/Core/Entity.gd @scenes/World/Debug/DebugPanel.gd:342
+[class_use] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugEcologyView.gd @scenes/World/Debug/DebugPanel.gd:72
+[class_use] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugEntityOverlay.gd @scenes/World/Debug/DebugPanel.gd:9
+[class_use] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugObservationView.gd @scenes/World/Debug/DebugPanel.gd:321
+[class_use] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugPoisonView.gd @scenes/World/Debug/DebugPanel.gd:73
+[class_use] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugPanel.gd:238
+[class_use] scenes/World/Debug/DebugPanelActions.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/Debug/DebugPanelActions.gd:193
+[class_use] scenes/World/Debug/DebugPanelActions.gd -> core/systems/ecology/SpeciesState.gd @scenes/World/Debug/DebugPanelActions.gd:294
+[class_use] scenes/World/Debug/DebugPanelActions.gd -> scenes/World/Debug/DebugEcologyView.gd @scenes/World/Debug/DebugPanelActions.gd:333
+[class_use] scenes/World/Debug/DebugPanelActions.gd -> scenes/World/Debug/DebugPoisonActions.gd @scenes/World/Debug/DebugPanelActions.gd:162
+[class_use] scenes/World/Debug/DebugPanelActions.gd -> scenes/World/Debug/DebugSpawnView.gd @scenes/World/Debug/DebugPanelActions.gd:555
+[class_use] scenes/World/Debug/DebugPanelActions.gd -> scenes/World/PoisonArea.gd @scenes/World/Debug/DebugPanelActions.gd:379
+[class_use] scenes/World/Debug/DebugPanelNavigation.gd -> scenes/World/Debug/DebugPoisonView.gd @scenes/World/Debug/DebugPanelNavigation.gd:116
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> core/components/StatusComponent.gd @scenes/World/Debug/DebugPoisonActions.gd:406
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/Debug/DebugPoisonActions.gd:63
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> core/systems/ecology/GroupPoisonState.gd @scenes/World/Debug/DebugPoisonActions.gd:317
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> scenes/Characters/Enemies/Corpse.gd @scenes/World/Debug/DebugPoisonActions.gd:274
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/World/Debug/DebugPoisonActions.gd:313
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> scenes/Core/Entity.gd @scenes/World/Debug/DebugPoisonActions.gd:256
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> scenes/World/Debug/DebugEntityOverlay.gd @scenes/World/Debug/DebugPoisonActions.gd:22
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugPoisonActions.gd:38
+[class_use] scenes/World/Debug/DebugPoisonActions.gd -> scenes/World/PoisonArea.gd @scenes/World/Debug/DebugPoisonActions.gd:75
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> core/components/PoisonStatusEffect.gd @scenes/World/Debug/DebugPoisonView.gd:377
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> core/components/StatusComponent.gd @scenes/World/Debug/DebugPoisonView.gd:379
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/Debug/DebugPoisonView.gd:177
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> core/systems/ecology/GroupPoisonState.gd @scenes/World/Debug/DebugPoisonView.gd:128
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> core/systems/ecology/PoisonAvoidance.gd @scenes/World/Debug/DebugPoisonView.gd:205
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> scenes/Characters/Enemies/Corpse.gd @scenes/World/Debug/DebugPoisonView.gd:98
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/World/Debug/DebugPoisonView.gd:121
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> scenes/Core/Entity.gd @scenes/World/Debug/DebugPoisonView.gd:92
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> scenes/World/Debug/DebugPoisonActions.gd @scenes/World/Debug/DebugPoisonView.gd:114
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugPoisonView.gd:36
+[class_use] scenes/World/Debug/DebugPoisonView.gd -> scenes/World/PoisonArea.gd @scenes/World/Debug/DebugPoisonView.gd:20
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugEcologyView.gd @scenes/World/Debug/DebugRightViewRefresh.gd:29
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugObservationView.gd @scenes/World/Debug/DebugRightViewRefresh.gd:25
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugPoisonView.gd @scenes/World/Debug/DebugRightViewRefresh.gd:32
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugSpawnView.gd @scenes/World/Debug/DebugRightViewRefresh.gd:34
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugTimeView.gd @scenes/World/Debug/DebugRightViewRefresh.gd:27
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugRightViewRefresh.gd:40
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugUtilityView.gd @scenes/World/Debug/DebugRightViewRefresh.gd:36
+[class_use] scenes/World/Debug/DebugRightViewRefresh.gd -> scenes/World/Debug/DebugWorldView.gd @scenes/World/Debug/DebugRightViewRefresh.gd:24
+[class_use] scenes/World/Debug/DebugSpawnView.gd -> core/databases/SpeciesDefinition.gd @scenes/World/Debug/DebugSpawnView.gd:60
+[class_use] scenes/World/Debug/DebugSpawnView.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/Debug/DebugSpawnView.gd:56
+[class_use] scenes/World/Debug/DebugSpawnView.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugSpawnView.gd:8
+[class_use] scenes/World/Debug/DebugTerritoryOverlay.gd -> core/systems/ecology/TerritoryState.gd @scenes/World/Debug/DebugTerritoryOverlay.gd:117
+[class_use] scenes/World/Debug/DebugTimeView.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugTimeView.gd:5
+[class_use] scenes/World/Debug/DebugUtilityView.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugUtilityView.gd:6
+[class_use] scenes/World/Debug/DebugWorldView.gd -> scenes/World/Debug/DebugUIHelpers.gd @scenes/World/Debug/DebugWorldView.gd:6
+[class_use] scenes/World/PoisonArea.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/PoisonArea.gd:13
+[class_use] scenes/World/PoisonArea.gd -> scenes/Characters/Enemies/Corpse.gd @scenes/World/PoisonArea.gd:58
+[class_use] scenes/World/PoisonArea.gd -> scenes/Core/Entity.gd @scenes/World/PoisonArea.gd:52
+[class_use] scenes/World/SpatialBioRegion3D.gd -> scenes/World/SpatialArea3D.gd @scenes/World/SpatialBioRegion3D.gd:15
+[class_use] scenes/World/TreeWood.gd -> core/components/Targetable.gd @scenes/World/TreeWood.gd:27
+[class_use] scenes/World/WorldMap/WorldMap.gd -> core/systems/ecology/SpeciesRelation.gd @scenes/World/WorldMap/WorldMap.gd:254
+[class_use] scenes/World/WorldMap/WorldMap.gd -> core/systems/ecology/TerritoryState.gd @scenes/World/WorldMap/WorldMap.gd:48
+[class_use] scenes/World/WorldMap/WorldMap.gd -> scenes/Map/InteractionObject.gd @scenes/World/WorldMap/WorldMap.gd:212
+[class_use] scenes/World/WorldMap/WorldMap.gd -> scenes/Systems/SpawnLocationResolver.gd @scenes/World/WorldMap/WorldMap.gd:85
+[class_use] scenes/World/WorldRoot/WorldRoot.gd -> core/systems/ecology/EnvironmentState.gd @scenes/World/WorldRoot/WorldRoot.gd:114
+[class_use] scenes/World/WorldRoot/WorldRoot.gd -> scenes/World/MapProvider.gd @scenes/World/WorldRoot/WorldRoot.gd:18
+[class_use] scenes/World/WorldRoot/WorldRoot.gd -> scenes/World/PoisonArea.gd @scenes/World/WorldRoot/WorldRoot.gd:26
+[extends] core/components/PoisonStatusEffect.gd -> core/components/StatusEffect.gd @core/components/PoisonStatusEffect.gd:1
+[extends] core/systems/ecology/ForestBioRegionDefinition.gd -> core/systems/ecology/BioRegionDefinition.gd @core/systems/ecology/ForestBioRegionDefinition.gd:6
+[extends] core/systems/ecology/MountainForestBioRegionDefinition.gd -> core/systems/ecology/ForestBioRegionDefinition.gd @core/systems/ecology/MountainForestBioRegionDefinition.gd:6
+[extends] scenes/Characters/Enemies/Enemy.gd -> scenes/Core/Entity.gd @scenes/Characters/Enemies/Enemy.gd:6
+[extends] scenes/Characters/Player/Player.gd -> scenes/Core/Entity.gd @scenes/Characters/Player/Player.gd:1
+[extends] scenes/Map/Cart.gd -> scenes/Map/InteractionObject.gd @scenes/Map/Cart.gd:2
+[extends] scenes/Map/InteractionObject.gd -> scenes/Core/Entity.gd @scenes/Map/InteractionObject.gd:6
+[extends] scenes/World/TreeWood.gd -> scenes/Core/Entity.gd @scenes/World/TreeWood.gd:2
+[extends] scenes/World/WorldMap/WorldMap.gd -> scenes/World/MapProvider.gd @scenes/World/WorldMap/WorldMap.gd:8
+[group_call] core/autoload/GameState.gd -> scenes/Characters/Player/Player.gd (player) @core/autoload/GameState.gd:338
+[group_call] core/autoload/WorldManager.gd -> scenes/Characters/Player/Player.gd (player) @core/autoload/WorldManager.gd:1062
+[group_call] core/systems/ecology/PoisonAvoidance.gd -> scenes/World/PoisonArea.gd (poison_areas) @core/systems/ecology/PoisonAvoidance.gd:16
+[group_call] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> scenes/World/PoisonArea.gd (poison_areas) @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:89
+[group_call] scenes/Characters/Enemies/Enemy.gd -> scenes/Characters/Player/Player.gd (player) @scenes/Characters/Enemies/Enemy.gd:276
+[group_call] scenes/Characters/Enemies/EnemyAI.gd -> scenes/Characters/Enemies/Corpse.gd (Corpses) @scenes/Characters/Enemies/EnemyAI.gd:291
+[group_call] scenes/Characters/Enemies/EnemyAI.gd -> scenes/Characters/Player/Player.gd (player) @scenes/Characters/Enemies/EnemyAI.gd:132
+[group_call] scenes/Characters/Player/Player.gd -> scenes/Characters/Player/Spell/SpellUI.gd (spell_ui) @scenes/Characters/Player/Player.gd:28
+[group_call] scenes/Characters/Player/Player.gd -> scenes/Map/Cart.gd (carts) @scenes/Characters/Player/Player.gd:156
+[group_call] scenes/Characters/Player/PlayerCombat.gd -> core/components/Targetable.gd (targetable) @scenes/Characters/Player/PlayerCombat.gd:50
+[group_call] scenes/Characters/Player/PlayerCombat.gd -> scenes/Characters/Enemies/Enemy.gd (enemies) @scenes/Characters/Player/PlayerCombat.gd:98
+[group_call] scenes/Characters/Player/PlayerCombat.gd -> scenes/Map/Cart.gd (carts) @scenes/Characters/Player/PlayerCombat.gd:198
+[group_call] scenes/Characters/Player/PlayerCombat.gd -> scenes/World/TreeWood.gd (targetable) @scenes/Characters/Player/PlayerCombat.gd:50
+[group_call] scenes/Characters/Player/PlayerSpell.gd -> scenes/Characters/Enemies/Enemy.gd (enemies) @scenes/Characters/Player/PlayerSpell.gd:248
+[group_call] scenes/Characters/Player/PlayerSpell.gd -> scenes/Systems/FireAgent.gd (FireAgents) @scenes/Characters/Player/PlayerSpell.gd:313
+[group_call] scenes/Characters/Player/Spell/SpellUI.gd -> scenes/Characters/Player/Player.gd (player) @scenes/Characters/Player/Spell/SpellUI.gd:50
+[group_call] scenes/Systems/Targeting/TargetSystem.gd -> core/components/Targetable.gd (targetable) @scenes/Systems/Targeting/TargetSystem.gd:215
+[group_call] scenes/Systems/Targeting/TargetSystem.gd -> scenes/World/TreeWood.gd (targetable) @scenes/Systems/Targeting/TargetSystem.gd:215
+[group_call] scenes/World/Debug/DebugEntityOverlay.gd -> scenes/Characters/Enemies/Corpse.gd (Corpses) @scenes/World/Debug/DebugEntityOverlay.gd:49
+[group_call] scenes/World/Debug/DebugEntityOverlay.gd -> scenes/Characters/Enemies/Enemy.gd (enemies) @scenes/World/Debug/DebugEntityOverlay.gd:46
+[group_call] scenes/World/Debug/DebugEntityOverlay.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugEntityOverlay.gd:19
+[group_call] scenes/World/Debug/DebugPanel.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugPanel.gd:229
+[group_call] scenes/World/Debug/DebugPanelActions.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugPanelActions.gd:165
+[group_call] scenes/World/Debug/DebugPanelActions.gd -> scenes/World/PoisonArea.gd (poison_areas) @scenes/World/Debug/DebugPanelActions.gd:374
+[group_call] scenes/World/Debug/DebugPoisonActions.gd -> scenes/Characters/Enemies/Corpse.gd (Corpses) @scenes/World/Debug/DebugPoisonActions.gd:276
+[group_call] scenes/World/Debug/DebugPoisonActions.gd -> scenes/Characters/Enemies/Enemy.gd (enemies) @scenes/World/Debug/DebugPoisonActions.gd:255
+[group_call] scenes/World/Debug/DebugPoisonActions.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugPoisonActions.gd:147
+[group_call] scenes/World/Debug/DebugPoisonActions.gd -> scenes/World/PoisonArea.gd (poison_areas) @scenes/World/Debug/DebugPoisonActions.gd:193
+[group_call] scenes/World/Debug/DebugPoisonView.gd -> scenes/Characters/Enemies/Corpse.gd (Corpses) @scenes/World/Debug/DebugPoisonView.gd:97
+[group_call] scenes/World/Debug/DebugPoisonView.gd -> scenes/Characters/Enemies/Enemy.gd (enemies) @scenes/World/Debug/DebugPoisonView.gd:91
+[group_call] scenes/World/Debug/DebugPoisonView.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugPoisonView.gd:19
+[group_call] scenes/World/Debug/DebugPoisonView.gd -> scenes/World/PoisonArea.gd (poison_areas) @scenes/World/Debug/DebugPoisonView.gd:359
+[group_call] scenes/World/Debug/DebugSpawnView.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugSpawnView.gd:107
+[group_call] scenes/World/Debug/DebugWorldView.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugWorldView.gd:12
+[group_call] scenes/World/PoisonArea.gd -> scenes/Characters/Enemies/Corpse.gd (Corpses) @scenes/World/PoisonArea.gd:57
+[group_call] scenes/World/PoisonArea.gd -> scenes/Characters/Enemies/Enemy.gd (enemies) @scenes/World/PoisonArea.gd:54
+[group_call] scenes/World/PoisonArea.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/PoisonArea.gd:51
+[group_call] scenes/World/WorldRoot/WorldRoot.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/WorldRoot/WorldRoot.gd:132
+[group_check] core/systems/ecology/SpeciesRelation.gd -> scenes/Characters/Player/Player.gd (player) @core/systems/ecology/SpeciesRelation.gd:179
+[group_check] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> scenes/Characters/Player/Player.gd (player) @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:275
+[group_check] scenes/Systems/Combat/DamageSystem.gd -> scenes/Characters/Enemies/Enemy.gd (enemies) @scenes/Systems/Combat/DamageSystem.gd:27
+[group_check] scenes/Systems/Combat/DamageSystem.gd -> scenes/Characters/Player/Player.gd (player) @scenes/Systems/Combat/DamageSystem.gd:25
+[group_check] scenes/World/Debug/DebugEntityOverlay.gd -> scenes/Characters/Player/Player.gd (player) @scenes/World/Debug/DebugEntityOverlay.gd:77
+[preload] core/autoload/WorldManager.gd -> scenes/Map/EnemySpawner.gd @core/autoload/WorldManager.gd:1081
+[preload] core/autoload/WorldManager.gd -> scenes/Map/ObjectGenerator.gd @core/autoload/WorldManager.gd:1095
+[preload] core/systems/ecology/EcologyManager.gd -> core/databases/MapDatabase.gd @core/systems/ecology/EcologyManager.gd:185
+[preload] core/systems/ecology/EcologyManager.gd -> core/databases/SpeciesDatabase.gd @core/systems/ecology/EcologyManager.gd:146
+[preload] core/systems/ecology/EcologyManager.gd -> core/systems/ecology/SpatialRegionResolver.gd @core/systems/ecology/EcologyManager.gd:196
+[preload] scenes/Characters/Enemies/BehaviorRegistry.gd -> scenes/Characters/Enemies/DefaultEnemyBehavior.gd @scenes/Characters/Enemies/BehaviorRegistry.gd:16
+[preload] scenes/Characters/Enemies/DefaultEnemyBehavior.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/Characters/Enemies/DefaultEnemyBehavior.gd:8
+[preload] scenes/Characters/Enemies/EnemyAI.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/Characters/Enemies/EnemyAI.gd:15
+[preload] scenes/Characters/Enemies/EnemyBehavior.gd -> scenes/Characters/Enemies/BehaviorRegistry.gd @scenes/Characters/Enemies/EnemyBehavior.gd:16
+[preload] scenes/Characters/Enemies/EnemyBehavior.gd -> scenes/Characters/Enemies/Enemy.gd @scenes/Characters/Enemies/EnemyBehavior.gd:14
+[preload] scenes/Characters/Enemies/EnemySkillSystem.gd -> scenes/Characters/Enemies/SkillRegistry.gd @scenes/Characters/Enemies/EnemySkillSystem.gd:10
+[preload] scenes/Map/ObjectGenerator.gd -> scenes/Map/InteractionObject.gd @scenes/Map/ObjectGenerator.gd:72
+[preload] scenes/Systems/Indicator/IndicatorManager.gd -> scenes/Systems/Indicator/IndicatorFactory.gd @scenes/Systems/Indicator/IndicatorManager.gd:4
+[preload] scenes/Systems/SpawnLocationResolver.gd -> core/systems/ecology/SpatialRegionResolver.gd @scenes/Systems/SpawnLocationResolver.gd:290
+[preload] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugEntityOverlay.gd @scenes/World/Debug/DebugPanel.gd:9
+[preload] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugPanelActions.gd @scenes/World/Debug/DebugPanel.gd:7
+[preload] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugPanelNavigation.gd @scenes/World/Debug/DebugPanel.gd:5
+[preload] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugRightViewRefresh.gd @scenes/World/Debug/DebugPanel.gd:6
+[preload] scenes/World/Debug/DebugPanel.gd -> scenes/World/Debug/DebugTerritoryOverlay.gd @scenes/World/Debug/DebugPanel.gd:8
+[preload] scenes/World/WorldMap/WorldMap.gd -> core/systems/ecology/SpawnRequest.gd @scenes/World/WorldMap/WorldMap.gd:89
+[preload] scenes/World/WorldMap/WorldMap.gd -> scenes/Map/EnemySpawner.gd @scenes/World/WorldMap/WorldMap.gd:197
+[preload] scenes/World/WorldRoot/WorldRoot.gd -> scenes/Map/EnemySpawner.gd @scenes/World/WorldRoot/WorldRoot.gd:107
+[preload] scenes/World/WorldRoot/WorldRoot.gd -> scenes/Map/ObjectGenerator.gd @scenes/World/WorldRoot/WorldRoot.gd:111
+[preload] scenes/World/WorldRoot/WorldRoot.gd -> scenes/Systems/SpawnController.gd @scenes/World/WorldRoot/WorldRoot.gd:102
+[preload] scenes/World/WorldRoot/WorldRoot.gd -> scenes/UI/EcologyObservationUI.gd @scenes/World/WorldRoot/WorldRoot.gd:50
+[preload] scenes/World/WorldRoot/WorldRoot.gd -> scenes/World/EcologyTraceFeedback.gd @scenes/World/WorldRoot/WorldRoot.gd:65
+[preload_scene] core/autoload/WorldManager.gd -> scenes/Characters/Enemies/Corpse.tscn @core/autoload/WorldManager.gd:1214
+[preload_scene] scenes/Systems/Indicator/IndicatorManager.gd -> scenes/Systems/Indicator/Indicator.tscn @scenes/Systems/Indicator/IndicatorManager.gd:3
+[preload_scene] scenes/World/Debug/DebugUIHelpers.gd -> scenes/World/Debug/Components/DebugActionButton.tscn @scenes/World/Debug/DebugUIHelpers.gd:7
+[preload_scene] scenes/World/Debug/DebugUIHelpers.gd -> scenes/World/Debug/Components/DebugMessage.tscn @scenes/World/Debug/DebugUIHelpers.gd:8
+[preload_scene] scenes/World/Debug/DebugUIHelpers.gd -> scenes/World/Debug/Components/DebugSectionTitle.tscn @scenes/World/Debug/DebugUIHelpers.gd:5
+[preload_scene] scenes/World/Debug/DebugUIHelpers.gd -> scenes/World/Debug/Components/DebugValueRow.tscn @scenes/World/Debug/DebugUIHelpers.gd:6
+[scene_ref] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/PlayerMesh.tscn
+[scene_ref] scenes/World/WorldRoot/WorldRoot.tscn -> scenes/Camera/WorldCamera.tscn
+[scene_ref] scenes/World/WorldRoot/WorldRoot.tscn -> scenes/Characters/Player/Player.tscn
+[scene_ref] scenes/World/WorldRoot/WorldRoot.tscn -> scenes/Characters/Player/Spell/SpellUI.tscn
+[scene_ref] scenes/World/WorldRoot/WorldRoot.tscn -> scenes/World/Debug/DebugPanel.tscn
+[scene_script] scenes/Camera/WorldCamera.tscn -> scenes/Camera/WorldCamera.gd
+[scene_script] scenes/Characters/Enemies/Corpse.tscn -> scenes/Characters/Enemies/Corpse.gd
+[scene_script] scenes/Characters/Enemies/Enemy.tscn -> scenes/Characters/Enemies/Enemy.gd
+[scene_script] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/Player.gd
+[scene_script] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/PlayerCombat.gd
+[scene_script] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/PlayerDodge.gd
+[scene_script] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/PlayerLook.gd
+[scene_script] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/PlayerMovement.gd
+[scene_script] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/PlayerMovementInput.gd
+[scene_script] scenes/Characters/Player/Player.tscn -> scenes/Characters/Player/PlayerSpell.gd
+[scene_script] scenes/Characters/Player/Spell/SpellUI.tscn -> scenes/Characters/Player/Spell/SpellUI.gd
+[scene_script] scenes/Systems/Indicator/Indicator.tscn -> scenes/Systems/Indicator/Indicator.gd
+[scene_script] scenes/World/Debug/DebugPanel.tscn -> scenes/World/Debug/DebugPanel.gd
+[scene_script] scenes/World/WorldMap/WorldMap.tscn -> scenes/World/SpatialArea3D.gd
+[scene_script] scenes/World/WorldMap/WorldMap.tscn -> scenes/World/SpatialBioRegion3D.gd
+[scene_script] scenes/World/WorldMap/WorldMap.tscn -> scenes/World/WorldMap/WorldMap.gd
+[scene_script] scenes/World/WorldRoot/WorldRoot.tscn -> scenes/World/WorldRoot/WorldRoot.gd
+[signal] core/autoload/GameState.gd -> scenes/Characters/Player/PlayerSpell.gd (spell_discovered) @scenes/Characters/Player/PlayerSpell.gd:36
+[signal] core/autoload/SpellMasteryManager.gd -> scenes/Characters/Player/PlayerSpell.gd (spell_discovered) @scenes/Characters/Player/PlayerSpell.gd:36
+[signal] core/autoload/WorldManager.gd -> scenes/World/WorldRoot/WorldRoot.gd (region_changed) @scenes/World/WorldRoot/WorldRoot.gd:176
+[signal] core/systems/ecology/EcologyManager.gd -> scenes/Systems/SpawnController.gd (spawn_request_object) @scenes/Systems/SpawnController.gd:22
+[signal] core/systems/ecology/EcologyManager.gd -> scenes/Systems/SpawnController.gd (spawn_requested) @scenes/Systems/SpawnController.gd:20
+[signal] core/systems/ecology/EcologyManager.gd -> scenes/UI/EcologyObservationUI.gd (ecology_updated) @scenes/UI/EcologyObservationUI.gd:30
+[signal] core/systems/ecology/EcologyManager.gd -> scenes/World/EcologyTraceFeedback.gd (ecology_updated) @scenes/World/EcologyTraceFeedback.gd:37
+[signal] core/systems/ecology/EcologyManager.gd -> scenes/World/WorldMap/WorldMap.gd (swarm_event_requested) @scenes/World/WorldMap/WorldMap.gd:27
+[signal] scenes/Characters/Player/PlayerCombat.gd -> scenes/Characters/Player/PlayerMovement.gd (crafting_interrupted) @scenes/Characters/Player/PlayerMovement.gd:31
+[signal] scenes/Characters/Player/PlayerCombat.gd -> scenes/UI/Crafting/CraftingUI.gd (crafting_interrupted) @scenes/UI/Crafting/CraftingUI.gd:23
+[signal] scenes/Characters/Player/PlayerCombat.gd -> scenes/Utils/CraftingSystem.gd (crafting_interrupted) @scenes/Utils/CraftingSystem.gd:23
+[signal] scenes/Utils/CraftingSystem.gd -> scenes/Characters/Player/PlayerMovement.gd (crafting_completed) @scenes/Characters/Player/PlayerMovement.gd:30
+[signal] scenes/Utils/CraftingSystem.gd -> scenes/Characters/Player/PlayerMovement.gd (crafting_started) @scenes/Characters/Player/PlayerMovement.gd:29
+[signal] scenes/Utils/CraftingSystem.gd -> scenes/UI/Crafting/CraftingUI.gd (crafting_completed) @scenes/UI/Crafting/CraftingUI.gd:22
+[signal] scenes/Utils/CraftingSystem.gd -> scenes/UI/Crafting/CraftingUI.gd (crafting_started) @scenes/UI/Crafting/CraftingUI.gd:21
+[signal] scenes/Utils/CraftingSystem.gd -> scenes/UI/Crafting/CraftingUI.gd (recipe_discovered) @scenes/UI/Crafting/CraftingUI.gd:20
+[signal] scenes/World/Debug/DebugPanelActions.gd -> scenes/UI/EcologyObservationUI.gd (ecology_updated) @scenes/UI/EcologyObservationUI.gd:30
+[signal] scenes/World/Debug/DebugPanelActions.gd -> scenes/World/EcologyTraceFeedback.gd (ecology_updated) @scenes/World/EcologyTraceFeedback.gd:37
+[signal] scenes/World/Debug/DebugPoisonActions.gd -> scenes/UI/EcologyObservationUI.gd (ecology_updated) @scenes/UI/EcologyObservationUI.gd:30
+[signal] scenes/World/Debug/DebugPoisonActions.gd -> scenes/World/EcologyTraceFeedback.gd (ecology_updated) @scenes/World/EcologyTraceFeedback.gd:37
+[signal] scenes/World/Debug/DebugSpawnView.gd -> scenes/Systems/SpawnController.gd (spawn_requested) @scenes/Systems/SpawnController.gd:20
+[signal] scenes/World/Debug/DebugSpawnView.gd -> scenes/UI/EcologyObservationUI.gd (ecology_updated) @scenes/UI/EcologyObservationUI.gd:30
+[signal] scenes/World/Debug/DebugSpawnView.gd -> scenes/World/EcologyTraceFeedback.gd (ecology_updated) @scenes/World/EcologyTraceFeedback.gd:37
+[signal] scenes/World/WorldMap/WorldMap.gd -> scenes/Systems/SpawnController.gd (spawn_requested) @scenes/Systems/SpawnController.gd:20
+[signal_listen] scenes/Characters/Player/PlayerMovement.gd -> core/autoload/EventBus.gd (crafting_completed) @scenes/Characters/Player/PlayerMovement.gd:30
+[signal_listen] scenes/Characters/Player/PlayerMovement.gd -> core/autoload/EventBus.gd (crafting_interrupted) @scenes/Characters/Player/PlayerMovement.gd:31
+[signal_listen] scenes/Characters/Player/PlayerMovement.gd -> core/autoload/EventBus.gd (crafting_started) @scenes/Characters/Player/PlayerMovement.gd:29
+[signal_listen] scenes/Characters/Player/PlayerSpell.gd -> core/autoload/GameState.gd (spell_discovered) @scenes/Characters/Player/PlayerSpell.gd:36
+[signal_listen] scenes/Systems/SpawnController.gd -> core/systems/ecology/EcologyManager.gd (spawn_request_object) @scenes/Systems/SpawnController.gd:22
+[signal_listen] scenes/Systems/SpawnController.gd -> core/systems/ecology/EcologyManager.gd (spawn_requested) @scenes/Systems/SpawnController.gd:20
+[signal_listen] scenes/UI/Crafting/CraftingUI.gd -> core/autoload/EventBus.gd (crafting_completed) @scenes/UI/Crafting/CraftingUI.gd:22
+[signal_listen] scenes/UI/Crafting/CraftingUI.gd -> core/autoload/EventBus.gd (crafting_interrupted) @scenes/UI/Crafting/CraftingUI.gd:23
+[signal_listen] scenes/UI/Crafting/CraftingUI.gd -> core/autoload/EventBus.gd (crafting_started) @scenes/UI/Crafting/CraftingUI.gd:21
+[signal_listen] scenes/UI/Crafting/CraftingUI.gd -> core/autoload/EventBus.gd (recipe_discovered) @scenes/UI/Crafting/CraftingUI.gd:20
+[signal_listen] scenes/UI/EcologyObservationUI.gd -> core/systems/ecology/EcologyManager.gd (ecology_updated) @scenes/UI/EcologyObservationUI.gd:30
+[signal_listen] scenes/UI/Map/MapReadingModeUI.gd -> core/autoload/EventBus.gd (map_reading_toggled) @scenes/UI/Map/MapReadingModeUI.gd:19
+[signal_listen] scenes/Utils/CraftingSystem.gd -> core/autoload/EventBus.gd (crafting_interrupted) @scenes/Utils/CraftingSystem.gd:23
+[signal_listen] scenes/Utils/MapKnowledgeManager.gd -> core/autoload/EventBus.gd (map_changed) @scenes/Utils/MapKnowledgeManager.gd:38
+[signal_listen] scenes/World/EcologyTraceFeedback.gd -> core/systems/ecology/EcologyManager.gd (ecology_updated) @scenes/World/EcologyTraceFeedback.gd:37
+[signal_listen] scenes/World/WorldMap/WorldMap.gd -> core/systems/ecology/EcologyManager.gd (swarm_event_requested) @scenes/World/WorldMap/WorldMap.gd:27
+[signal_listen] scenes/World/WorldRoot/WorldRoot.gd -> core/autoload/WorldManager.gd (region_changed) @scenes/World/WorldRoot/WorldRoot.gd:176
+[?dynamic_get_node] scenes/Characters/Enemies/Enemy.gd:211 autoload_name
+[?dynamic_get_node] scenes/Characters/Enemies/EnemyAI.gd:254 autoload_name
+[?dynamic_get_node_or_null] scenes/Characters/Enemies/Boss.gd:40 swarm_spawner_path
+[?dynamic_get_node_or_null] scenes/World/Debug/DebugPanel.gd:378 view_name
+[?dynamic_get_node_or_null] scenes/World/Debug/DebugPanelNavigation.gd:262 folder.name.replace("Folder"
+[?dynamic_load] core/autoload/GameState.gd:582 path
+[?dynamic_load] core/databases/EnemyDatabase.gd:27 path
+[?dynamic_load] core/databases/ItemDatabase.gd:25 path
+[?dynamic_load] core/databases/SpeciesDatabase.gd:27 path
+[?dynamic_load] core/systems/ecology/EcologyManager.gd:110 full_path
+[?dynamic_load] scenes/Characters/Enemies/Enemy.gd:318 corpse_path
+[?dynamic_load] scenes/Characters/Enemies/SkillRegistry.gd:32 path
+[?dynamic_load] scenes/Map/EnemySpawner.gd:122 ENEMY_SCENE
+[?dynamic_load] scenes/Map/GenerateMapFromDEM.gd:20 dem_image_path
+[?dynamic_load] scenes/Map/ObjectGenerator.gd:69 scene_path
+[?dynamic_load] scenes/World/WorldMap/WorldMap.gd:210 path
+[?dynamic_load] scenes/World/WorldMap/WorldMap.gd:225 path
+[?dynamic_load] scenes/World/WorldRoot/WorldRoot.gd:92 scenes_list[target_scene]
+[?export_scene_in_resource] core/databases/SpeciesDefinition.gd:102 visual_scene
+[?export_scene_not_in_tscn] scenes/Utils/SwarmSpawner.gd:12 fast_enemy_scene
+[?export_scene_not_in_tscn] scenes/Utils/SwarmSpawner.gd:13 tank_enemy_scene
+[?export_scene_not_in_tscn] scenes/Utils/SwarmSpawner.gd:14 balanced_enemy_scene
+[?export_scene_not_in_tscn] scenes/Utils/SwarmSpawner.gd:119 boss_scene
+[?export_scene_not_in_tscn] scenes/World/WorldRoot/WorldRoot.gd:13 enemy_scene
+[?group_no_member] scenes/Characters/NPC/LogisticsNPC.gd:62 allies
+[?group_no_member] scenes/Utils/SwarmSpawner.gd:114 Player
+[?group_no_member] scenes/World/Debug/DebugSpawnView.gd:17 spawn_controller
+[?group_no_member] scenes/World/Debug/DebugSpawnView.gd:25 spawn_controller
+[?preload_missing] scenes/Characters/NPC/LogisticsNPC.gd:72 res://scenes/Map/CargoCrate.tscn

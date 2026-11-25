@@ -1,0 +1,8 @@
+PlayerDodge
+f=scenes/Characters/Player/PlayerDodge.gd
+p=Handles the player's dodge mechanics including direction, duration, and cooldown management.
+r=Executing dodge starts based on input direction.,Managing active dodge duration and velocity adjustments.,Handling dodge cooldown timers.,Calculating movement vectors relative to the camera viewport.
+api=process_dodge(delta: float) -> bool,update_timers(delta: float) -> void
+prop=player: CharacterBody3D,dodge_speed_multiplier: float,dodge_duration: float,dodge_cooldown: float,dodge_jump_velocity: float
+data=dodge_direction: Vector3,is_dodging: bool,dodge_timer: float,dodge_cooldown_timer: float
+use=PlayerMovement

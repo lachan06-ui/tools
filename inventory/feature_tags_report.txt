@@ -1,0 +1,15 @@
+Feature Tag Sync Report
+========================================
+登録総数: 122
+
+[自動追加・タグ推定済み] 4
+  + DebugPanelActions: debug
+  + DebugPanelNavigation: debug
+  + DebugRightViewRefresh: debug
+  + DebugTerritoryOverlay: debug
+
+[自動追加・タグ推定不能（要手動）] 0
+
+[ファイル移動] 0
+
+[タグにあるが実体なし（削除せず報告のみ）] 0

@@ -1,0 +1,8 @@
+EcologySimulation
+f=core/systems/ecology/EcologySimulation.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=initialize(manager: Node, environments: Dictionary, bio_region_defs: Dictionary, species_states: Dictionary, carcasses: Array, observable_consequences: Array, day_counter_ref: Array[int]) -> void,update_region_day(region_id: String, allow_materialization: bool = true) -> void,calculate_effective_activity_radius(region_id: String, species_id: String, target_species_id: String) -> float,on_triday_settlement() -> void
+data=DEBUG: int,CARCASS_DECOMPOSITION_DAYS: float,CARCASS_DETRITUS_YIELD: float,CARNIVORE_CARRION_YIELD: float,DETRITUS_PROCESS_RATE: float,DETRITUS_FERTILITY_YIELD: float,ACTIVITY_APPROACH_WEIGHT: float,ACTIVITY_FOOD_DEFICIT_WEIGHT: float,ACTIVITY_MIN_FACTOR: float,ACTIVITY_MAX_FACTOR: float,POISON_ACTIVITY_MIN_FACTOR: float,POISON_ACTIVITY_MAX_FACTOR: float,POISON_ACTIVITY_WEIGHT: float,POISON_STRESS_WEIGHT: float,POISON_FOOD_PENALTY_WEIGHT: float,CARNIVORE_BASE_DAILY_CAPACITY: float,CARNIVORE_MIN_DAILY_DEMAND_FACTOR: float,AVOIDANCE_PRESSURE_MAX: float,AVOIDANCE_BASE_DISTANCE: float,AVOIDANCE_MIN_DISTANCE_FACTOR: float,AVOIDANCE_MAX_DISTANCE_FACTOR: float,HERBIVORE_BASE_DAILY_CONSUMPTION: float,HERBIVORE_MAX_DAILY_CONSUMPTION: float,SWARM_SPIKE_THRESHOLD: float,_manager: Node,_environments: Dictionary,_bio_region_defs: Dictionary,_species_states: Dictionary,_carcasses: Array,_observable_consequences: Array,_day_counter_ref: Array[int]
+dep=EcologyManager,EnvironmentState,SpeciesState,SpeciesDefinition,PopulationCalculator,GeneticDriftCalculator,SpeciesRelation,EnemyStats,QuestGenerator,TerritoryState,GroupPoisonState,SpawnRequest
+use=EcologyManager

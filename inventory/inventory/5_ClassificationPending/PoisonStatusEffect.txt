@@ -1,0 +1,8 @@
+PoisonStatusEffect
+f=core/components/PoisonStatusEffect.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=add_poison_amount(amount: float, duration: float = POISON_DOSE_DURATION) -> float,set_poison_amount(value: float, duration: float = POISON_DOSE_DURATION) -> void,get_poison_amount() -> float,get_stacks() -> int,set_stacks(value: int) -> void,get_poison_level() -> int,get_attack_multiplier() -> float,get_speed_multiplier() -> float,get_defense_multiplier() -> float,get_threshold_level() -> int,is_aggressive() -> bool,has_dependency() -> bool,refresh_stacks(value: int, new_duration: float) -> void,tick(delta: float) -> void,is_expired() -> bool,get_dose_snapshot() -> Array[Dictionary]
+data=POISON_STACK_UNIT: float,POISON_DOSE_DURATION: float,THRESHOLD_1: float,THRESHOLD_2: float,THRESHOLD_3: float,ATTACK_1: float,ATTACK_2: float,ATTACK_3: float,SPEED_1: float,SPEED_2: float,SPEED_3: float,DEFENSE_1: float,DEFENSE_2: float,DEFENSE_3: float,poison_amount: float,threshold_level: int
+dep=StatusEffect
+use=DebugPoisonActions,DebugPoisonView,Entity,StatusComponent

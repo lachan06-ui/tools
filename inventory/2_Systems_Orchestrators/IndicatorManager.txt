@@ -1,0 +1,8 @@
+IndicatorManager
+f=scenes/Systems/Indicator/IndicatorManager.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=create_circle(pos: Vector3, radius: float, color: Color) -> int,create_target_circle(pos: Vector3, radius: float, color: Color) -> int,create_sector(pos, radius, angle, color) -> int,create_line_between(from: Vector3, to: Vector3, color: Color) -> int,face_camera(id: int, camera: Camera3D) -> void,remove(id: int),set_position(id: int, pos: Vector3),exists(id: int) -> bool
+data=INDICATOR_SCENE: unmarked,IndicatorFactory: unmarked,indicators: unmarked,next_id: unmarked
+dep=Indicator,IndicatorFactory
+use=TargetSystem

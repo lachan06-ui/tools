@@ -1,0 +1,914 @@
+{
+  "_note": "機能タグの正本。inv_sep_map_v4.py が自動追加（source=auto）する。手動修正は source を manual に。",
+  "tag_descriptions": {
+    "core": "全体の基盤（EventBus, Entity, GameState, WorldManager）",
+    "player": "プレイヤー本体・移動・視点・入力",
+    "spell": "呪文・詠唱・習熟",
+    "enemy": "敵の本体・AI・行動・スキル・敵の数値・敵のスポーン",
+    "ecology": "生態系シミュレーション・種・領域・環境・個体数",
+    "combat": "ダメージ・攻撃・ターゲット・防御・回避",
+    "status": "状態異常（付与・継続・解除）",
+    "item": "アイテム・ドロップ・経済",
+    "crafting": "クラフト・レシピ",
+    "map": "マップ生成・世界構造・オブジェクト・相互作用",
+    "npc": "NPC・輸送・移動する非戦闘キャラクター",
+    "quest": "クエスト生成・管理",
+    "time": "昼夜・時間の進行",
+    "save": "セーブ・ロード・シリアライズ",
+    "ui": "プレイヤーに見せるUI（HUD・パネル・カード）",
+    "feedback": "視覚的フィードバック（インジケーター・エフェクト）",
+    "debug": "デバッグ用の表示・操作",
+    "poison": "毒状態、毒環境",
+    "spawn": "Spawn"
+  },
+  "classes": {
+    "AreaDefinition": {
+      "tags": [
+        "ecology",
+        "map"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/AreaDefinition.gd"
+    },
+    "AttachSystem": {
+      "tags": [
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Combat/AttachSystem.gd"
+    },
+    "BehaviorProfile": {
+      "tags": [
+        "enemy",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/databases/BehaviorProfile.gd"
+    },
+    "BehaviorRegistry": {
+      "tags": [
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/BehaviorRegistry.gd"
+    },
+    "BioRegionDefinition": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/BioRegionDefinition.gd"
+    },
+    "BioRegionInstance": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/BioRegionInstance.gd"
+    },
+    "BiomeDatabase": {
+      "tags": [
+        "ecology",
+        "map"
+      ],
+      "source": "manual",
+      "file": "core/databases/BiomeDatabase.gd"
+    },
+    "Boss": {
+      "tags": [
+        "enemy",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/Boss.gd"
+    },
+    "CarryHelper": {
+      "tags": [
+        "core"
+      ],
+      "source": "manual",
+      "file": "scenes/Utils/CarryHelper.gd"
+    },
+    "Cart": {
+      "tags": [
+        "npc",
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/Map/Cart.gd"
+    },
+    "Corpse": {
+      "tags": [
+        "enemy",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/Corpse.gd"
+    },
+    "CraftingSystem": {
+      "tags": [
+        "crafting",
+        "item"
+      ],
+      "source": "manual",
+      "file": "core/systems/CraftingSystem.gd"
+    },
+    "CraftingUI": {
+      "tags": [
+        "crafting",
+        "ui"
+      ],
+      "source": "manual",
+      "file": "scenes/UI/Crafting/CraftingUI.gd"
+    },
+    "DamageEvent": {
+      "tags": [
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Combat/DamageEvent.gd"
+    },
+    "DamageSystem": {
+      "tags": [
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Combat/DamageSystem.gd"
+    },
+    "DebugEcologyView": {
+      "tags": [
+        "debug",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugEcologyView.gd"
+    },
+    "DebugEntityOverlay": {
+      "tags": [
+        "debug"
+      ],
+      "source": "auto",
+      "file": "scenes/World/Debug/DebugEntityOverlay.gd"
+    },
+    "DebugObservationView": {
+      "tags": [
+        "debug",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugObservationView.gd"
+    },
+    "DebugPanel": {
+      "tags": [
+        "debug"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugPanel.gd"
+    },
+    "DebugPoisonActions": {
+      "tags": [
+        "debug",
+        "poison"
+      ],
+      "source": "auto",
+      "file": "scenes/World/Debug/DebugPoisonActions.gd"
+    },
+    "DebugPoisonView": {
+      "tags": [
+        "debug",
+        "poison"
+      ],
+      "source": "auto",
+      "file": "scenes/World/Debug/DebugPoisonView.gd"
+    },
+    "DebugSpawnView": {
+      "tags": [
+        "debug",
+        "enemy",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugSpawnView.gd"
+    },
+    "DebugTimeView": {
+      "tags": [
+        "debug",
+        "time"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugTimeView.gd"
+    },
+    "DebugUIHelpers": {
+      "tags": [
+        "debug"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugUIHelpers.gd"
+    },
+    "DebugUtilityView": {
+      "tags": [
+        "debug",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugUtilityView.gd"
+    },
+    "DebugWorldView": {
+      "tags": [
+        "debug",
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/World/Debug/DebugWorldView.gd"
+    },
+    "DefaultEnemyBehavior": {
+      "tags": [
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd"
+    },
+    "DropEntry": {
+      "tags": [
+        "item"
+      ],
+      "source": "manual",
+      "file": "core/databases/DropEntry.gd"
+    },
+    "DropTable": {
+      "tags": [
+        "item"
+      ],
+      "source": "manual",
+      "file": "core/databases/DropTable.gd"
+    },
+    "EcologyManager": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/EcologyManager.gd"
+    },
+    "EcologyObservationUI": {
+      "tags": [
+        "ecology",
+        "ui",
+        "debug"
+      ],
+      "source": "manual",
+      "file": "scenes/UI/EcologyObservationUI.gd"
+    },
+    "EcologySerializer": {
+      "tags": [
+        "ecology",
+        "save"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/EcologySerializer.gd"
+    },
+    "EcologySimulation": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/EcologySimulation.gd"
+    },
+    "EcologyTraceFeedback": {
+      "tags": [
+        "ecology",
+        "feedback",
+        "debug"
+      ],
+      "source": "manual",
+      "file": "scenes/World/EcologyTraceFeedback.gd"
+    },
+    "EconomyManager": {
+      "tags": [
+        "item"
+      ],
+      "source": "manual",
+      "file": "core/autoload/EconomyManager.gd"
+    },
+    "Effects": {
+      "tags": [
+        "feedback"
+      ],
+      "source": "manual",
+      "file": "scenes/Utils/Effects.gd"
+    },
+    "Enemy": {
+      "tags": [
+        "enemy",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/Enemy.gd"
+    },
+    "EnemyAI": {
+      "tags": [
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/EnemyAI.gd"
+    },
+    "EnemyBehavior": {
+      "tags": [
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/EnemyBehavior.gd"
+    },
+    "EnemyDatabase": {
+      "tags": [
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/databases/EnemyDatabase.gd"
+    },
+    "EnemySkill": {
+      "tags": [
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/databases/EnemySkill.gd"
+    },
+    "EnemySkillSystem": {
+      "tags": [
+        "enemy",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/EnemySkillSystem.gd"
+    },
+    "EnemySpawner": {
+      "tags": [
+        "enemy",
+        "map",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/Map/EnemySpawner.gd"
+    },
+    "EnemyStats": {
+      "tags": [
+        "enemy",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/databases/EnemyStats.gd"
+    },
+    "Entity": {
+      "tags": [
+        "core"
+      ],
+      "source": "manual",
+      "file": "scenes/Core/Entity.gd"
+    },
+    "EnvironmentState": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/EnvironmentState.gd"
+    },
+    "EventBus": {
+      "tags": [
+        "core"
+      ],
+      "source": "manual",
+      "file": "core/autoload/EventBus.gd"
+    },
+    "FireAgent": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/FireAgent.gd"
+    },
+    "ForestBioRegionDefinition": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/ForestBioRegionDefinition.gd"
+    },
+    "GameState": {
+      "tags": [
+        "core",
+        "status",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/autoload/GameState.gd"
+    },
+    "GenerateMapFromDEM": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/Map/GenerateMapFromDEM.gd"
+    },
+    "GeneticDriftCalculator": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/GeneticDriftCalculator.gd"
+    },
+    "GenusDefinition": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/databases/GenusDefinition.gd"
+    },
+    "GroupPoisonState": {
+      "tags": [
+        "ecology",
+        "poison"
+      ],
+      "source": "auto",
+      "file": "core/systems/ecology/GroupPoisonState.gd"
+    },
+    "GroupSkillState": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/GroupSkillState.gd"
+    },
+    "Indicator": {
+      "tags": [
+        "feedback",
+        "ui"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Indicator/Indicator.gd"
+    },
+    "IndicatorFactory": {
+      "tags": [
+        "feedback"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Indicator/IndicatorFactory.gd"
+    },
+    "IndicatorManager": {
+      "tags": [
+        "feedback"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Indicator/IndicatorManager.gd"
+    },
+    "InteractionObject": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/Map/InteractionObject.gd"
+    },
+    "InteractionSystem": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Interaction/InteractionSystem.gd"
+    },
+    "ItemData": {
+      "tags": [
+        "item"
+      ],
+      "source": "manual",
+      "file": "core/databases/ItemData.gd"
+    },
+    "ItemDatabase": {
+      "tags": [
+        "item"
+      ],
+      "source": "manual",
+      "file": "core/databases/ItemDatabase.gd"
+    },
+    "LogisticsNPC": {
+      "tags": [
+        "npc"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/NPC/LogisticsNPC.gd"
+    },
+    "MapDatabase": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "core/databases/MapDatabase.gd"
+    },
+    "MapKnowledgeManager": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "core/systems/MapKnowledgeManager.gd"
+    },
+    "MapProvider": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/World/MapProvider.gd"
+    },
+    "MapReadingModeUI": {
+      "tags": [
+        "map",
+        "ui"
+      ],
+      "source": "manual",
+      "file": "scenes/UI/Map/MapReadingModeUI.gd"
+    },
+    "MountainForestBioRegionDefinition": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/MountainForestBioRegionDefinition.gd"
+    },
+    "NutrientCycle": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "auto",
+      "file": "core/systems/ecology/NutrientCycle.gd"
+    },
+    "ObjectDatabase": {
+      "tags": [
+        "map",
+        "item"
+      ],
+      "source": "manual",
+      "file": "core/databases/ObjectDatabase.gd"
+    },
+    "ObjectGenerator": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/Map/ObjectGenerator.gd"
+    },
+    "Player": {
+      "tags": [
+        "player",
+        "combat",
+        "status"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/Player.gd"
+    },
+    "PlayerCombat": {
+      "tags": [
+        "player",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/PlayerCombat.gd"
+    },
+    "PlayerDodge": {
+      "tags": [
+        "player",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/PlayerDodge.gd"
+    },
+    "PlayerLook": {
+      "tags": [
+        "player"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/PlayerLook.gd"
+    },
+    "PlayerMovement": {
+      "tags": [
+        "player"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/PlayerMovement.gd"
+    },
+    "PlayerMovementInput": {
+      "tags": [
+        "player"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/PlayerMovementInput.gd"
+    },
+    "PlayerSpell": {
+      "tags": [
+        "player",
+        "spell"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/PlayerSpell.gd"
+    },
+    "PlayerStats": {
+      "tags": [
+        "player"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/PlayerStats.gd"
+    },
+    "PoisonArea": {
+      "tags": [
+        "map",
+        "poison"
+      ],
+      "source": "auto",
+      "file": "scenes/World/PoisonArea.gd"
+    },
+    "PoisonAvoidance": {
+      "tags": [
+        "ecology",
+        "poison"
+      ],
+      "source": "auto",
+      "file": "core/systems/ecology/PoisonAvoidance.gd"
+    },
+    "PoisonStatusEffect": {
+      "tags": [
+        "status",
+        "poison"
+      ],
+      "source": "auto",
+      "file": "core/components/PoisonStatusEffect.gd"
+    },
+    "PopulationCalculator": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/PopulationCalculator.gd"
+    },
+    "QuestGenerator": {
+      "tags": [
+        "quest"
+      ],
+      "source": "manual",
+      "file": "scenes/Quest/QuestGenerator.gd"
+    },
+    "QuestManager": {
+      "tags": [
+        "quest"
+      ],
+      "source": "manual",
+      "file": "scenes/Quest/QuestManager.gd"
+    },
+    "SaveManager": {
+      "tags": [
+        "save"
+      ],
+      "source": "manual",
+      "file": "core/autoload/SaveManager.gd"
+    },
+    "SaveSystem": {
+      "tags": [
+        "save"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/SaveSystem.gd"
+    },
+    "SkillRegistry": {
+      "tags": [
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Enemies/SkillRegistry.gd"
+    },
+    "SpatialArea3D": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/World/SpatialArea3D.gd"
+    },
+    "SpatialBioRegion3D": {
+      "tags": [
+        "map",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/World/SpatialBioRegion3D.gd"
+    },
+    "SpatialRegionResolver": {
+      "tags": [
+        "ecology",
+        "map"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/SpatialRegionResolver.gd"
+    },
+    "SpawnController": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/SpawnController.gd"
+    },
+    "SpawnGroundResolver": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/SpawnGroundResolver.gd"
+    },
+    "SpawnLocationResolver": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/SpawnLocationResolver.gd"
+    },
+    "SpawnRequest": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/SpawnRequest.gd"
+    },
+    "SpecialRoomGenerator": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/Map/SpecialRoomGenerator.gd"
+    },
+    "SpeciesDatabase": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/databases/SpeciesDatabase.gd"
+    },
+    "SpeciesDefinition": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/databases/SpeciesDefinition.gd"
+    },
+    "SpeciesRelation": {
+      "tags": [
+        "ecology",
+        "enemy",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/SpeciesRelation.gd"
+    },
+    "SpeciesState": {
+      "tags": [
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/SpeciesState.gd"
+    },
+    "SpellCard": {
+      "tags": [
+        "spell",
+        "ui"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/Spell/SpellCard.gd"
+    },
+    "SpellMasteryManager": {
+      "tags": [
+        "spell"
+      ],
+      "source": "manual",
+      "file": "core/autoload/SpellMasteryManager.gd"
+    },
+    "SpellUI": {
+      "tags": [
+        "spell",
+        "ui"
+      ],
+      "source": "manual",
+      "file": "scenes/Characters/Player/Spell/SpellUI.gd"
+    },
+    "StatusComponent": {
+      "tags": [
+        "status",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "core/components/StatusComponent.gd"
+    },
+    "StatusEffect": {
+      "tags": [
+        "status",
+        "combat"
+      ],
+      "source": "manual",
+      "file": "core/components/StatusEffect.gd"
+    },
+    "SwarmSpawner": {
+      "tags": [
+        "enemy",
+        "ecology"
+      ],
+      "source": "manual",
+      "file": "scenes/Utils/SwarmSpawner.gd"
+    },
+    "TargetSystem": {
+      "tags": [
+        "combat"
+      ],
+      "source": "manual",
+      "file": "scenes/Systems/Targeting/TargetSystem.gd"
+    },
+    "Targetable": {
+      "tags": [
+        "combat"
+      ],
+      "source": "manual",
+      "file": "core/components/Targetable.gd"
+    },
+    "TerritoryState": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/TerritoryState.gd"
+    },
+    "TimeSystem": {
+      "tags": [
+        "time"
+      ],
+      "source": "manual",
+      "file": "core/autoload/TimeSystem.gd"
+    },
+    "TreeGenerator": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/World/WorldMap/TreeGenerator.gd"
+    },
+    "TreeWood": {
+      "tags": [
+        "map"
+      ],
+      "source": "auto",
+      "file": "scenes/World/TreeWood.gd"
+    },
+    "UtilityScoringEngine": {
+      "tags": [
+        "ecology",
+        "enemy"
+      ],
+      "source": "manual",
+      "file": "core/systems/ecology/UtilityScoringEngine.gd"
+    },
+    "WorldCamera": {
+      "tags": [
+        "player",
+        "ui"
+      ],
+      "source": "manual",
+      "file": "scenes/Camera/WorldCamera.gd"
+    },
+    "WorldManager": {
+      "tags": [
+        "core",
+        "map"
+      ],
+      "source": "manual",
+      "file": "core/autoload/WorldManager.gd"
+    },
+    "WorldMap": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/World/WorldMap/WorldMap.gd"
+    },
+    "WorldRoot": {
+      "tags": [
+        "map"
+      ],
+      "source": "manual",
+      "file": "scenes/World/WorldRoot/WorldRoot.gd"
+    },
+    "WorldState": {
+      "tags": [
+        "core",
+        "map"
+      ],
+      "source": "manual",
+      "file": "core/autoload/WorldState.gd"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+TreeGenerator
+f=scenes/World/WorldMap/TreeGenerator.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+prop=terrain: Node3D,min_distance_between_trees: float,lod_begin: float,lod_end: float,forest_range_A:,forest_range_B:
+data=placed_positions: Array[Vector3]

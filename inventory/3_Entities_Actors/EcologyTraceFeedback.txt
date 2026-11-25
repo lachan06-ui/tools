@@ -1,0 +1,8 @@
+EcologyTraceFeedback
+f=scenes/World/EcologyTraceFeedback.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=set_active_region(region_id: String) -> void
+data=_active_region_id: String,ecology_manager: Node
+dep=EcologyManager
+use=EcologyManager,WorldRoot

@@ -1,0 +1,8 @@
+EnvironmentState
+f=core/systems/ecology/EnvironmentState.gd
+p=Holds current environmental values (terrain, biotic, anthropogenic) for one region.
+r=Managing environmental variables, handling day progression/recovery, and applying nutrients.
+api=from_bio_region(bio_region: Resource) -> EnvironmentState,tick_day() -> void,apply_nutrients(nutrition: int, positive: bool = true) -> void,consume_vegetation(amount: float) -> void,apply_fire_damage(amount: float) -> void,apply_poison(amount: float) -> void,get_poison_stack_count(max_stacks: int) -> int,to_dict() -> Dictionary,from_dict(d: Dictionary) -> void
+data=altitude: float,humidity: float,temperature: float,water_level: float,vegetation: float,fertility: float,food_amount: float,detritus_food: float,human_activity: float,burn_recovery: float,poison_level: float,burn_level: float,pollution: float
+dep=BioRegionDefinition,BioRegionInstance
+use=BioRegionDefinition,BioRegionInstance,BiomeDatabase,Corpse,DebugEcologyView,DebugPanel,DebugPoisonActions,DebugPoisonView,DebugSpawnView,EcologyManager,EcologyObservationUI,EcologySerializer,EcologySimulation,FireAgent,NutrientCycle,PoisonArea,PopulationCalculator,SpawnController,SpawnLocationResolver,SpawnRequest,SpeciesDatabase,SpeciesDefinition,WorldManager,WorldRoot

@@ -1,0 +1,8 @@
+EcologyObservationUI
+f=scenes/UI/EcologyObservationUI.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh_display() -> void,get_current_region_id() -> String,get_observation_summary() -> Dictionary
+data=_panel: PanelContainer,_title_label: Label,_context_label: Label,_env_label: Label,_species_container: VBoxContainer,_territory_container: VBoxContainer,_refresh_timer: Timer,_current_region_id: String,_debug_console_mode: bool,_debug_console_rect: Rect2,_debug_console_visible: unmarked
+dep=EcologyManager,SpatialRegionResolver,WorldManager,EnvironmentState,SpeciesState,TerritoryState
+use=DebugObservationView,DebugPanel,DebugSpawnView,WorldRoot

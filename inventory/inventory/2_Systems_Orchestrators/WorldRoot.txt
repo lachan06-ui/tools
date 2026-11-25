@@ -1,0 +1,8 @@
+WorldRoot
+f=scenes/World/WorldRoot/WorldRoot.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=regenerate_dungeon() -> void
+prop=player_scene: PackedScene,enemy_scene: PackedScene,player_position_label: Label,map_node: unmarked
+data=DEBUG: int,_map: MapProvider,_village_ui: Control,_village_layer: CanvasLayer,_enemy_spawner: RefCounted,_spawn_controller: Node,_object_generator: RefCounted,_feedback_node: Node3D,_spawn_point: unmarked,_poison_area: PoisonArea,scenes_list: unmarked,target_scene: unmarked
+dep=SpawnController,EnemySpawner,ObjectGenerator,WorldManager,EcologyManager,TimeSystem,QuestGenerator,MapProvider,PoisonArea,WorldMap,DebugPanel,EcologyObservationUI,EcologyTraceFeedback,WorldCamera,Enemy,EnvironmentState,Player,SwarmSpawner

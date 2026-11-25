@@ -1,0 +1,7 @@
+PlayerMovementInput
+f=scenes/Characters/Player/PlayerMovementInput.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=get_direction() -> Vector3
+prop=player: CharacterBody3D
+use=PlayerMovement

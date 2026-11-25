@@ -1,0 +1,7 @@
+StatusEffect
+f=core/components/StatusEffect.gd
+p=Base class for defining behavior of individual status effects.
+api=on_apply(entity: Node) -> void,tick(delta: float) -> void,on_remove() -> void,is_expired() -> bool,refresh(new_duration: float) -> void
+data=id: String,duration: float,elapsed: float,owner: Node
+dep=StatusComponent
+use=Entity,PoisonStatusEffect,StatusComponent

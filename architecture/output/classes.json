@@ -1,0 +1,1255 @@
+{
+  "core/autoload/EconomyManager.gd": {
+    "class_name": "",
+    "domain": "item",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 8,
+    "line_count": 44
+  },
+  "core/autoload/EventBus.gd": {
+    "class_name": "",
+    "domain": "core",
+    "extends": [
+      "Node"
+    ],
+    "signals": {
+      "entity_died": 11,
+      "entity_spawned": 12,
+      "damage_dealt": 15,
+      "player_died": 16,
+      "distress_signal_triggered": 17,
+      "species_population_changed": 20,
+      "map_changed": 23,
+      "quest_completed": 26,
+      "quest_failed": 27,
+      "day_passed": 30,
+      "hud_refresh_requested": 33,
+      "map_reading_toggled": 36,
+      "recipe_discovered": 39,
+      "crafting_started": 40,
+      "crafting_completed": 41,
+      "crafting_interrupted": 42,
+      "settlement_upgraded": 45
+    },
+    "func_count": 0,
+    "line_count": 48
+  },
+  "core/autoload/GameState.gd": {
+    "class_name": "",
+    "domain": "core",
+    "extends": [
+      "Node"
+    ],
+    "signals": {
+      "spell_unlocked": 25,
+      "spell_discovered": 26,
+      "global_event_received": 27
+    },
+    "func_count": 69,
+    "line_count": 813
+  },
+  "core/autoload/SaveManager.gd": {
+    "class_name": "",
+    "domain": "save",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 89
+  },
+  "core/autoload/SpellMasteryManager.gd": {
+    "class_name": "",
+    "domain": "spell",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 10,
+    "line_count": 113
+  },
+  "core/autoload/TimeSystem.gd": {
+    "class_name": "",
+    "domain": "time",
+    "extends": [
+      "Node"
+    ],
+    "signals": {
+      "time_changed": 8,
+      "day_changed": 9,
+      "morning_started": 10,
+      "noon_started": 11,
+      "evening_started": 12,
+      "night_started": 13
+    },
+    "func_count": 14,
+    "line_count": 116
+  },
+  "core/autoload/WorldManager.gd": {
+    "class_name": "",
+    "domain": "core",
+    "extends": [
+      "Node"
+    ],
+    "signals": {
+      "map_changed": 8,
+      "region_changed": 9
+    },
+    "func_count": 58,
+    "line_count": 1536
+  },
+  "core/autoload/WorldState.gd": {
+    "class_name": "",
+    "domain": "core",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 13,
+    "line_count": 214
+  },
+  "core/components/PoisonStatusEffect.gd": {
+    "class_name": "PoisonStatusEffect",
+    "domain": "status",
+    "extends": [
+      "StatusEffect"
+    ],
+    "signals": {},
+    "func_count": 19,
+    "line_count": 145
+  },
+  "core/components/StatusComponent.gd": {
+    "class_name": "StatusComponent",
+    "domain": "status",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 16,
+    "line_count": 110
+  },
+  "core/components/StatusEffect.gd": {
+    "class_name": "StatusEffect",
+    "domain": "status",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 37
+  },
+  "core/components/Targetable.gd": {
+    "class_name": "Targetable",
+    "domain": "combat",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 22
+  },
+  "core/databases/BehaviorProfile.gd": {
+    "class_name": "BehaviorProfile",
+    "domain": "enemy",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 10,
+    "line_count": 57
+  },
+  "core/databases/BiomeDatabase.gd": {
+    "class_name": "",
+    "domain": "ecology",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 8,
+    "line_count": 69
+  },
+  "core/databases/DropEntry.gd": {
+    "class_name": "DropEntry",
+    "domain": "item",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 8
+  },
+  "core/databases/DropTable.gd": {
+    "class_name": "DropTable",
+    "domain": "item",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 5
+  },
+  "core/databases/EnemyDatabase.gd": {
+    "class_name": "",
+    "domain": "enemy",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 26,
+    "line_count": 174
+  },
+  "core/databases/EnemySkill.gd": {
+    "class_name": "EnemySkill",
+    "domain": "enemy",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 12
+  },
+  "core/databases/EnemyStats.gd": {
+    "class_name": "EnemyStats",
+    "domain": "enemy",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 35
+  },
+  "core/databases/GenusDefinition.gd": {
+    "class_name": "GenusDefinition",
+    "domain": "ecology",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 37
+  },
+  "core/databases/ItemData.gd": {
+    "class_name": "ItemData",
+    "domain": "item",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 8
+  },
+  "core/databases/ItemDatabase.gd": {
+    "class_name": "",
+    "domain": "item",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 8,
+    "line_count": 65
+  },
+  "core/databases/MapDatabase.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 9,
+    "line_count": 48
+  },
+  "core/databases/ObjectDatabase.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 47
+  },
+  "core/databases/SpeciesDatabase.gd": {
+    "class_name": "",
+    "domain": "ecology",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 9,
+    "line_count": 79
+  },
+  "core/databases/SpeciesDefinition.gd": {
+    "class_name": "SpeciesDefinition",
+    "domain": "ecology",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 135
+  },
+  "core/systems/ecology/AreaDefinition.gd": {
+    "class_name": "AreaDefinition",
+    "domain": "ecology",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 12
+  },
+  "core/systems/ecology/BioRegionDefinition.gd": {
+    "class_name": "BioRegionDefinition",
+    "domain": "ecology",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 37
+  },
+  "core/systems/ecology/BioRegionInstance.gd": {
+    "class_name": "BioRegionInstance",
+    "domain": "ecology",
+    "extends": [
+      "Resource"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 43
+  },
+  "core/systems/ecology/EcologyManager.gd": {
+    "class_name": "",
+    "domain": "ecology",
+    "extends": [
+      "Node"
+    ],
+    "signals": {
+      "spawn_requested": 10,
+      "spawn_request_object": 11,
+      "ecology_updated": 12,
+      "swarm_event_requested": 13
+    },
+    "func_count": 59,
+    "line_count": 937
+  },
+  "core/systems/ecology/EcologySerializer.gd": {
+    "class_name": "EcologySerializer",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 62
+  },
+  "core/systems/ecology/EcologySimulation.gd": {
+    "class_name": "EcologySimulation",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 14,
+    "line_count": 920
+  },
+  "core/systems/ecology/EnvironmentState.gd": {
+    "class_name": "EnvironmentState",
+    "domain": "ecology",
+    "extends": [],
+    "signals": {},
+    "func_count": 9,
+    "line_count": 143
+  },
+  "core/systems/ecology/ForestBioRegionDefinition.gd": {
+    "class_name": "ForestBioRegionDefinition",
+    "domain": "ecology",
+    "extends": [
+      "BioRegionDefinition"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 11
+  },
+  "core/systems/ecology/GeneticDriftCalculator.gd": {
+    "class_name": "GeneticDriftCalculator",
+    "domain": "ecology",
+    "extends": [],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 54
+  },
+  "core/systems/ecology/GroupPoisonState.gd": {
+    "class_name": "GroupPoisonState",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 10,
+    "line_count": 77
+  },
+  "core/systems/ecology/GroupSkillState.gd": {
+    "class_name": "GroupSkillState",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 48
+  },
+  "core/systems/ecology/MountainForestBioRegionDefinition.gd": {
+    "class_name": "MountainForestBioRegionDefinition",
+    "domain": "ecology",
+    "extends": [
+      "ForestBioRegionDefinition"
+    ],
+    "signals": {},
+    "func_count": 0,
+    "line_count": 11
+  },
+  "core/systems/ecology/NutrientCycle.gd": {
+    "class_name": "NutrientCycle",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 3,
+    "line_count": 28
+  },
+  "core/systems/ecology/PoisonAvoidance.gd": {
+    "class_name": "PoisonAvoidance",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 59
+  },
+  "core/systems/ecology/PopulationCalculator.gd": {
+    "class_name": "PopulationCalculator",
+    "domain": "ecology",
+    "extends": [],
+    "signals": {},
+    "func_count": 3,
+    "line_count": 69
+  },
+  "core/systems/ecology/SpatialRegionResolver.gd": {
+    "class_name": "",
+    "domain": "ecology",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 20,
+    "line_count": 149
+  },
+  "core/systems/ecology/SpawnGroundResolver.gd": {
+    "class_name": "SpawnGroundResolver",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 90
+  },
+  "core/systems/ecology/SpawnRequest.gd": {
+    "class_name": "SpawnRequest",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 37
+  },
+  "core/systems/ecology/SpeciesRelation.gd": {
+    "class_name": "SpeciesRelation",
+    "domain": "ecology",
+    "extends": [],
+    "signals": {},
+    "func_count": 17,
+    "line_count": 226
+  },
+  "core/systems/ecology/SpeciesState.gd": {
+    "class_name": "SpeciesState",
+    "domain": "ecology",
+    "extends": [],
+    "signals": {},
+    "func_count": 10,
+    "line_count": 159
+  },
+  "core/systems/ecology/TerritoryState.gd": {
+    "class_name": "TerritoryState",
+    "domain": "ecology",
+    "extends": [],
+    "signals": {},
+    "func_count": 5,
+    "line_count": 57
+  },
+  "core/systems/ecology/UtilityScoringEngine.gd": {
+    "class_name": "UtilityScoringEngine",
+    "domain": "ecology",
+    "extends": [],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 65
+  },
+  "scenes/Camera/WorldCamera.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 12,
+    "line_count": 277
+  },
+  "scenes/Characters/Enemies/BehaviorRegistry.gd": {
+    "class_name": "BehaviorRegistry",
+    "domain": "enemy",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 3,
+    "line_count": 25
+  },
+  "scenes/Characters/Enemies/Boss.gd": {
+    "class_name": "",
+    "domain": "enemy",
+    "extends": [
+      "CharacterBody3D"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 72
+  },
+  "scenes/Characters/Enemies/Corpse.gd": {
+    "class_name": "Corpse",
+    "domain": "enemy",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 27,
+    "line_count": 420
+  },
+  "scenes/Characters/Enemies/DefaultEnemyBehavior.gd": {
+    "class_name": "DefaultEnemyBehavior",
+    "domain": "enemy",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 13,
+    "line_count": 319
+  },
+  "scenes/Characters/Enemies/Enemy.gd": {
+    "class_name": "Enemy",
+    "domain": "enemy",
+    "extends": [
+      "Entity"
+    ],
+    "signals": {},
+    "func_count": 18,
+    "line_count": 372
+  },
+  "scenes/Characters/Enemies/EnemyAI.gd": {
+    "class_name": "EnemyAI",
+    "domain": "enemy",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 29,
+    "line_count": 379
+  },
+  "scenes/Characters/Enemies/EnemyBehavior.gd": {
+    "class_name": "EnemyBehavior",
+    "domain": "enemy",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 45
+  },
+  "scenes/Characters/Enemies/EnemySkillSystem.gd": {
+    "class_name": "EnemySkillSystem",
+    "domain": "enemy",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 79
+  },
+  "scenes/Characters/Enemies/SkillRegistry.gd": {
+    "class_name": "SkillRegistry",
+    "domain": "enemy",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 61
+  },
+  "scenes/Characters/NPC/LogisticsNPC.gd": {
+    "class_name": "LogisticsNPC",
+    "domain": "npc",
+    "extends": [
+      "CharacterBody3D"
+    ],
+    "signals": {},
+    "func_count": 5,
+    "line_count": 90
+  },
+  "scenes/Characters/Player/Player.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Entity"
+    ],
+    "signals": {
+      "mode_changed": 3
+    },
+    "func_count": 12,
+    "line_count": 260
+  },
+  "scenes/Characters/Player/PlayerCombat.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 17,
+    "line_count": 325
+  },
+  "scenes/Characters/Player/PlayerDodge.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 5,
+    "line_count": 127
+  },
+  "scenes/Characters/Player/PlayerLook.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 198
+  },
+  "scenes/Characters/Player/PlayerMovement.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 11,
+    "line_count": 179
+  },
+  "scenes/Characters/Player/PlayerMovementInput.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 46
+  },
+  "scenes/Characters/Player/PlayerSpell.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 14,
+    "line_count": 320
+  },
+  "scenes/Characters/Player/PlayerStats.gd": {
+    "class_name": "",
+    "domain": "player",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 15
+  },
+  "scenes/Characters/Player/Spell/SpellCard.gd": {
+    "class_name": "",
+    "domain": "spell",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 8
+  },
+  "scenes/Characters/Player/Spell/SpellUI.gd": {
+    "class_name": "",
+    "domain": "spell",
+    "extends": [
+      "CanvasLayer"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 118
+  },
+  "scenes/Core/Entity.gd": {
+    "class_name": "Entity",
+    "domain": "core",
+    "extends": [
+      "CharacterBody3D"
+    ],
+    "signals": {
+      "poison_received": 15,
+      "on_global_event_received": 32
+    },
+    "func_count": 26,
+    "line_count": 225
+  },
+  "scenes/Map/Cart.gd": {
+    "class_name": "Cart",
+    "domain": "npc",
+    "extends": [
+      "InteractionObject"
+    ],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 37
+  },
+  "scenes/Map/EnemySpawner.gd": {
+    "class_name": "",
+    "domain": "enemy",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 9,
+    "line_count": 229
+  },
+  "scenes/Map/GenerateMapFromDEM.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "MeshInstance3D"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 87
+  },
+  "scenes/Map/InteractionObject.gd": {
+    "class_name": "InteractionObject",
+    "domain": "map",
+    "extends": [
+      "Entity"
+    ],
+    "signals": {},
+    "func_count": 9,
+    "line_count": 83
+  },
+  "scenes/Map/ObjectGenerator.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 94
+  },
+  "scenes/Map/SpecialRoomGenerator.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 9
+  },
+  "scenes/Quest/QuestGenerator.gd": {
+    "class_name": "",
+    "domain": "quest",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 14,
+    "line_count": 223
+  },
+  "scenes/Quest/QuestManager.gd": {
+    "class_name": "",
+    "domain": "quest",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 11,
+    "line_count": 178
+  },
+  "scenes/Systems/Combat/AttachSystem.gd": {
+    "class_name": "",
+    "domain": "combat",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 37
+  },
+  "scenes/Systems/Combat/DamageEvent.gd": {
+    "class_name": "DamageEvent",
+    "domain": "combat",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 29
+  },
+  "scenes/Systems/Combat/DamageSystem.gd": {
+    "class_name": "",
+    "domain": "combat",
+    "extends": [
+      "Node"
+    ],
+    "signals": {
+      "damage_applied": 14
+    },
+    "func_count": 1,
+    "line_count": 67
+  },
+  "scenes/Systems/FireAgent.gd": {
+    "class_name": "FireAgent",
+    "domain": "ecology",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {
+      "ignited": 10,
+      "extinguished": 11
+    },
+    "func_count": 7,
+    "line_count": 110
+  },
+  "scenes/Systems/Indicator/Indicator.gd": {
+    "class_name": "",
+    "domain": "feedback",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 10
+  },
+  "scenes/Systems/Indicator/IndicatorFactory.gd": {
+    "class_name": "",
+    "domain": "feedback",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 91
+  },
+  "scenes/Systems/Indicator/IndicatorManager.gd": {
+    "class_name": "",
+    "domain": "feedback",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 8,
+    "line_count": 139
+  },
+  "scenes/Systems/Interaction/InteractionSystem.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 64
+  },
+  "scenes/Systems/SaveSystem.gd": {
+    "class_name": "",
+    "domain": "save",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 77
+  },
+  "scenes/Systems/SpawnController.gd": {
+    "class_name": "SpawnController",
+    "domain": "ecology",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 145
+  },
+  "scenes/Systems/SpawnLocationResolver.gd": {
+    "class_name": "SpawnLocationResolver",
+    "domain": "ecology",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 12,
+    "line_count": 314
+  },
+  "scenes/Systems/Targeting/TargetSystem.gd": {
+    "class_name": "",
+    "domain": "combat",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 24,
+    "line_count": 527
+  },
+  "scenes/UI/Crafting/CraftingUI.gd": {
+    "class_name": "",
+    "domain": "crafting",
+    "extends": [
+      "CanvasLayer"
+    ],
+    "signals": {},
+    "func_count": 9,
+    "line_count": 75
+  },
+  "scenes/UI/EcologyObservationUI.gd": {
+    "class_name": "",
+    "domain": "ecology",
+    "extends": [
+      "Control"
+    ],
+    "signals": {},
+    "func_count": 8,
+    "line_count": 382
+  },
+  "scenes/UI/Map/MapReadingModeUI.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "CanvasLayer"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 64
+  },
+  "scenes/Utils/CarryHelper.gd": {
+    "class_name": "CarryHelper",
+    "domain": "core",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 7
+  },
+  "scenes/Utils/CraftingSystem.gd": {
+    "class_name": "",
+    "domain": "crafting",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 12,
+    "line_count": 177
+  },
+  "scenes/Utils/Effects.gd": {
+    "class_name": "",
+    "domain": "feedback",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 21
+  },
+  "scenes/Utils/MapKnowledgeManager.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "Node"
+    ],
+    "signals": {},
+    "func_count": 17,
+    "line_count": 214
+  },
+  "scenes/Utils/SwarmSpawner.gd": {
+    "class_name": "",
+    "domain": "enemy",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 133
+  },
+  "scenes/World/Debug/DebugEcologyView.gd": {
+    "class_name": "DebugEcologyView",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 28,
+    "line_count": 621
+  },
+  "scenes/World/Debug/DebugEntityOverlay.gd": {
+    "class_name": "DebugEntityOverlay",
+    "domain": "debug",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 112
+  },
+  "scenes/World/Debug/DebugObservationView.gd": {
+    "class_name": "DebugObservationView",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 44
+  },
+  "scenes/World/Debug/DebugPanel.gd": {
+    "class_name": "",
+    "domain": "debug",
+    "extends": [
+      "CanvasLayer"
+    ],
+    "signals": {},
+    "func_count": 42,
+    "line_count": 610
+  },
+  "scenes/World/Debug/DebugPanelActions.gd": {
+    "class_name": "",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 33,
+    "line_count": 600
+  },
+  "scenes/World/Debug/DebugPanelNavigation.gd": {
+    "class_name": "",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 12,
+    "line_count": 270
+  },
+  "scenes/World/Debug/DebugPoisonActions.gd": {
+    "class_name": "DebugPoisonActions",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 44,
+    "line_count": 448
+  },
+  "scenes/World/Debug/DebugPoisonView.gd": {
+    "class_name": "DebugPoisonView",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 25,
+    "line_count": 408
+  },
+  "scenes/World/Debug/DebugRightViewRefresh.gd": {
+    "class_name": "",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 43
+  },
+  "scenes/World/Debug/DebugSpawnView.gd": {
+    "class_name": "DebugSpawnView",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 122
+  },
+  "scenes/World/Debug/DebugTerritoryOverlay.gd": {
+    "class_name": "",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 464
+  },
+  "scenes/World/Debug/DebugTimeView.gd": {
+    "class_name": "DebugTimeView",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 20
+  },
+  "scenes/World/Debug/DebugUIHelpers.gd": {
+    "class_name": "DebugUIHelpers",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 41
+  },
+  "scenes/World/Debug/DebugUtilityView.gd": {
+    "class_name": "DebugUtilityView",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 2,
+    "line_count": 72
+  },
+  "scenes/World/Debug/DebugWorldView.gd": {
+    "class_name": "DebugWorldView",
+    "domain": "debug",
+    "extends": [
+      "RefCounted"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 20
+  },
+  "scenes/World/EcologyTraceFeedback.gd": {
+    "class_name": "",
+    "domain": "ecology",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 5,
+    "line_count": 416
+  },
+  "scenes/World/MapProvider.gd": {
+    "class_name": "MapProvider",
+    "domain": "map",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 7,
+    "line_count": 45
+  },
+  "scenes/World/PoisonArea.gd": {
+    "class_name": "PoisonArea",
+    "domain": "map",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 10,
+    "line_count": 95
+  },
+  "scenes/World/SpatialArea3D.gd": {
+    "class_name": "SpatialArea3D",
+    "domain": "map",
+    "extends": [
+      "Area3D"
+    ],
+    "signals": {},
+    "func_count": 4,
+    "line_count": 123
+  },
+  "scenes/World/SpatialBioRegion3D.gd": {
+    "class_name": "SpatialBioRegion3D",
+    "domain": "map",
+    "extends": [
+      "Area3D"
+    ],
+    "signals": {},
+    "func_count": 6,
+    "line_count": 69
+  },
+  "scenes/World/TreeWood.gd": {
+    "class_name": "TreeWood",
+    "domain": "map",
+    "extends": [
+      "Entity"
+    ],
+    "signals": {},
+    "func_count": 10,
+    "line_count": 108
+  },
+  "scenes/World/WorldMap/TreeGenerator.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 1,
+    "line_count": 111
+  },
+  "scenes/World/WorldMap/WorldMap.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "MapProvider"
+    ],
+    "signals": {},
+    "func_count": 13,
+    "line_count": 256
+  },
+  "scenes/World/WorldRoot/WorldRoot.gd": {
+    "class_name": "",
+    "domain": "map",
+    "extends": [
+      "Node3D"
+    ],
+    "signals": {},
+    "func_count": 19,
+    "line_count": 233
+  }
+}

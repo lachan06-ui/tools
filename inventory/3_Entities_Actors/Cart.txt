@@ -1,0 +1,7 @@
+Cart
+f=scenes/Map/Cart.gd
+p=Manages the movement and destination of a cart entity.
+r=Handling cart movement and setting destinations.
+data=attached_player: CharacterBody3D
+dep=InteractionObject
+use=Player,PlayerMovement

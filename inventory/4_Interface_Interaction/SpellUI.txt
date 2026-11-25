@@ -1,0 +1,9 @@
+SpellUI
+f=scenes/Characters/Player/Spell/SpellUI.gd
+p=Manages the UI overlay for the spell-casting mode, including the text input field and a grid of visual spell cards.
+r=Generating the dynamic grid, instantiating spell cards, managing text input integration, layout management, and mastery visualization.
+api=focus_input(),refresh_spell_cards(spells_data: Dictionary)
+prop=spell_input: unmarked,spell_cards: unmarked,spell_card_scene: PackedScene
+data=grid: GridContainer
+dep=GameState
+use=PlayerSpell

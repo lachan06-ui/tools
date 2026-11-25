@@ -1,0 +1,7 @@
+DebugTimeView
+f=scenes/World/Debug/DebugTimeView.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh(content: VBoxContainer, selected_item: String) -> void
+dep=DebugUIHelpers,TimeSystem
+use=DebugRightViewRefresh

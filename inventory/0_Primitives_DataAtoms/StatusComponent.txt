@@ -1,0 +1,8 @@
+StatusComponent
+f=core/components/StatusComponent.gd
+p=Manages the attachment and removal of status effects on an entity.
+r=Handling addition, removal, and retrieval of active statuses.
+api=add_status(effect: StatusEffect) -> void,remove_status(effect_id: String) -> void,has_status(effect_id: String) -> bool,set_status_stacks(effect_id: String, stacks: int, duration: float = 0.0) -> void,add_poison_amount(amount: float, duration: float = PoisonStatusEffect.POISON_DOSE_DURATION) -> float,get_poison_amount() -> float,get_poison_stacks() -> int,get_poison_effect() -> PoisonStatusEffect,get_status_stacks(effect_id: String) -> int,tick(delta: float) -> void,apply(effect: StatusEffect) -> void,remove(effect_id: String) -> void,has_effect(effect_id: String) -> bool,get_effect(effect_id: String) -> StatusEffect,get_all_ids() -> Array,clear() -> void
+data=_effects: Dictionary
+dep=StatusEffect,Player,Enemy,Corpse,PoisonStatusEffect
+use=DamageSystem,DebugPoisonActions,DebugPoisonView,Entity,Player,PlayerMovement,StatusEffect

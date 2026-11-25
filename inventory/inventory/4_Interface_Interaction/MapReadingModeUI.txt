@@ -1,0 +1,7 @@
+MapReadingModeUI
+f=scenes/UI/Map/MapReadingModeUI.gd
+r=Diegetic UI overlay for viewing the physical map, fog of war, and markers.
+api=toggle_map() -> void
+prop=map_panel: Control,fog_container: Control,marker_container: Control
+data=is_open: bool
+dep=MapKnowledgeManager,EventBus

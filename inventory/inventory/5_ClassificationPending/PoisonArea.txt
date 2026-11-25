@@ -1,0 +1,9 @@
+PoisonArea
+f=scenes/World/PoisonArea.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=setup_from_environment(env: EnvironmentState) -> void,contains_position(position: Vector3) -> bool,get_poison_exposure_amount(delta: float) -> float,refresh_visual() -> void
+prop=region_id: String,exposure_amount_per_second: float,exposure_distance: float,materialize_threshold: float
+data=DEFAULT_MATERIALIZE_THRESHOLD: float,environment_state: EnvironmentState,_visual_mesh: MeshInstance3D
+dep=EnvironmentState,Entity,Corpse
+use=Corpse,DebugPanel,DebugPoisonActions,DebugPoisonView,DefaultEnemyBehavior,PoisonAvoidance,WorldRoot

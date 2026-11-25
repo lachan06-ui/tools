@@ -1,0 +1,7 @@
+DebugObservationView
+f=scenes/World/Debug/DebugObservationView.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=set_locked_observation(observation: Dictionary) -> void,clear_locked_observation() -> void,refresh(content: VBoxContainer, selected_item: String, observation_ui: Control) -> void
+dep=DebugUIHelpers,EcologyObservationUI,Entity
+use=DebugPanel,DebugRightViewRefresh

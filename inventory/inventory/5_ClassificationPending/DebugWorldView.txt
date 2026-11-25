@@ -1,0 +1,7 @@
+DebugWorldView
+f=scenes/World/Debug/DebugWorldView.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh(content: VBoxContainer, selected_item: String, tree: SceneTree, region_id: String) -> void
+dep=DebugUIHelpers,Player
+use=DebugPanel

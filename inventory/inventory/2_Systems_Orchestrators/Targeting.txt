@@ -1,0 +1,9 @@
+Targeting
+f=scenes/Systems/Targeting/TargetSystem.gd,scenes/Systems/Indicator/Indicator.gd
+p=Manages selection, tracking, and visual indicators for targetable entities or ground positions.
+r=Performing physics raycasts to detect targetable objects.,Managing the state of the currently active target and attached targets.,Updating visual indicators (circles, lines) via IndicatorManager.,Calculating optimal indicator positions based on entity bounding boxes.
+api=set_target(target: Node),clear_target(),has_target(),get_target(),get_preferred_attach_target(),toggle_screen_center_target(),is_attached_target_locked()
+prop=max_target_distance,target_ray_radius,target_indicator_camera_offset,target_indicator_fallback_height,target_ray_length,debug_target_ray_duration,player (Node),current_target (Node),attached_target (Node)
+data=_attach_range_handle (int),_target_handle (int),_debug_ray_handle (int)
+dep=IndicatorManager,Targetable (Component/Node),PlayerCombat (Component/Node)
+note=Only implementation facts.,---

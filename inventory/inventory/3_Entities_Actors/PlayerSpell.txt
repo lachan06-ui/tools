@@ -1,0 +1,9 @@
+PlayerSpell
+f=scenes/Characters/Player/PlayerSpell.gd
+p=A sophisticated spell-casting system that processes text input (typed/spoken simulation) to execute spells with mechanics involving linguistic similarity, fatigue, and "Tongue Bite" risk.
+r=Text-to-spell parsing, managing linguistic boosts, handling tongue fatigue/bite risk, executing dynamic spell effects, providing visual feedback (shouts), and loading spells data.
+api=load_spells(),process_spell_mode(),process_spell_input(),parse_repeats_and_clean(input_text: String, target_word: String) -> Dictionary,parse_and_cast_spell(input_text: String),trigger_tongue_bite(),resolve_tongue_bite_event(),cast_spell_fail(input_text: String),cast_spell_effect(spell_id: String, sim_score: float, power_boost: float = 1.0, range_boost: float = 1.0),show_shout_effect(text_shout: String, sim_score: float = 1.0)
+prop=player: Node
+data=spells_by_id: unmarked,recent_spell_id: String,repeat_count: int,tongue_fatigue: float,tongue_bite_risk: float
+dep=GameState,Player,SpellUI,DamageSystem,DamageEvent,FireAgent
+use=Player

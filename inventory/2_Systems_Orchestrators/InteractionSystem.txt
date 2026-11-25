@@ -1,0 +1,7 @@
+InteractionSystem
+f=scenes/Systems/Interaction/InteractionSystem.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=try_interact(interactor: Node, object: Node) -> bool,try_pickup(carrier: Node, object: Node) -> bool,drop(carrier: Node) -> void,try_throw(carrier: Node, direction: Vector3, force: float) -> bool,attach(target: Node) -> void,detach() -> void
+dep=AttachSystem,InteractionObject,Corpse
+use=AttachSystem,InteractionObject,Player

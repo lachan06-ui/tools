@@ -1,0 +1,10 @@
+BioRegionInstance
+f=core/systems/ecology/BioRegionInstance.gd
+p=Represents a placed BioRegion instance referencing a BioRegionDefinition type with optional environmental overrides.
+r=Resolving environmental values by prioritizing instance-level overrides over template defaults.,Creating `EnvironmentState` instances using resolved properties.
+api=get_humidity() -> float,get_vegetation() -> float,get_fertility() -> float,create_environment_state() -> EnvironmentState
+prop=bio_region_id: String,area_id: String,definition: BioRegionDefinition,humidity_override: float,vegetation_override: float,fertility_override: float
+data=UNSET_OVERRIDE: float
+dep=BioRegionDefinition,EnvironmentState
+use=BioRegionDefinition,EcologyManager,EnvironmentState
+note=Uses `UNSET_OVERRIDE` constant (-999.0) to detect if an override is present.

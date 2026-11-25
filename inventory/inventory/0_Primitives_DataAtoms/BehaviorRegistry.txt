@@ -1,0 +1,8 @@
+BehaviorRegistry
+f=scenes/Characters/Enemies/BehaviorRegistry.gd
+p=Maps behavior identifiers to their respective implementation classes.
+r=Providing behavior lookup and registration interfaces.
+api=register(species_id: String, behavior: Object) -> void,get_behavior(species_id: String) -> Object
+data=skill_system: unmarked,registry: Dictionary,default_behavior: unmarked
+dep=DefaultEnemyBehavior,SpeciesDefinition
+use=EnemyBehavior

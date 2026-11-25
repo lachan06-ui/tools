@@ -1,0 +1,7 @@
+TerritoryState
+f=core/systems/ecology/TerritoryState.gd
+p=Runtime state container for species-specific biological territories.
+r=Storing spatial and identity data for a territory.,Providing dictionary serialization support.
+api=contains_point(position: Vector3) -> bool,contains_activity_point(position: Vector3) -> bool,to_dict() -> Dictionary,from_dict(d: Dictionary) -> void
+data=territory_id: String,species_id: String,bio_region_id: String,area_id: String,center: Vector3,radius: float,activity_radius: float
+use=DefaultEnemyBehavior,EcologyManager,EcologyObservationUI,EcologySimulation,EnemyAI,SpatialRegionResolver,SpawnLocationResolver,WorldMap

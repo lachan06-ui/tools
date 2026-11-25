@@ -1,0 +1,7 @@
+HeightMap
+f=scenes/Map/HeightMap.gd
+p=Manages and retrieves elevation data for the map terrain.
+r=Retrieving height at a specific position.
+api=load_from_image(image: Image, height_scale: float) -> void,get_height(x: int, y: int) -> float,set_height(x: int, y: int, value: float) -> void
+data=width: int,height: int,heights: Array
+use=GenerateMapFromDEM

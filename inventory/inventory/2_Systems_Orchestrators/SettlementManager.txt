@@ -1,0 +1,8 @@
+SettlementManager
+f=scenes/World/Village/SettlementManager.gd
+r=Handles settlement progression, tracking development tiers and player contributions, and managing facility availability based on tier thresholds.
+api=get_settlement_tier(settlement_id: String) -> int,apply_contribution(settlement_id: String, amount: float) -> void,get_facilities(settlement_id: String) -> Array,get_manager_profile(settlement_id: String) -> Dictionary,set_economic_activity(settlement_id: String, value: float) -> void,set_story_multiplier(settlement_id: String, multiplier: float) -> void,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void
+data=_definitions: Dictionary,_state: Dictionary
+dep=EventBus,TimeSystem,Player,GameState,WorldManager
+use=SaveManager,VillageFacilityUI
+save=Provides get_save_data,Provides load_save_data

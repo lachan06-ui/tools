@@ -1,0 +1,8 @@
+PoisonAvoidance
+f=core/systems/ecology/PoisonAvoidance.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=compute(owner: Node3D) -> Dictionary,steer(owner: Node3D, base_direction: Vector3) -> Vector3
+data=MARGIN: float,IDLE_ESCAPE_WEIGHT: float
+dep=PoisonArea,GroupPoisonState
+use=DebugPoisonView,DefaultEnemyBehavior,EnemyAI

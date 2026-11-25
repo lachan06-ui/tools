@@ -1,0 +1,5 @@
+Effects
+f=scenes/Utils/Effects.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+use=GameState,PlayerCombat

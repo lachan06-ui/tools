@@ -1,0 +1,10 @@
+SpeciesRelation
+f=core/systems/ecology/SpeciesRelation.gd
+p=Maintains dynamic approach tendency and attack desire per area and species pair.
+r=Registry of species relation data.,Management of approach tendency and attack desire values.,Updating relations based on combat interaction deltas.,Persistence of relation state via serialization.
+api=get_relation(scope_id: String, observer_species: String, target_species: String) -> Dictionary,get_approach_tendency(scope_id: String, observer_species: String, target_species: String) -> float,get_attack_desire(scope_id: String, observer_species: String, target_species: String) -> float,set_relation(scope_id: String, observer_species: String, target_species: String, approach_tendency: float, attack_desire: float) -> void,has_relation(scope_id: String, observer_species: String, target_species: String) -> bool,record_interaction(group_id: String, observer_species: String, target_species: String, delta_approach: float, delta_attack: float) -> void,on_combat_event(event: DamageEvent) -> void,get_experience_sensitivity(species_id: String) -> float,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void,clear_all() -> void,inherit_group(parent_group_id: String, child_group_id: String) -> void,delete_group(group_id: String) -> void
+data=BASE_DAMAGE_APPROACH_DELTA: float,BASE_DAMAGE_ATTACK_DELTA: float,BASE_KILL_APPROACH_DELTA: float,BASE_KILL_ATTACK_DELTA: float,BASE_DAMAGE_VICTIM_APPROACH_DELTA: float,BASE_DAMAGE_VICTIM_ATTACK_DELTA: float,BASE_KILL_VICTIM_APPROACH_DELTA: float,BASE_KILL_VICTIM_ATTACK_DELTA: float
+dep=SpatialRegionResolver,DamageSystem,SpeciesDatabase,SpeciesDefinition,DamageEvent
+use=DamageSystem,DefaultEnemyBehavior,EcologyManager,EcologySimulation,UtilityScoringEngine,WorldManager,WorldMap
+save=Provides get_save_data,Provides load_save_data
+note=Resolves area using `SpatialRegionResolver.resolve_area` or `Spatial $\text{_}$ resolver.resolve_bio_region`, or via `map_id` property.,Extracts species identity from `species_id` or `enemy_id` metadata/properties or the "player" group.,Updates relation values by processing `DamageEvent` intensity (damage vs. kill).

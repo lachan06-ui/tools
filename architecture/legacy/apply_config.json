@@ -1,0 +1,4 @@
+{
+  "test_cmd": "<ゲームのテストを実行するコマンド。分からなければ空文字>",
+  "charts_cmd": "python tools/architecture/generate_charts_v2.py --tags <feature_tags.json のパス> --inventory tr_1_inventory.md"
+}

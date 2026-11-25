@@ -1,0 +1,8 @@
+EnemySkillSystem
+f=scenes/Characters/Enemies/EnemySkillSystem.gd
+p=Manages the execution and cooldowns of skills for enemies.
+r=Managing skill execution and cooldown tracking.
+api=execute(skill_id: String, owner: Node, target: Node) -> DamageEvent
+data=registry: unmarked
+dep=SkillRegistry,DamageSystem,DamageEvent
+use=DefaultEnemyBehavior,EnemyAI,EnemyBehavior

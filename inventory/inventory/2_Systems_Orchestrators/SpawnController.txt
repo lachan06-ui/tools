@@ -1,0 +1,8 @@
+SpawnController
+f=scenes/Systems/SpawnController.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=debug_spawn_at_position(region_id: String, def: SpeciesDefinition, position: Vector3, env: EnvironmentState) -> bool
+data=ENEMY_SCENE: unmarked,MAX_PER_REQUEST: int,GROUP_SCATTER: float,resolver: RefCounted
+dep=EcologyManager,EnvironmentState,SpeciesDefinition,WorldManager,SpawnLocationResolver,Enemy,SpeciesState,SpeciesRelation,EnemyDatabase,EnemyStats
+use=DebugSpawnView,EcologyManager,EnemySpawner,WorldRoot

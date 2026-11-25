@@ -1,0 +1,7 @@
+SpeciesState
+f=core/systems/ecology/SpeciesState.gd
+p=Tracks the current ecological state (population, stress, genetics) of a single species within a specific region.
+r=Storing population, stress, metrics, evolutionary state, and genetic drift data; providing persistence support.
+api=get_death_mean_body_scale() -> float,get_death_body_scale_variance() -> float,get_death_mean_part_scale(part_name: String) -> float,get_death_deviation_from_population_mean() -> float,apply_natural_selection(selection_strength: float = 0.05, min_deaths: int = 5) -> void,calculate_reproduction_births(repro_rate: float = 0.1) -> int,update_danger(base_atk: float = 10.0, base_def: float = 0.0, base_spd: float = 3.0) -> float,to_dict() -> Dictionary,from_dict(d: Dictionary) -> void
+data=species_id: String,population: int,target_population: int,stress: float,food_available: float,average_condition: float,environmental_adaptation: float,evolution_preparation: float,danger: float,mean_body_scale: float,mean_part_scales: Dictionary,total_generations: int,last_death_phenotype: Dictionary,death_count: int,death_body_scale_sum: float,death_body_scale_sq_sum: float,death_part_scale_sums: Dictionary
+use=DebugEcologyView,DebugPanel,EcologyManager,EcologyObservationUI,EcologySerializer,EcologySimulation,GeneticDriftCalculator,PopulationCalculator,QuestGenerator,SpawnController,SpawnRequest

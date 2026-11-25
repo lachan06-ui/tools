@@ -1,0 +1,9 @@
+InteractionObject
+f=scenes/Map/InteractionObject.gd
+p=Detects player proximity and executes interaction logic when triggered.
+r=Proximity detection and interaction execution.
+api=interact(_interactor: Node) -> void,apply_damage(attacker: Entity, amount: float) -> DamageEvent,take_damage(amount: float) -> void,destroy() -> void,on_destroy() -> void,on_pickup(_carrier: Node) -> void,on_throw(_direction: Vector3, _force: float) -> void
+prop=object_id: String,object_type: String,weight: float,interactable: bool,movable: bool,breakable: bool,is_pickable: bool,is_throwable: bool
+data=targetable: Targetable
+dep=Corpse,Entity,InteractionSystem,Targetable,DamageSystem,DamageEvent
+use=Cart,InteractionSystem,ObjectGenerator,WorldMap

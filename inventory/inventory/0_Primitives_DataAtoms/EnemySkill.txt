@@ -1,0 +1,6 @@
+EnemySkill
+f=core/databases/EnemySkill.gd
+p=Data structure for skills used by enemy entities.
+r=Storing skill ID and damage multiplier data.
+prop=id: String,type: String,weight: int,animation: String,cooldown: float,range: float,damage: int,effect: String
+use=DefaultEnemyBehavior,Enemy,EnemyAI,EnemyStats,SkillRegistry

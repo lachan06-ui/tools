@@ -1,0 +1,8 @@
+BiomeDatabase
+f=core/databases/BiomeDatabase.gd
+p=Repository for biome-specific environmental data.
+r=Retrieving biome data and listing biomes in a region.
+api=get_biome_for_env(env: EnvironmentState) -> String,get_entry(id: String) -> Dictionary,get_value(id: String, key: String, default = null),has_entry(id: String) -> bool,get_all_ids() -> Array,get_all() -> Array
+data=DATA_PATH: unmarked
+dep=EnvironmentState
+use=EcologyManager

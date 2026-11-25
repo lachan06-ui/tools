@@ -1,0 +1,5 @@
+FactionKnowledgeRegistry
+f=core/systems/ecology/FactionKnowledgeRegistry.gd
+p=Stores species threat perception data per region using a nested dictionary structure.
+api=get_threat_level(group_id: String, observer_id: String, target_id: String) -> float,record_experience(group_id: String, observer_id: String, target_id: String, delta_threat: float = 0.4) -> void,process_daily_learning(_area_id: String) -> void
+dep=SpeciesRelation

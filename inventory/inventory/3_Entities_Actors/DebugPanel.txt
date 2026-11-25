@@ -1,0 +1,8 @@
+DebugPanel
+f=scenes/World/Debug/DebugPanel.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=set_observation_ui(observation_ui: Control) -> void
+data=DEBUG_KEY: Key,DEBUG_REFRESH_INTERVAL: float,POISON_REFRESH_INTERVAL: float,PARENT_BUTTON_COLOR: Color,PARENT_BUTTON_OPEN_COLOR: Color,CHILD_BUTTON_COLOR: Color,_subtab_buttons: Dictionary,_debug_refresh_timer: float,_panel: PanelContainer,_tab_container: TabContainer,_status_label: Label,_right_panel: PanelContainer,_observation_ui: Control,_world_camera: Node,_selected_group: String,_selected_item: String,_console_visible: bool,_previous_mouse_mode: Input.MouseMode,_right_views: Dictionary,_active_right_view: Control,_right_lock_overlay: Control,_right_lock_button: Button,_right_selected_group: String,_right_selected_item: String,_right_ecology_species_tab_index: int,_expanded_subtab: String,_subtab_contents: Dictionary,_debug_species_option: OptionButton,_debug_consequence_option: OptionButton,_locked_target_observation_enabled: bool,_locked_target_observation_elapsed: float,_target_volume_radius_spin: SpinBox,_target_volume_distance_spin: SpinBox,_target_volume_visible_button: Button
+dep=WorldCamera,DebugWorldView,DebugTimeView,DebugEcologyView,DebugPoisonView,DebugSpawnView,DebugUtilityView,DebugObservationView,DebugUIHelpers,EnvironmentState,EcologyManager,TimeSystem,Player,PoisonArea,SpeciesState,DebugPoisonActions,WorldManager,EcologyObservationUI,TargetSystem,Entity,SpatialRegionResolver
+use=WorldRoot

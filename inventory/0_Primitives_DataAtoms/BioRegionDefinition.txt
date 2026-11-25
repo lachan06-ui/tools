@@ -1,0 +1,9 @@
+BioRegionDefinition
+f=core/systems/ecology/BioRegionDefinition.gd
+p=Resource describing an ecological/environmental sub-region within an Area.
+r=Storing base environmental characteristics (temperature, humidity, vegetation, fertility).,Providing habitat metadata and tags.,Initializing `EnvironmentState` with base values.
+api=get_humidity() -> float,get_vegetation() -> float,get_fertility() -> float,create_environment_state() -> EnvironmentState
+prop=bio_region_id: String,area_id: String,display_name: String,base_temperature: float,base_humidity: float,base_vegetation: float,base_fertility: float,habitat_tags: Array[String]
+dep=BioRegionInstance,EnvironmentState
+use=BioRegionInstance,EcologyManager,EnvironmentState,ForestBioRegionDefinition
+note=Implementation includes specialized biological templates for Forest and Mountain Forest types.

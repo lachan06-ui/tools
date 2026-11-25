@@ -1,0 +1,8 @@
+MapKnowledgeManager
+f=scenes/Utils/MapKnowledgeManager.gd
+r=Manages Fog of War state using compressed bitmasks for sectors and manages both manual and knowledge-based map markers.
+api=is_sector_explored(sector: Vector2i) -> bool,mark_sector_explored(sector: Vector2i) -> void,mark_world_position_explored(world_pos: Vector3) -> void,world_to_sector(world_pos: Vector3) -> Vector2i,get_known_landmarks() -> Array[Dictionary],add_manual_marker(marker_dict: Dictionary) -> bool,add_knowledge_marker(marker_dict: Dictionary) -> bool,remove_marker(marker_id: String) -> bool,get_all_markers() -> Array[Dictionary],get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void
+data=SECTOR_WORLD_SIZE: float,CHUNK_SECTORS_PER_AXIS: int,MAX_MANUAL_MARKERS: int,MAX_KNOWLEDGE_MARKERS: int,_explored_chunks: Dictionary,_manual_markers: Array[Dictionary],_knowledge_markers: Array[Dictionary]
+dep=EventBus,WorldManager
+use=MapReadingModeUI,SaveManager
+save=Provides get_save_data,Provides load_save_data

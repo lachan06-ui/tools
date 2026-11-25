@@ -1,0 +1,758 @@
+=== FEATURE PACK: enemy ===
+Target classes: 26
+
+## 対象クラス（全フィールド）
+### BehaviorProfile  (core/databases/BehaviorProfile.gd)
+Purpose: 
+Public API Methods:
+  - apply_personality_modifiers_once() -> void
+  - set_territorial_expansion(value: float) -> void
+  - set_group_combat_tendency(value: float) -> void
+  - set_approach_tendency(target_species: String, value: float) -> void
+  - set_attack_intent(target_species: String, value: float) -> void
+  - get_approach_tendency(target_species: String) -> float
+  - get_attack_intent(target_species: String) -> float
+  - get_experience_sensitivity() -> float
+  - get_territorial_expansion() -> float
+  - get_group_combat_tendency() -> float
+Properties:
+  - personality_tags: Array[String]
+  - approach_tendency_by_species: Dictionary[String, float]
+  - attack_intent_by_species: Dictionary[String, float]
+Owned Data:
+  - _personality_modifiers_applied: bool
+Used By:
+  - SpeciesDefinition
+
+### BehaviorRegistry  (scenes/Characters/Enemies/BehaviorRegistry.gd)
+Purpose: Maps behavior identifiers to their respective implementation classes.
+Public API Methods:
+  - register(species_id: String, behavior: Object) -> void
+  - get_behavior(species_id: String) -> Object
+Owned Data:
+  - skill_system: unmarked
+  - registry: Dictionary
+  - default_behavior: unmarked
+Depends On:
+  - DefaultEnemyBehavior
+  - SpeciesDefinition
+Used By:
+  - EnemyBehavior
+
+### Boss  (scenes/Characters/Enemies/Boss.gd)
+Purpose: Extends enemy functionality with specialized boss mechanics and phases.
+Public API Methods:
+  - apply_damage(amount: int) -> void
+Properties:
+  - max_health: int
+  - phase_durations: Array[float]
+  - swarm_spawner_path: NodePath
+Owned Data:
+  - _current_health: int
+  - _current_phase: int
+  - _phase_timer: Timer
+Depends On:
+  - SwarmSpawner
+  - Player
+Used By:
+  - SwarmSpawner
+
+### Corpse  (scenes/Characters/Enemies/Corpse.gd)
+Purpose: Represents the physical remains of a dead entity for decomposition.
+Public API Methods:
+  - interact(interactor: Node) -> void
+  - apply_knockback(force: Vector3) -> void
+  - serialize() -> Dictionary
+  - restore(data: Dictionary) -> void
+  - add_poison_amount(amount: float) -> float
+  - get_poison_amount() -> float
+  - get_poison_ratio() -> float
+Properties:
+  - nutrition: int
+  - lifetime_seconds: float
+  - weight: float
+Owned Data:
+  - species_id: String
+  - tier: int
+  - region_id: String
+  - nutrition_notified: bool
+  - poison_amount: float
+  - _timer: float
+  - targetable: Targetable
+  - velocity: Vector3
+Depends On:
+  - Targetable
+  - WorldManager
+  - EcologyManager
+Used By:
+  - EcologyManager
+  - Enemy
+  - EnemyAI
+  - InteractionObject
+  - PoisonArea
+  - StatusComponent
+  - WorldManager
+
+### DebugSpawnView  (scenes/World/Debug/DebugSpawnView.gd)
+Purpose: 
+Public API Methods:
+  - refresh(content: VBoxContainer, selected_item: String, tree: SceneTree) -> void
+  - spawn_one(panel: Node, tree: SceneTree, region_id: String, species_id: String) -> void
+  - kill_one(panel: Node, tree: SceneTree, region_id: String, species_id: String) -> void
+  - create_carcass(player_position: Vector3, species_id: String, region_id: String) -> void
+Depends On:
+  - DebugUIHelpers
+  - EcologyManager
+  - SpawnController
+  - EcologyObservationUI
+  - EnvironmentState
+  - SpeciesDatabase
+  - SpeciesDefinition
+  - WorldManager
+Used By:
+  - DebugPanel
+
+### DefaultEnemyBehavior  (scenes/Characters/Enemies/DefaultEnemyBehavior.gd)
+Purpose: Implementation of standard patrol and chase behaviors.
+Public API Methods:
+  - get_debug_relation_observation(owner: Enemy, target: Entity) -> Dictionary
+  - decide_movement(owner: Enemy, target: Entity) -> Vector3
+  - get_debug_candidate_observations(owner: Enemy, candidates: Array) -> Array[Dictionary]
+  - decide_target(owner: Enemy, candidates: Array) -> Entity
+  - decide_skill(owner: Enemy, target: Entity) -> String
+  - get_debug_skill_observation(owner: Enemy, target: Entity) -> Array[Dictionary]
+  - should_retreat(owner: Enemy) -> bool
+Owned Data:
+  - Enemy: unmarked
+  - skill_system: EnemySkillSystem
+Depends On:
+  - Enemy
+  - EnemySkillSystem
+  - UtilityScoringEngine
+  - SpeciesDatabase
+  - Entity
+  - SpeciesDefinition
+  - SpeciesRelation
+  - PoisonArea
+  - SpatialRegionResolver
+  - TerritoryState
+  - EnemySkill
+  - GroupSkillState
+Used By:
+  - BehaviorRegistry
+  - Enemy
+
+### Enemy  (scenes/Characters/Enemies/Enemy.gd)
+Purpose: Base class for enemy entities handling health and basic lifecycle.
+Public API Methods:
+  - get_effective_atk() -> float
+  - get_effective_def() -> float
+  - get_effective_spd() -> float
+  - apply_knockback(force: Vector3) -> void
+  - swing_melee_attack() -> void
+  - take_damage(amount: float) -> void
+  - die() -> void
+  - freeze(duration: float) -> void
+  - configure(new_speed: float, new_hp: float) -> void
+Properties:
+  - speed: float
+  - knockback_damping: float
+  - attack_range: float
+  - attack_cooldown: float
+  - is_dummy: bool
+  - is_boss: bool
+  - enemy_id: String
+  - territory_radius: float
+  - visual_container: Node3D
+  - _ai: EnemyAI
+Owned Data:
+  - species_id: String
+  - area_id: String
+  - bio_region_id: String
+  - territory_id: String
+  - group_id: String
+  - base_atk: float
+  - base_def: float
+  - atk: float
+  - def: float
+  - _archetype_skills: Array[EnemySkill]
+  - freeze_timer: float
+  - discovered: bool
+  - knockback_velocity: Vector3
+  - is_swinging: bool
+  - targetable: Targetable
+  - genetic_scale_modifier: Vector3
+  - genetic_part_scales: Dictionary
+Depends On:
+  - EnemyAI
+  - QuestManager
+  - GameState
+  - EcologyManager
+  - EnemyDatabase
+  - Entity
+  - EnemySkill
+  - EnemyStats
+  - DefaultEnemyBehavior
+  - Targetable
+  - SpeciesDefinition
+  - SpeciesDatabase
+  - EventBus
+  - Corpse
+  - TargetSystem
+Used By:
+  - DefaultEnemyBehavior
+  - EnemyAI
+  - EnemyBehavior
+  - EnemySpawner
+  - EnemyStats
+  - Entity
+  - SpawnController
+  - SpeciesDefinition
+  - StatusComponent
+  - WorldManager
+  - WorldMap
+  - WorldRoot
+
+### EnemyAI  (scenes/Characters/Enemies/EnemyAI.gd)
+Purpose: Handles decision-making logic for enemy entities based on surroundings.
+Public API Methods:
+  - init(owner_node: Enemy) -> void
+  - tick(delta: float) -> void
+  - get_state_name() -> String
+  - is_idle() -> bool
+  - is_chasing() -> bool
+  - is_attacking() -> bool
+  - is_returning() -> bool
+  - get_debug_summary() -> String
+  - get_debug_observation() -> Dictionary
+  - get_debug_target_observation(target: Node) -> Dictionary
+Owned Data:
+  - Enemy: unmarked
+  - behavior: unmarked
+  - _owner: Enemy
+  - attack_timer: float
+  - state: int
+  - spawn_position: Vector3
+  - _last_target: Entity
+  - _last_move_direction: Vector3
+  - _last_skill_id: String
+  - _last_approach_tendency: float
+  - _last_attack_desire: float
+  - _last_static_approach: float
+  - _last_static_attack: float
+  - _last_dynamic_approach: float
+  - _last_dynamic_attack: float
+  - _last_skill_weight: float
+  - RETURN_THRESHOLD: unmarked
+  - FEED_RANGE: float
+  - FEED_COOLDOWN: float
+  - FEED_POISON_TRANSFER_RATIO: float
+  - feed_timer: float
+  - _last_food_source: Corpse
+Depends On:
+  - Enemy
+  - EnemyBehavior
+  - EnemySkillSystem
+  - AttachSystem
+  - Entity
+  - Corpse
+  - TerritoryState
+  - SpatialRegionResolver
+  - WorldManager
+  - UtilityScoringEngine
+  - EnemySkill
+Used By:
+  - Enemy
+  - EnemySpawner
+
+### EnemyBehavior  (scenes/Characters/Enemies/EnemyBehavior.gd)
+Purpose: Base class for defining abstract enemy behaviors.
+Public API Methods:
+  - decide_movement(owner: Enemy, target: Entity) -> Vector3
+  - decide_target(owner: Enemy, candidates: Array) -> Entity
+  - decide_skill(owner: Enemy, target: Entity) -> String
+  - get_debug_relation_observation(owner: Enemy, target: Entity) -> Dictionary
+  - get_debug_skill_observation(owner: Enemy, target: Entity) -> Array[Dictionary]
+  - should_retreat(owner: Enemy) -> bool
+Owned Data:
+  - Enemy: unmarked
+  - skill_system: unmarked
+  - registry_manager: unmarked
+Depends On:
+  - Enemy
+  - BehaviorRegistry
+  - EnemySkillSystem
+  - Entity
+Used By:
+  - EnemyAI
+
+### EnemyDatabase  (core/databases/EnemyDatabase.gd)
+Purpose: Repository for enemy configurations, stats, and skill associations.
+Public API Methods:
+  - get_resource(id: String) -> EnemyStats
+  - get_entry(id: String) -> Dictionary
+  - get_value(id: String, key: String, default = null)
+  - has_entry(id: String) -> bool
+  - get_all_ids() -> Array
+  - get_all() -> Array
+  - get_species_default_population(species_id: String) -> int
+  - get_default_population(species_id: String) -> int
+  - get_species_definition(enemy_id: String) -> SpeciesDefinition
+  - get_weight(enemy_id: String) -> float
+  - get_nutrition(enemy_id: String) -> int
+  - get_faction_id(id: String) -> String
+  - get_group_id(id: String) -> String
+  - get_species_ids() -> Array
+  - get_by_tier(tier: int) -> Array
+  - get_by_species(species_id: String) -> Array
+  - get_enemy(id: String) -> Dictionary
+  - get_monster(id: String) -> Dictionary
+  - has_monster(id: String) -> bool
+  - get_all_monster_ids() -> Array
+  - get_all_monsters() -> Array
+  - get_monsters_by_tier(tier: int) -> Array
+  - get_monsters_by_species(species_id: String) -> Array
+Owned Data:
+  - RESOURCES_DIR: unmarked
+  - _enemies_resources: Dictionary
+Depends On:
+  - EnemyStats
+  - SpeciesDatabase
+  - SpeciesDefinition
+Used By:
+  - Enemy
+  - QuestGenerator
+  - SpawnController
+  - SpeciesDatabase
+  - SpeciesDefinition
+  - WorldMap
+
+### EnemySkill  (core/databases/EnemySkill.gd)
+Purpose: Data structure for skills used by enemy entities.
+Properties:
+  - id: String
+  - type: String
+  - weight: int
+  - animation: String
+  - cooldown: float
+  - range: float
+  - damage: int
+  - effect: String
+Used By:
+  - DefaultEnemyBehavior
+  - Enemy
+  - EnemyAI
+  - EnemyStats
+  - SkillRegistry
+
+### EnemySkillSystem  (scenes/Characters/Enemies/EnemySkillSystem.gd)
+Purpose: Manages the execution and cooldowns of skills for enemies.
+Public API Methods:
+  - execute(skill_id: String, owner: Node, target: Node) -> DamageEvent
+Owned Data:
+  - registry: unmarked
+Depends On:
+  - SkillRegistry
+  - DamageSystem
+  - DamageEvent
+Used By:
+  - DefaultEnemyBehavior
+  - EnemyAI
+  - EnemyBehavior
+
+### EnemySpawner  (scenes/Map/EnemySpawner.gd)
+Purpose: Automates the spawning of enemies at designated locations using a timer.
+Public API Methods:
+  - setup(container: Node) -> void
+  - register_spawn_points(map_id: String, positions: Array) -> void
+  - spawn_enemies_in_room(room: Node3D, map_id: String) -> void
+  - spawn_enemy_at(pos: Vector3, map_id: String) -> void
+  - register_spawn_point_with_species(species_id: String, map_id: String, pos: Vector3) -> Dictionary
+  - serialize_enemy(node: Node) -> Dictionary
+  - deserialize_enemy(data: Dictionary, container: Node) -> Node
+  - select_weighted_species(map_id: String) -> String
+Owned Data:
+  - ENEMY_SCENE: unmarked
+  - _container: Node
+Depends On:
+  - WorldManager
+  - Enemy
+  - EcologyManager
+  - SpeciesDefinition
+  - SpeciesDatabase
+  - SpawnController
+  - EnemyAI
+  - MapDatabase
+Used By:
+  - WorldManager
+  - WorldMap
+  - WorldRoot
+
+### EnemyStats  (core/databases/EnemyStats.gd)
+Purpose: Data structure for base enemy attributes. aka. EnemyArchetype
+Properties:
+  - id: String
+  - species_id: String
+  - name: String
+  - monster_type: String
+  - weight: float
+  - nutrition: int
+  - tier: int
+  - description: String
+  - ecology: Array[String]
+  - max_hp: float
+  - speed: float
+  - base_atk: float
+  - base_def: float
+  - behavior_script: Script
+  - skills: Array[EnemySkill]
+  - drop_table: DropTable
+Depends On:
+  - SpeciesDefinition
+  - EnemySkill
+  - Enemy
+  - DropTable
+Used By:
+  - EcologySimulation
+  - Enemy
+  - EnemyDatabase
+  - GameState
+  - QuestGenerator
+  - SkillRegistry
+  - SpawnController
+  - SpeciesDefinition
+
+### GenusDefinition  (core/databases/GenusDefinition.gd)
+Purpose: 
+Public API Methods:
+  - apply_to_species(def: SpeciesDefinition) -> void
+Properties:
+  - genus_id: String
+  - display_name: String
+  - preferred_biomes: Array[String]
+  - diet_type: String
+  - reproduction_rate: float
+  - migration_rate: float
+  - group_size_min: int
+  - group_size_max: int
+  - taxonomic_order: String
+  - default_skill_slots: Array[String]
+Depends On:
+  - SpeciesDefinition
+Used By:
+  - SpeciesDefinition
+
+### GroupSkillState  (core/systems/ecology/GroupSkillState.gd)
+Purpose: 
+Public API Methods:
+  - get_weight(group_id: String, target_species_id: String, skill_id: String) -> float
+  - set_weight(group_id: String, target_species_id: String, skill_id: String, weight: float) -> void
+  - delete_group(group_id: String) -> void
+  - get_save_data() -> Dictionary
+  - load_save_data(data: Dictionary) -> void
+  - clear_all() -> void
+Used By:
+  - DefaultEnemyBehavior
+  - EcologyManager
+  - WorldManager
+
+### SkillRegistry  (scenes/Characters/Enemies/SkillRegistry.gd)
+Purpose: Single registry loaded from .tres for enemy skill definitions
+Public API Methods:
+  - get_skill(skill_id: String) -> Dictionary
+  - has_skill(skill_id: String) -> bool
+  - get_skill_resource(skill_id: String) -> EnemySkill
+  - get_all_ids() -> Array
+Owned Data:
+  - RESOURCES_DIR: unmarked
+  - skills: Dictionary
+Depends On:
+  - EnemySkill
+  - EnemyStats
+Used By:
+  - EnemySkillSystem
+
+### SpawnController  (scenes/Systems/SpawnController.gd)
+Purpose: 
+Public API Methods:
+  - debug_spawn_at_position(region_id: String, def: SpeciesDefinition, position: Vector3, env: EnvironmentState) -> bool
+Owned Data:
+  - ENEMY_SCENE: unmarked
+  - MAX_PER_REQUEST: int
+  - GROUP_SCATTER: float
+  - resolver: RefCounted
+Depends On:
+  - EcologyManager
+  - EnvironmentState
+  - SpeciesDefinition
+  - WorldManager
+  - SpawnLocationResolver
+  - Enemy
+  - SpeciesState
+  - SpeciesRelation
+  - EnemyDatabase
+  - EnemyStats
+Used By:
+  - DebugSpawnView
+  - EcologyManager
+  - EnemySpawner
+  - WorldRoot
+
+### SpawnLocationResolver  (scenes/Systems/SpawnLocationResolver.gd)
+Purpose: 
+Public API Methods:
+  - resolve_spawn_request(req: RefCounted) -> Vector3
+  - is_spatial_request_valid(area_id: String, bio_region_id: String, territory_id: String) -> bool
+  - is_environment_suitable(def: SpeciesDefinition, env: EnvironmentState) -> bool
+Owned Data:
+  - DEFAULT_MAX_SLOPE_DEGREES: float
+  - SPAWN_ATTEMPTS: int
+  - SPAWN_BOUNDS_MIN: unmarked
+  - SPAWN_BOUNDS_MAX: unmarked
+  - ground_resolver: SpawnGroundResolver
+Depends On:
+  - SpatialRegionResolver
+  - EnvironmentState
+  - SpeciesDefinition
+  - SpawnGroundResolver
+  - TerritoryState
+  - EcologyManager
+Used By:
+  - SpawnController
+  - WorldMap
+
+### SpawnRequest  (core/systems/ecology/SpawnRequest.gd)
+Purpose: Lightweight data structure for passing spawn requests through the pipeline.
+Owned Data:
+  - area_id: StringName
+  - bio_region_id: StringName
+  - territory_id: StringName
+  - species_id: StringName
+  - count: int
+  - species_def: SpeciesDefinition
+  - env: EnvironmentState
+  - species_state: SpeciesState
+Depends On:
+  - SpeciesDefinition
+  - EnvironmentState
+  - SpeciesState
+Used By:
+  - EcologyManager
+  - EcologySimulation
+  - WorldMap
+
+### SpeciesDatabase  (core/databases/SpeciesDatabase.gd)
+Purpose: Repository for species definitions and biological traits.
+Public API Methods:
+  - get_species(id: String) -> SpeciesDefinition
+  - has_species(id: String) -> bool
+  - get_all_species() -> Array
+  - get_all_ids() -> Array
+  - get_by_biome(biome_id: String) -> Array
+  - get_suitable_species(biome_id: String, env_humidity: float, env_temperature: float) -> Array
+  - get_compatible_candidates(env: EnvironmentState, bio_def: Resource = null) -> Array[SpeciesDefinition]
+Owned Data:
+  - RESOURCES_DIR: unmarked
+  - _species: Dictionary
+Depends On:
+  - SpeciesDefinition
+  - EnemyDatabase
+  - EnvironmentState
+Used By:
+  - DebugSpawnView
+  - DefaultEnemyBehavior
+  - EcologyManager
+  - Enemy
+  - EnemyDatabase
+  - EnemySpawner
+  - GameState
+  - QuestGenerator
+  - SpeciesRelation
+  - WorldMap
+
+### SpeciesDefinition  (core/databases/SpeciesDefinition.gd)
+Purpose: Definition of biological parameters for species.
+Public API Methods:
+  - is_environment_compatible(env: EnvironmentState, bio_def: Resource = null) -> bool
+  - calculate_compatibility_score(env: EnvironmentState, bio_def: Resource = null) -> float
+  - get_approach_tendency(target_species: String) -> float
+  - get_attack_intent(target_species: String) -> float
+  - get_experience_sensitivity() -> float
+  - get_enemy_stats() -> EnemyStats
+Properties:
+  - genus_definition: GenusDefinition
+  - species_id: String
+  - display_name: String
+  - tier: int
+  - monster_type: String
+  - preferred_biomes: Array[String]
+  - altitude_range: Vector2
+  - humidity_range: Vector2
+  - temperature_range: Vector2
+  - preferred_habitat_tags: Array[String]
+  - max_spawn_slope_degrees: float
+  - diet_type: String
+  - reproduction_rate: float
+  - migration_rate: float
+  - default_population: int
+  - group_size_min: int
+  - group_size_max: int
+  - enemy_id: String
+  - taxonomic_order: String
+  - behavior_profile: BehaviorProfile
+  - visual_scene: PackedScene
+Depends On:
+  - Enemy
+  - EnemyStats
+  - GenusDefinition
+  - EnvironmentState
+  - BehaviorProfile
+  - EnemyDatabase
+Used By:
+  - BehaviorRegistry
+  - DebugSpawnView
+  - DefaultEnemyBehavior
+  - EcologyManager
+  - EcologySimulation
+  - Enemy
+  - EnemyDatabase
+  - EnemySpawner
+  - EnemyStats
+  - GameState
+  - GenusDefinition
+  - PopulationCalculator
+  - QuestGenerator
+  - SpawnController
+  - SpawnLocationResolver
+  - SpawnRequest
+  - SpeciesDatabase
+  - SpeciesRelation
+
+### SpeciesRelation  (core/systems/ecology/SpeciesRelation.gd)
+Purpose: Maintains dynamic approach tendency and attack desire per area and species pair.
+Public API Methods:
+  - get_relation(scope_id: String, observer_species: String, target_species: String) -> Dictionary
+  - get_approach_tendency(scope_id: String, observer_species: String, target_species: String) -> float
+  - get_attack_desire(scope_id: String, observer_species: String, target_species: String) -> float
+  - set_relation(scope_id: String, observer_species: String, target_species: String, approach_tendency: float, attack_desire: float) -> void
+  - has_relation(scope_id: String, observer_species: String, target_species: String) -> bool
+  - record_interaction(group_id: String, observer_species: String, target_species: String, delta_approach: float, delta_attack: float) -> void
+  - on_combat_event(event: DamageEvent) -> void
+  - get_experience_sensitivity(species_id: String) -> float
+  - get_save_data() -> Dictionary
+  - load_save_data(data: Dictionary) -> void
+  - clear_all() -> void
+  - delete_group(group_id: String) -> void
+Owned Data:
+  - BASE_DAMAGE_APPROACH_DELTA: float
+  - BASE_DAMAGE_ATTACK_DELTA: float
+  - BASE_KILL_APPROACH_DELTA: float
+  - BASE_KILL_ATTACK_DELTA: float
+  - BASE_DAMAGE_VICTIM_APPROACH_DELTA: float
+  - BASE_DAMAGE_VICTIM_ATTACK_DELTA: float
+  - BASE_KILL_VICTIM_APPROACH_DELTA: float
+  - BASE_KILL_VICTIM_ATTACK_DELTA: float
+Depends On:
+  - SpatialRegionResolver
+  - DamageSystem
+  - SpeciesDatabase
+  - SpeciesDefinition
+  - DamageEvent
+Used By:
+  - DamageSystem
+  - DefaultEnemyBehavior
+  - EcologyManager
+  - EcologySimulation
+  - SpawnController
+  - UtilityScoringEngine
+  - WorldManager
+  - WorldMap
+Notes:
+  - Resolves area using `SpatialRegionResolver.resolve_area` or `Spatial $\text{_}$ resolver.resolve_bio_region`, or via `map_id` property.
+  - Extracts species identity from `species_id` or `enemy_id` metadata/properties or the "player" group.
+  - Updates relation values by processing `DamageEvent` intensity (damage vs. kill).
+
+### SwarmSpawner  (scenes/Utils/SwarmSpawner.gd)
+Purpose: Controls spawning of ant‑style swarm enemies and the hornet boss.
+Public API Methods:
+  - spawn_swarm(boss_type: String, spawn_center: Vector3, count: int, enemy_type: String = "balanced") -> void
+Properties:
+  - fast_enemy_scene: PackedScene    # Fast, low hp enemy prefab
+  - tank_enemy_scene: PackedScene    # High hp, slow enemy prefab
+  - balanced_enemy_scene: PackedScene    # Balanced enemy prefab
+  - max_swarm_size: int
+  - spawn_interval: float
+  - spawn_radius: float
+  - pheromone_attraction_strength: float
+  - boss_scene: PackedScene
+  - boss_trigger_size: int
+Owned Data:
+  - _spawn_timer: Timer
+  - _current_swarm: Array[Node]
+Depends On:
+  - Player
+  - Boss
+Used By:
+  - Boss
+  - WorldMap
+  - WorldRoot
+Notes:
+  - Periodically spawns random enemy types via an internal Timer.
+
+### TerritoryState  (core/systems/ecology/TerritoryState.gd)
+Purpose: Runtime state container for species-specific biological territories.
+Public API Methods:
+  - contains_point(position: Vector3) -> bool
+  - contains_activity_point(position: Vector3) -> bool
+  - to_dict() -> Dictionary
+  - from_dict(d: Dictionary) -> void
+Owned Data:
+  - territory_id: String
+  - species_id: String
+  - bio_region_id: String
+  - area_id: String
+  - center: Vector3
+  - radius: float
+  - activity_radius: float
+Used By:
+  - DefaultEnemyBehavior
+  - EcologyManager
+  - EcologyObservationUI
+  - EcologySimulation
+  - EnemyAI
+  - SpatialRegionResolver
+  - SpawnLocationResolver
+  - WorldMap
+
+### UtilityScoringEngine  (core/systems/ecology/UtilityScoringEngine.gd)
+Purpose: Stateless utility for computing AI decision-making scores (attack vs flee) based on biological and learned data.
+Public API Methods:
+  - calculate_flee_desire(group_id: String, observer_id: String, observer_power: float, target_id: String, target_power: float) -> float
+Depends On:
+  - SpeciesRelation
+Used By:
+  - DefaultEnemyBehavior
+  - EnemyAI
+
+## 外部依存（用途のみ）
+- AttachSystem (scenes/Systems/Combat/AttachSystem.gd): 
+- DamageEvent (scenes/Systems/Combat/DamageEvent.gd): 
+- DamageSystem (scenes/Systems/Combat/DamageSystem.gd): Central damage pipeline for applying and resolving damage between entities.
+- DebugUIHelpers (scenes/World/Debug/DebugUIHelpers.gd): 
+- DropTable (core/databases/DropTable.gd): Manages weighted random selection for item drops.
+- EcologyManager (core/systems/ecology/EcologyManager.gd): Manages all regions, drives daily ecology updates, and issues spawn requests.
+- EcologyObservationUI (scenes/UI/EcologyObservationUI.gd): 
+- Entity (scenes/Core/Entity.gd): Base class for all world entities providing fundamental properties and lifecycle signals.
+- EnvironmentState (core/systems/ecology/EnvironmentState.gd): Holds current environmental values (terrain, biotic, anthropogenic) for one region.
+- EventBus (core/autoload/EventBus.gd): Central signal bus for decoupled communication across the game engine.
+- GameState (core/autoload/GameState.gd): Acts as the central global authority for managing game progression, economy, status effects, environment, and data loading/unloading.
+- MapDatabase (core/databases/MapDatabase.gd): Static registry for map metadata and species associations.
+- Player (scenes/Characters/Player/Player.gd): The main controller for the player character entity, managing movement, combat, spells, status effects, and cart interactions.
+- PoisonArea (scenes/World/PoisonArea.gd): 
+- QuestManager (scenes/Quest/QuestManager.gd): 
+- SpatialRegionResolver (core/systems/ecology/SpatialRegionResolver.gd): Centralized resolver mapping Vector3 positions to Area ID, Bio Region ID, and Territory ID.
+- SpawnGroundResolver (core/systems/ecology/SpawnGroundResolver.gd): 
+- SpeciesState (core/systems/ecology/SpeciesState.gd): Tracks the current ecological state (population, stress, genetics) of a single species within a specific region.
+- TargetSystem (scenes/Systems/Targeting/TargetSystem.gd): 
+- Targetable (core/components/Targetable.gd): Provides an interface for identifying entities that can be targeted in combat.
+- WorldManager (core/autoload/WorldManager.gd): Manages the physical lifecycle of entities in the game world through spatial hashing and proximity-based activation/deactivation.

@@ -1,0 +1,7 @@
+GroupSkillState
+f=core/systems/ecology/GroupSkillState.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=get_weight(group_id: String, target_species_id: String, skill_id: String) -> float,set_weight(group_id: String, target_species_id: String, skill_id: String, weight: float) -> void,inherit_group(parent_group_id: String, child_group_id: String) -> void,delete_group(group_id: String) -> void,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void,clear_all() -> void
+use=DefaultEnemyBehavior,EcologyManager,WorldManager
+save=Provides get_save_data,Provides load_save_data

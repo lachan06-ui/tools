@@ -1,0 +1,8 @@
+NutrientCycle
+f=core/systems/ecology/NutrientCycle.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=return_to_soil(region_id: String, units: float) -> void,excrete(region_id: String, _center: Vector3, _radius: float, units: float) -> void
+data=NUTRITION_TO_DETRITUS: float
+dep=EcologyManager,EnvironmentState
+use=Corpse,EnemyAI

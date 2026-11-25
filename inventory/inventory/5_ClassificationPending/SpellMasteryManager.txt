@@ -1,0 +1,8 @@
+SpellMasteryManager
+f=core/autoload/SpellMasteryManager.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=load_spells_data() -> void,test_spell() -> void,get_mastery(spell_id: String) -> float,gain_mastery(spell_id: String, sim_score: float) -> void,check_unlocks_and_discoveries() -> void,get_mastery_damage_bonus(spell_id: String) -> float,get_mastery_range_bonus(spell_id: String) -> float,get_mastery_typo_bonus(spell_id: String) -> float
+data=spell_mastery: Dictionary,unlocked_spells: Array[String],discovered_spells: Array[String],all_spells: Array
+dep=GameState
+use=GameState

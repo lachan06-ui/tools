@@ -1,0 +1,10 @@
+Corpse
+f=scenes/Characters/Enemies/Corpse.gd
+p=Represents the physical remains of a dead entity for decomposition.
+r=Managing nutrient release and decomposition timers.
+api=initialize_poison_from_environment() -> void,interact(interactor: Node) -> void,apply_knockback(force: Vector3) -> void,advance_game_minutes(minutes: float) -> void,is_dusting() -> bool,advance_state(nutrition_units: int, progress: float, current_poison_amount: float, minutes: float, decay_speed: float, poison_factor: float) -> Dictionary,get_decay_poison_multiplier_for_region(region_id: String) -> float,get_decay_speed_for_region(region_id: String) -> float,step_serialized(data: Dictionary, game_minutes: float) -> bool,consume(units: int = 1) -> Dictionary,serialize() -> Dictionary,restore(data: Dictionary) -> void,add_poison_amount(amount: float) -> float,get_poison_amount() -> float
+prop=nutrition: int,weight: float
+data=DECAY_GAME_MINUTES_PER_NUTRITION: float,DECAY_REFERENCE_TEMP: float,DECAY_REFERENCE_HUM: float,DECAY_HUMIDITY_DOUBLING: float,POISON_AMOUNT_PER_GAME_MINUTE: float,DUST_FADE_SECONDS: float,ENV_REFRESH_SEC: float,CORPSE_POISON_VARIATION_MIN: float,CORPSE_POISON_VARIATION_MAX: float,CORPSE_POISON_LOAD_SCALE: float,poison_amount: float,poison_initialized: bool,species_id: String,tier: int,region_id: String,nutrition_notified: bool,initial_nutrition: int,decay_progress: float,targetable: Targetable,velocity: Vector3,decay: float:,_dusting: bool,_decay_speed: float,_poison_factor: float,_env_timer: float,_last_game_minutes: float
+dep=Targetable,WorldManager,EcologyManager,TimeSystem,NutrientCycle,EnvironmentState,PoisonArea
+use=DebugEntityOverlay,DebugPoisonActions,DebugPoisonView,EcologyManager,Enemy,EnemyAI,InteractionObject,PoisonArea,StatusComponent,WorldManager
+save=Provides serialize

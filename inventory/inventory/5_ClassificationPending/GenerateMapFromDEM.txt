@@ -1,0 +1,8 @@
+GenerateMapFromDEM
+f=scenes/Map/GenerateMapFromDEM.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=build_terrain_mesh()
+prop=dem_image_path: String,grid_size: float,height_scale: float,generate_mesh_now: bool
+data=height_map: unmarked
+dep=HeightMap

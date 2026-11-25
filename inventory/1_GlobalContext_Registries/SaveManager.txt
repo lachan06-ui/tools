@@ -1,0 +1,9 @@
+SaveManager
+f=core/autoload/SaveManager.gd
+p=Slot-based JSON persistence for game saves.
+r=Handling saving and loading of game data to slots.
+api=serialize() -> Dictionary,deserialize(data: Dictionary) -> void,save_to_slot(slot: int) -> void,load_from_slot(slot: int) -> void,slot_exists(slot: int) -> bool,delete_slot(slot: int) -> void
+data=SAVE_DIR: unmarked,SAVE_EXT: unmarked,CURRENT_SAVE_VERSION: int
+dep=WorldManager,EcologyManager,CraftingSystem,MapKnowledgeManager
+use=WorldManager
+save=Provides serialize,Provides deserialize

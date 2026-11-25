@@ -1,0 +1,569 @@
+{
+  "nodes": {
+    "combat": [
+      "AttachSystem",
+      "DamageEvent",
+      "DamageSystem",
+      "TargetSystem",
+      "Targetable"
+    ],
+    "core": [
+      "CarryHelper",
+      "Entity",
+      "EventBus",
+      "GameState",
+      "WorldManager",
+      "WorldState"
+    ],
+    "crafting": [
+      "CraftingSystem",
+      "CraftingUI"
+    ],
+    "ecology": [
+      "AreaDefinition",
+      "BioRegionDefinition",
+      "BioRegionInstance",
+      "BiomeDatabase",
+      "EcologyManager",
+      "EcologyObservationUI",
+      "EcologySerializer",
+      "EcologySimulation",
+      "EcologyTraceFeedback",
+      "EnvironmentState",
+      "FireAgent",
+      "ForestBioRegionDefinition",
+      "GeneticDriftCalculator",
+      "GenusDefinition",
+      "GroupPoisonState",
+      "GroupSkillState",
+      "MountainForestBioRegionDefinition",
+      "NutrientCycle",
+      "PoisonAvoidance",
+      "PopulationCalculator",
+      "SpatialRegionResolver",
+      "SpawnController",
+      "SpawnGroundResolver",
+      "SpawnLocationResolver",
+      "SpawnRequest",
+      "SpeciesDatabase",
+      "SpeciesDefinition",
+      "SpeciesRelation",
+      "SpeciesState",
+      "TerritoryState",
+      "UtilityScoringEngine"
+    ],
+    "enemy": [
+      "BehaviorProfile",
+      "BehaviorRegistry",
+      "Boss",
+      "Corpse",
+      "DefaultEnemyBehavior",
+      "Enemy",
+      "EnemyAI",
+      "EnemyBehavior",
+      "EnemyDatabase",
+      "EnemySkill",
+      "EnemySkillSystem",
+      "EnemySpawner",
+      "EnemyStats",
+      "SkillRegistry",
+      "SwarmSpawner"
+    ],
+    "feedback": [
+      "Effects",
+      "Indicator",
+      "IndicatorFactory",
+      "IndicatorManager"
+    ],
+    "item": [
+      "DropEntry",
+      "DropTable",
+      "EconomyManager",
+      "ItemData",
+      "ItemDatabase"
+    ],
+    "map": [
+      "GenerateMapFromDEM",
+      "InteractionObject",
+      "InteractionSystem",
+      "MapDatabase",
+      "MapKnowledgeManager",
+      "MapProvider",
+      "MapReadingModeUI",
+      "ObjectDatabase",
+      "ObjectGenerator",
+      "PoisonArea",
+      "SpatialArea3D",
+      "SpatialBioRegion3D",
+      "SpecialRoomGenerator",
+      "TreeGenerator",
+      "TreeWood",
+      "WorldMap",
+      "WorldRoot"
+    ],
+    "npc": [
+      "Cart",
+      "LogisticsNPC"
+    ],
+    "player": [
+      "Player",
+      "PlayerCombat",
+      "PlayerDodge",
+      "PlayerLook",
+      "PlayerMovement",
+      "PlayerMovementInput",
+      "PlayerSpell",
+      "PlayerStats",
+      "WorldCamera"
+    ],
+    "quest": [
+      "QuestGenerator",
+      "QuestManager"
+    ],
+    "save": [
+      "SaveManager",
+      "SaveSystem"
+    ],
+    "spell": [
+      "SpellCard",
+      "SpellMasteryManager",
+      "SpellUI"
+    ],
+    "status": [
+      "PoisonStatusEffect",
+      "StatusComponent",
+      "StatusEffect"
+    ],
+    "time": [
+      "TimeSystem"
+    ]
+  },
+  "edges": [
+    {
+      "source": "core",
+      "target": "ecology",
+      "group": "direct",
+      "weight": 9,
+      "signals": [],
+      "examples": [
+        "GameState->SpeciesDatabase",
+        "GameState->SpeciesDefinition",
+        "WorldManager->SpeciesDatabase",
+        "WorldManager->SpeciesDefinition"
+      ]
+    },
+    {
+      "source": "core",
+      "target": "enemy",
+      "group": "direct",
+      "weight": 3,
+      "signals": [],
+      "examples": [
+        "GameState->EnemyStats",
+        "WorldManager->Corpse",
+        "WorldManager->EnemySpawner"
+      ]
+    },
+    {
+      "source": "core",
+      "target": "map",
+      "group": "event",
+      "weight": 1,
+      "signals": [
+        "region_changed"
+      ],
+      "examples": [
+        "WorldManager->WorldRoot"
+      ]
+    },
+    {
+      "source": "core",
+      "target": "player",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "GameState->Player",
+        "WorldManager->Player"
+      ]
+    },
+    {
+      "source": "core",
+      "target": "player",
+      "group": "event",
+      "weight": 1,
+      "signals": [
+        "spell_discovered"
+      ],
+      "examples": [
+        "GameState->PlayerSpell"
+      ]
+    },
+    {
+      "source": "core",
+      "target": "status",
+      "group": "direct",
+      "weight": 3,
+      "signals": [],
+      "examples": [
+        "Entity->PoisonStatusEffect",
+        "Entity->StatusComponent",
+        "Entity->StatusEffect"
+      ]
+    },
+    {
+      "source": "crafting",
+      "target": "player",
+      "group": "event",
+      "weight": 1,
+      "signals": [
+        "crafting_completed",
+        "crafting_started"
+      ],
+      "examples": [
+        "CraftingSystem->PlayerMovement"
+      ]
+    },
+    {
+      "source": "ecology",
+      "target": "core",
+      "group": "direct",
+      "weight": 4,
+      "signals": [],
+      "examples": [
+        "EcologyManager->WorldManager",
+        "SpatialRegionResolver->WorldManager",
+        "SpawnController->WorldManager",
+        "EcologyObservationUI->WorldManager"
+      ]
+    },
+    {
+      "source": "ecology",
+      "target": "enemy",
+      "group": "direct",
+      "weight": 6,
+      "signals": [],
+      "examples": [
+        "SpeciesDefinition->BehaviorProfile",
+        "SpeciesDefinition->EnemyDatabase",
+        "SpeciesDefinition->EnemyStats",
+        "EcologySimulation->EnemyStats"
+      ]
+    },
+    {
+      "source": "ecology",
+      "target": "map",
+      "group": "direct",
+      "weight": 3,
+      "signals": [],
+      "examples": [
+        "EcologyManager->MapDatabase",
+        "PoisonAvoidance->PoisonArea",
+        "SpatialRegionResolver->SpatialArea3D"
+      ]
+    },
+    {
+      "source": "ecology",
+      "target": "map",
+      "group": "event",
+      "weight": 1,
+      "signals": [
+        "swarm_event_requested"
+      ],
+      "examples": [
+        "EcologyManager->WorldMap"
+      ]
+    },
+    {
+      "source": "enemy",
+      "target": "combat",
+      "group": "direct",
+      "weight": 4,
+      "signals": [],
+      "examples": [
+        "Corpse->Targetable",
+        "Enemy->Targetable",
+        "EnemySkillSystem->DamageEvent",
+        "EnemySkillSystem->DamageSystem"
+      ]
+    },
+    {
+      "source": "enemy",
+      "target": "core",
+      "group": "direct",
+      "weight": 7,
+      "signals": [],
+      "examples": [
+        "Corpse->WorldManager",
+        "DefaultEnemyBehavior->Entity",
+        "Enemy->WorldManager",
+        "EnemyAI->WorldManager"
+      ]
+    },
+    {
+      "source": "enemy",
+      "target": "ecology",
+      "group": "direct",
+      "weight": 21,
+      "signals": [],
+      "examples": [
+        "EnemyDatabase->SpeciesDatabase",
+        "EnemyDatabase->SpeciesDefinition",
+        "Corpse->EcologyManager",
+        "Corpse->EnvironmentState"
+      ]
+    },
+    {
+      "source": "enemy",
+      "target": "map",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "DefaultEnemyBehavior->PoisonArea",
+        "EnemySpawner->MapDatabase"
+      ]
+    },
+    {
+      "source": "enemy",
+      "target": "player",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "Enemy->Player",
+        "EnemyAI->Player"
+      ]
+    },
+    {
+      "source": "map",
+      "target": "combat",
+      "group": "direct",
+      "weight": 5,
+      "signals": [],
+      "examples": [
+        "InteractionObject->Targetable",
+        "InteractionObject->DamageEvent",
+        "InteractionObject->DamageSystem",
+        "InteractionSystem->AttachSystem"
+      ]
+    },
+    {
+      "source": "map",
+      "target": "core",
+      "group": "direct",
+      "weight": 5,
+      "signals": [],
+      "examples": [
+        "InteractionObject->Entity",
+        "ObjectGenerator->WorldManager",
+        "PoisonArea->Entity",
+        "WorldMap->WorldManager"
+      ]
+    },
+    {
+      "source": "map",
+      "target": "ecology",
+      "group": "direct",
+      "weight": 15,
+      "signals": [],
+      "examples": [
+        "PoisonArea->EnvironmentState",
+        "SpatialArea3D->SpatialRegionResolver",
+        "SpatialBioRegion3D->SpatialRegionResolver",
+        "WorldMap->SpeciesDatabase"
+      ]
+    },
+    {
+      "source": "map",
+      "target": "ecology",
+      "group": "event",
+      "weight": 1,
+      "signals": [
+        "spawn_requested"
+      ],
+      "examples": [
+        "WorldMap->SpawnController"
+      ]
+    },
+    {
+      "source": "map",
+      "target": "enemy",
+      "group": "direct",
+      "weight": 5,
+      "signals": [],
+      "examples": [
+        "InteractionSystem->Corpse",
+        "PoisonArea->Corpse",
+        "PoisonArea->Enemy",
+        "WorldMap->EnemySpawner"
+      ]
+    },
+    {
+      "source": "map",
+      "target": "player",
+      "group": "direct",
+      "weight": 3,
+      "signals": [],
+      "examples": [
+        "PoisonArea->Player",
+        "WorldRoot->WorldCamera",
+        "WorldRoot->Player"
+      ]
+    },
+    {
+      "source": "player",
+      "target": "combat",
+      "group": "direct",
+      "weight": 9,
+      "signals": [],
+      "examples": [
+        "Player->TargetSystem",
+        "PlayerCombat->Targetable",
+        "PlayerCombat->AttachSystem",
+        "PlayerCombat->DamageEvent"
+      ]
+    },
+    {
+      "source": "player",
+      "target": "core",
+      "group": "direct",
+      "weight": 5,
+      "signals": [],
+      "examples": [
+        "Player->CarryHelper",
+        "PlayerCombat->GameState",
+        "PlayerCombat->Entity",
+        "PlayerMovement->GameState"
+      ]
+    },
+    {
+      "source": "player",
+      "target": "crafting",
+      "group": "event",
+      "weight": 2,
+      "signals": [
+        "crafting_interrupted"
+      ],
+      "examples": [
+        "PlayerCombat->CraftingUI",
+        "PlayerCombat->CraftingSystem"
+      ]
+    },
+    {
+      "source": "player",
+      "target": "enemy",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "PlayerCombat->Enemy",
+        "PlayerSpell->Enemy"
+      ]
+    },
+    {
+      "source": "player",
+      "target": "map",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "Player->InteractionSystem",
+        "PlayerCombat->TreeWood"
+      ]
+    },
+    {
+      "source": "player",
+      "target": "npc",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "Player->Cart",
+        "PlayerCombat->Cart"
+      ]
+    },
+    {
+      "source": "quest",
+      "target": "ecology",
+      "group": "direct",
+      "weight": 4,
+      "signals": [],
+      "examples": [
+        "QuestGenerator->SpeciesDatabase",
+        "QuestGenerator->SpeciesDefinition",
+        "QuestGenerator->EcologyManager",
+        "QuestGenerator->SpeciesState"
+      ]
+    },
+    {
+      "source": "quest",
+      "target": "enemy",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "QuestGenerator->EnemyDatabase",
+        "QuestGenerator->EnemyStats"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "core",
+      "group": "direct",
+      "weight": 4,
+      "signals": [],
+      "examples": [
+        "SaveManager->WorldManager",
+        "SaveSystem->GameState",
+        "SaveSystem->WorldManager",
+        "SaveSystem->WorldState"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "ecology",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "SaveManager->EcologyManager",
+        "SaveSystem->EcologyManager"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "quest",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "SaveSystem->QuestGenerator",
+        "SaveSystem->QuestManager"
+      ]
+    },
+    {
+      "source": "spell",
+      "target": "core",
+      "group": "direct",
+      "weight": 2,
+      "signals": [],
+      "examples": [
+        "SpellMasteryManager->GameState",
+        "SpellUI->GameState"
+      ]
+    },
+    {
+      "source": "spell",
+      "target": "player",
+      "group": "event",
+      "weight": 1,
+      "signals": [
+        "spell_discovered"
+      ],
+      "examples": [
+        "SpellMasteryManager->PlayerSpell"
+      ]
+    }
+  ]
+}

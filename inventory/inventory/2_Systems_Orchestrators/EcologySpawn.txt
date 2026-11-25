@@ -1,0 +1,11 @@
+EcologySpawn
+f=scenes/Systems/SpawnController.gd,scenes/Systems/SpawnLocationResolver.gd,scenes/Systems/SpawnGroundResolver.gd
+p=Handles the execution and resolution of entity spawning within the ecology system.
+r=Executing spawn requests from EcologyManager.,Resolving valid spawn coordinates based on habitat suitability, NavMesh availability, and regional constraints.,Registering spawned entities with the WorldManager.,Managing group size and scatter logic for spawns.,Getting the y axis from spawnpoints to the ground.
+api=SpawnLocationResolver,resolve_spawn_position_from_candidate(,candidate: Vector3,,def: SpeciesDefinition,,area_id: String = "",,bio_region_id: String = "",,territory_id: String = "",,) -> Vector3,resolve_spawn_request(req: RefCounted) -> Vector3,resolve_spawn_position(region_id: String, def: SpeciesDefinition, env: EnvironmentState, area_id: String, bio_region_id: String, territory_id: String) -> Vector3,is_spatial_request_valid(area_id: String, bio_region_id: String, territory_id: String) -> bool,is_environment_suitable(def: SpeciesDefinition, env: EnvironmentState) -> bool,is_position_in_region(,position: Vector3,,def: SpeciesDefinition = null,) -> bool,SpawnGroundResolver,resolve_ground(world: World3D, xz_position: Vector3) -> Dictionary,is_slope_valid(normal: Vector3, max_slope_degrees: float) -> bool
+sig=Listens to EcologyManager.spawn_requested,Listens to Ecology.spawn_request_object
+prop=SpawnController,resolver: RefCounted,SpawnLocationResolver,DEFAULT_MAX_SLOPE_DEGREES: float,SPAWN_ATTEMPTS: int,SPAWN_BOUNDS_MIN := Vector3,SPAWN_BOUNDS_MAX := Vector3,ground_resolver: SpawnGroundResolver,SpawnGroundResolver,GROUND_RAY_HEIGHT: float,GROUND_RAY_DEPTH: float,GROUND_OFFSET: float,DEFAULT_GROUND_COLLISION_MASK: float,collision_mask: int
+data=resolver (SpawnLocationResolver)
+dep=EcologyManager,SpeciesDefinition,EnvironmentState,WorldManager,NavigationServer3D,SpatialRegionResolver
+use=EcologyManager
+note=Only implementation facts.,---

@@ -1,0 +1,8 @@
+EnemyAI
+f=scenes/Characters/Enemies/EnemyAI.gd
+p=Handles decision-making logic for enemy entities based on surroundings.
+r=Managing state, detection, and behavior loops.
+api=init(owner_node: Enemy) -> void,tick(delta: float) -> void,get_state_name() -> String,is_idle() -> bool,is_chasing() -> bool,is_attacking() -> bool,is_returning() -> bool,get_debug_summary() -> String,get_debug_observation() -> Dictionary,get_debug_target_observation(target: Node) -> Dictionary
+data=Enemy: unmarked,behavior: unmarked,_owner: Enemy,attack_timer: float,state: int,spawn_position: Vector3,_last_target: Entity,_last_move_direction: Vector3,_last_skill_id: String,_last_approach_tendency: float,_last_attack_desire: float,_last_static_approach: float,_last_static_attack: float,_last_dynamic_approach: float,_last_dynamic_attack: float,_last_skill_weight: float,RETURN_THRESHOLD: unmarked,FEED_RANGE: float,FEED_COOLDOWN: float,FEED_POISON_TRANSFER_RATIO: float,feed_timer: float,_last_food_source: Corpse
+dep=Enemy,EnemyBehavior,EnemySkillSystem,AttachSystem,Entity,Corpse,TerritoryState,SpatialRegionResolver,WorldManager,UtilityScoringEngine,NutrientCycle,EnemySkill,PoisonAvoidance
+use=Enemy,EnemySpawner

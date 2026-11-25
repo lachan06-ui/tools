@@ -1,0 +1,8 @@
+SpawnLocationResolver
+f=scenes/Systems/SpawnLocationResolver.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=resolve_spawn_request(req: RefCounted) -> Vector3,is_spatial_request_valid(area_id: String, bio_region_id: String, territory_id: String) -> bool,is_environment_suitable(def: SpeciesDefinition, env: EnvironmentState) -> bool
+data=DEFAULT_MAX_SLOPE_DEGREES: float,SPAWN_ATTEMPTS: int,SPAWN_BOUNDS_MIN: unmarked,SPAWN_BOUNDS_MAX: unmarked,ground_resolver: SpawnGroundResolver
+dep=SpatialRegionResolver,EnvironmentState,SpeciesDefinition,SpawnGroundResolver,TerritoryState,EcologyManager
+use=SpawnController,WorldMap

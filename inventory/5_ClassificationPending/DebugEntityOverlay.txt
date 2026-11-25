@@ -1,0 +1,7 @@
+DebugEntityOverlay
+f=scenes/World/Debug/DebugEntityOverlay.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+data=MAX_LABELS: int,TEXT_INTERVAL: float,LABEL_HEIGHT: float,FONT_PIXEL_SIZE: float,radius: float,show_enemies: bool,show_corpses: bool,show_player: bool,_labels: Array[Label3D],_text_timer: float
+dep=Corpse,Entity,Enemy,GroupPoisonState
+use=DebugPanel,DebugPoisonActions

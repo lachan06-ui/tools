@@ -1,0 +1,7 @@
+DebugRightViewRefresh
+f=scenes/World/Debug/DebugRightViewRefresh.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh(panel: Node) -> void
+dep=DebugWorldView,DebugObservationView,DebugTimeView,DebugEcologyView,DebugPoisonView,DebugSpawnView,DebugUtilityView,DebugUIHelpers
+use=DebugPanel

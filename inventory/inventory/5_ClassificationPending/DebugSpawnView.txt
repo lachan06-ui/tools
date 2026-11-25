@@ -1,0 +1,7 @@
+DebugSpawnView
+f=scenes/World/Debug/DebugSpawnView.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh(content: VBoxContainer, selected_item: String, tree: SceneTree) -> void,spawn_one(panel: Node, tree: SceneTree, region_id: String, species_id: String) -> void,kill_one(panel: Node, tree: SceneTree, region_id: String, species_id: String) -> void,create_carcass(player_position: Vector3, species_id: String, region_id: String) -> void
+dep=DebugUIHelpers,EcologyManager,SpawnController,EcologyObservationUI,EnvironmentState,SpeciesDatabase,SpeciesDefinition,WorldManager
+use=DebugPanel

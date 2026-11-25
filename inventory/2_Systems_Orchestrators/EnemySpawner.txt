@@ -1,0 +1,8 @@
+EnemySpawner
+f=scenes/Map/EnemySpawner.gd
+p=Automates the spawning of enemies at designated locations using a timer.
+r=Registering spawn points and executing enemy spawning via timer.
+api=setup(container: Node) -> void,register_spawn_points(map_id: String, positions: Array) -> void,spawn_enemies_in_room(room: Node3D, map_id: String) -> void,spawn_enemy_at(pos: Vector3, map_id: String) -> void,register_spawn_point_with_species(species_id: String, map_id: String, pos: Vector3) -> Dictionary,serialize_enemy(node: Node) -> Dictionary,deserialize_enemy(data: Dictionary, container: Node) -> Node,select_weighted_species(map_id: String) -> String
+data=ENEMY_SCENE: unmarked,_container: Node
+dep=WorldManager,Enemy,EcologyManager,SpeciesDefinition,SpeciesDatabase,EnemyAI,MapDatabase
+use=WorldManager,WorldMap,WorldRoot

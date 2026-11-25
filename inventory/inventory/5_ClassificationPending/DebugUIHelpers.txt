@@ -1,0 +1,6 @@
+DebugUIHelpers
+f=scenes/World/Debug/DebugUIHelpers.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=add_section_title(parent: Control, text: String) -> void,add_value_row(parent: Control, label_text: String, value_text: String) -> void,add_action_button(parent: Control, text: String, callback: Callable) -> void,add_message(parent: Control, text: String) -> void,add_separator(parent: Control) -> void,clear_control_children(parent: Control) -> void
+use=DebugEcologyView,DebugObservationView,DebugPanel,DebugPoisonActions,DebugPoisonView,DebugSpawnView,DebugTimeView,DebugUtilityView,DebugWorldView

@@ -1,0 +1,8 @@
+CraftingSystem
+f=core/systems/CraftingSystem.gd
+r=Manages crafting workflows including recipe loading from JSON, tracking discovered recipes, executing crafting sessions (field vs settlement), and applying durability/quality penalties for field usage.
+api=is_recipe_known(recipe_id: String) -> bool,discover_recipe(recipe_id: String) -> void,get_crafting_modifier(recipe_id: String, is_field: bool) -> Dictionary,is_crafting_active() -> bool,execute_craft(recipe_id: String, is_field: bool) -> bool,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void
+data=_recipes: Dictionary,_discovered: Dictionary,_active_recipe_id: String,_active_timer: float,_active_is_field: bool
+dep=EventBus,ItemDatabase,GameState
+use=CraftingUI,SaveManager
+save=Provides get_save_data,Provides load_save_data

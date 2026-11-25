@@ -1,0 +1,5 @@
+SpellCard
+f=scenes/Characters/Player/Spell/SpellCard.gd
+p=A lightweight data-binding component that populates a UI card with spell information (name, description, verbal keyword, and mana cost).
+r=Populating UI elements from dictionary input.
+api=setup(spell_data: Dictionary)

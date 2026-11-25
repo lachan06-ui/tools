@@ -1,0 +1,7 @@
+ForestBioRegionDefinition
+f=core/systems/ecology/ForestBioRegionDefinition.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+prop=canopy_density: float,forest_floor_moisture: float
+dep=BioRegionDefinition
+use=MountainForestBioRegionDefinition

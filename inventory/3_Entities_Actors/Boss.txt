@@ -1,0 +1,9 @@
+Boss
+f=scenes/Characters/Enemies/Boss.gd
+p=Extends enemy functionality with specialized boss mechanics and phases.
+r=Managing combat phases and boss abilities.
+api=apply_damage(amount: int) -> void
+prop=max_health: int,phase_durations: Array[float],swarm_spawner_path: NodePath
+data=_current_health: int,_current_phase: int,_phase_timer: Timer
+dep=SwarmSpawner,Player
+use=SwarmSpawner

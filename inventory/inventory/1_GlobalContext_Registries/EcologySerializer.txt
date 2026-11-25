@@ -1,0 +1,9 @@
+EcologySerializer
+f=core/systems/ecology/EcologySerializer.gd
+p=Handles serialization and deserialization of ecology states with versioning.
+r=Serializing and deserializing ecology data with version support.
+api=serialize_ecology(environments: Dictionary, species_states: Dictionary, carcasses: Array = [], observable_consequences: Array = []) -> Dictionary,deserialize_ecology(data: Dictionary, environments: Dictionary, species_states: Dictionary, carcasses: Array = [], observable_consequences: Array = []) -> void
+data=CURRENT_VERSION: unmarked
+dep=EnvironmentState,SpeciesState
+use=EcologyManager
+save=Serialized via EcologySerializer

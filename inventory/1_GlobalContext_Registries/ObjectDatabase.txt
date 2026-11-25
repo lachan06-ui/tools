@@ -1,0 +1,7 @@
+ObjectDatabase
+f=core/databases/ObjectDatabase.gd
+p=Registry for all interactable world objects.
+r=Registering and retrieving object data within the registry.
+api=get_entry(id: String) -> Dictionary,get_value(id: String, key: String, default = null),has_entry(id: String) -> bool,get_all_ids() -> Array,get_all() -> Array
+data=DATA_PATH: unmarked,_objects: Dictionary
+use=WorldMap

@@ -1,0 +1,7 @@
+GeneticDriftCalculator
+f=core/systems/ecology/GeneticDriftCalculator.gd
+p=Stateless utility implementing Cumulative Moving Average (mu) drift and Atrophy models for evolutionary traits.
+r=Applying genetic drift, applying atrophy, calculating trait tradeoffs, and calculating metabolic cost.
+api=apply_drift(state: SpeciesState, individual_scale: float, part_name: String = "") -> void,apply_atrophy(state: SpeciesState, atrophy_factor: float = 0.05) -> void,calculate_trait_tradeoffs(state: SpeciesState) -> Dictionary,calculate_metabolic_cost(state: SpeciesState) -> float
+dep=SpeciesState
+use=EcologySimulation,PopulationCalculator

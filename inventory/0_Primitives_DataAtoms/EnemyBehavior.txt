@@ -1,0 +1,8 @@
+EnemyBehavior
+f=scenes/Characters/Enemies/EnemyBehavior.gd
+p=Base class for defining abstract enemy behaviors.
+r=Providing an execution interface for agent behaviors.
+api=decide_movement(owner: Enemy, target: Entity) -> Vector3,decide_target(owner: Enemy, candidates: Array) -> Entity,decide_skill(owner: Enemy, target: Entity) -> String,get_debug_relation_observation(owner: Enemy, target: Entity) -> Dictionary,get_debug_skill_observation(owner: Enemy, target: Entity) -> Array[Dictionary],should_retreat(owner: Enemy) -> bool
+data=Enemy: unmarked,skill_system: unmarked,registry_manager: unmarked
+dep=Enemy,BehaviorRegistry,EnemySkillSystem,Entity
+use=EnemyAI

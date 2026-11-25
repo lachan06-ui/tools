@@ -1,0 +1,10 @@
+Player
+f=scenes/Characters/Player/Player.gd
+p=The main controller for the player character entity, managing movement, combat, spells, status effects, and cart interactions.
+r=Vitality management, movement/combat/spell delegation, status effect management, cart attachment logic, target acquisition, weapon loading, and position history tracking.
+api=toggle_typing_mode(enabled_bool: bool),has_status(id: String) -> bool,show_shout_effect(text_shout: String),take_damage(amount: float),submit_spell(text: String),die() -> void
+sig=mode_changed(is_typing_mode: bool)
+prop=movement_handler: unmarked,combat_handler: unmarked,spell_handler: unmarked,look_handler: unmarked,max_mp: unmarked,spell_ui: unmarked
+data=mp: unmarked,statuses: unmarked,is_invincible: bool,weapons_data: unmarked,has_left_weapon: bool,has_right_weapon: bool,HISTORY_MAX_SIZE: unmarked,position_history: Array[Vector3],attached_cart: CharacterBody3D,is_typing_mode: bool,ui_layer: CanvasLayer,hp_label: Label,mp_label: Label,total_damage_taken: float,total_damage_dealt: float,total_steps_taken: float,equipped_spells: unmarked
+dep=Entity,PlayerMovement,PlayerCombat,PlayerSpell,PlayerLook,Cart,TargetSystem,PlayerStats,StatusComponent,CarryHelper,InteractionSystem
+use=Boss,DebugPanel,DebugPoisonActions,DebugPoisonView,DebugWorldView,Entity,PlayerCombat,PlayerSpell,StatusComponent,SwarmSpawner,WorldRoot

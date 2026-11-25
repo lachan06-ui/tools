@@ -1,0 +1,24 @@
+digraph "trace" {
+  rankdir="LR";
+  bgcolor="white";
+  graph [fontname="Noto Sans CJK JP", pad="0.3"];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK JP", fontsize=11];
+  edge [fontname="Noto Sans CJK JP", fontsize=9];
+  "Entity.add_poison_amount" [label="Entity.add_poison_amount", fillcolor="#DCEBFA", penwidth=3];
+  "Entity.get_poison_resistance" [label="Entity.get_poison_resistance", fillcolor="#DCEBFA"];
+  "GroupPoisonState.add_exposure" [label="GroupPoisonState.add_exposure", fillcolor="#E3F4DC"];
+  "sig:Entity.poison_received" [label="poison_received", shape=ellipse, style="filled", fillcolor="#E0ECFF", fontsize=10];
+  "GroupPoisonState.get_tolerance" [label="GroupPoisonState.get_tolerance", fillcolor="#E3F4DC"];
+  "GroupPoisonState._key" [label="GroupPoisonState._key", fillcolor="#E3F4DC"];
+  "Enemy._on_poison_received" [label="Enemy._on_poison_received", fillcolor="#FCE8D5"];
+  "GroupPoisonState._get_species" [label="GroupPoisonState._get_species", fillcolor="#E3F4DC"];
+  "Enemy._on_poison_received" -> "GroupPoisonState.add_exposure" [color="#64748B"];
+  "Entity.add_poison_amount" -> "Entity.get_poison_resistance" [color="#64748B"];
+  "Entity.add_poison_amount" -> "GroupPoisonState.add_exposure" [color="#64748B"];
+  "Entity.add_poison_amount" -> "sig:Entity.poison_received" [color="#2563EB", style=dashed];
+  "Entity.get_poison_resistance" -> "GroupPoisonState.get_tolerance" [color="#64748B"];
+  "GroupPoisonState.add_exposure" -> "GroupPoisonState._key" [color="#64748B"];
+  "GroupPoisonState.get_tolerance" -> "GroupPoisonState._get_species" [color="#64748B"];
+  "GroupPoisonState.get_tolerance" -> "GroupPoisonState._key" [color="#64748B"];
+  "sig:Entity.poison_received" -> "Enemy._on_poison_received" [color="#2563EB"];
+}

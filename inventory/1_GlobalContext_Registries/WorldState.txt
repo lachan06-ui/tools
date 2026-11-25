@@ -1,0 +1,8 @@
+WorldState
+f=core/autoload/WorldState.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=get_map_state(map_id: String) -> Dictionary,get_map_value(map_id: String, key: String, default_value = 0),set_map_value(map_id: String, key: String, value) -> void,add_map_value(map_id: String, key: String, amount) -> void,ensure_map_exists(map_id: String) -> void,update_map_decay(map_id: String, current_day: int) -> void,evaluate_environment_damage(map_id: String) -> Dictionary,add_burn_damage(map_id: String, amount: float) -> void,add_poison_damage(map_id: String, amount: float) -> void,get_environment_damage_summary(map_id: String) -> Dictionary,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void,debug_map_state(map_id: String) -> void
+data=map_states: Dictionary
+use=GameState,SaveSystem,WorldManager
+save=Provides get_save_data,Provides load_save_data

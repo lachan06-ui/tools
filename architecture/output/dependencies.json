@@ -1,0 +1,3818 @@
+[
+  {
+    "source": "core/autoload/EventBus.gd",
+    "target": "scenes/Systems/Combat/DamageEvent.gd",
+    "kind": "class_use",
+    "line": 15,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "core/autoload/EconomyManager.gd",
+    "kind": "autoload_use",
+    "line": 117,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "core/autoload/SpellMasteryManager.gd",
+    "kind": "autoload_use",
+    "line": 92,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "core/autoload/WorldState.gd",
+    "kind": "autoload_use",
+    "line": 706,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "core/databases/EnemyStats.gd",
+    "kind": "class_use",
+    "line": 583,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 586,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 586,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 338,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "scenes/Characters/Player/PlayerSpell.gd",
+    "kind": "signal",
+    "line": 36,
+    "detail": "spell_discovered",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/SaveManager.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 18,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/SaveManager.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 21,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/SaveManager.gd",
+    "target": "scenes/Utils/CraftingSystem.gd",
+    "kind": "autoload_use",
+    "line": 24,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/SaveManager.gd",
+    "target": "scenes/Utils/MapKnowledgeManager.gd",
+    "kind": "autoload_use",
+    "line": 27,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/SpellMasteryManager.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "autoload_use",
+    "line": 63,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/SpellMasteryManager.gd",
+    "target": "scenes/Characters/Player/PlayerSpell.gd",
+    "kind": "signal",
+    "line": 36,
+    "detail": "spell_discovered",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/TimeSystem.gd",
+    "target": "core/databases/MapDatabase.gd",
+    "kind": "autoload_use",
+    "line": 53,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/TimeSystem.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 51,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/TimeSystem.gd",
+    "target": "scenes/Quest/QuestGenerator.gd",
+    "kind": "autoload_use",
+    "line": 54,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 1048,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 1051,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 853,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 884,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "core/systems/ecology/GroupSkillState.gd",
+    "kind": "class_use",
+    "line": 312,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "core/systems/ecology/SpeciesRelation.gd",
+    "kind": "class_use",
+    "line": 313,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "scenes/Characters/Enemies/Corpse.tscn",
+    "kind": "preload_scene",
+    "line": 1214,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 1062,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "scenes/Map/EnemySpawner.gd",
+    "kind": "preload",
+    "line": 1081,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "scenes/Map/ObjectGenerator.gd",
+    "kind": "preload",
+    "line": 1095,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/autoload/WorldManager.gd",
+    "target": "scenes/World/WorldRoot/WorldRoot.gd",
+    "kind": "signal",
+    "line": 176,
+    "detail": "region_changed",
+    "count": 1
+  },
+  {
+    "source": "core/components/PoisonStatusEffect.gd",
+    "target": "core/components/StatusEffect.gd",
+    "kind": "extends",
+    "line": 1,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/components/StatusComponent.gd",
+    "target": "core/components/PoisonStatusEffect.gd",
+    "kind": "class_use",
+    "line": 38,
+    "detail": "",
+    "count": 16
+  },
+  {
+    "source": "core/components/StatusComponent.gd",
+    "target": "core/components/StatusEffect.gd",
+    "kind": "class_use",
+    "line": 22,
+    "detail": "",
+    "count": 8
+  },
+  {
+    "source": "core/databases/BiomeDatabase.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 33,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/DropEntry.gd",
+    "target": "core/databases/ItemData.gd",
+    "kind": "class_use",
+    "line": 4,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/DropTable.gd",
+    "target": "core/databases/DropEntry.gd",
+    "kind": "class_use",
+    "line": 4,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/EnemyDatabase.gd",
+    "target": "core/databases/EnemyStats.gd",
+    "kind": "class_use",
+    "line": 28,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "core/databases/EnemyDatabase.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 79,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/databases/EnemyDatabase.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 103,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/EnemyStats.gd",
+    "target": "core/databases/DropTable.gd",
+    "kind": "class_use",
+    "line": 34,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/EnemyStats.gd",
+    "target": "core/databases/EnemySkill.gd",
+    "kind": "class_use",
+    "line": 33,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/GenusDefinition.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 20,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/ItemDatabase.gd",
+    "target": "core/databases/ItemData.gd",
+    "kind": "class_use",
+    "line": 26,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/databases/SpeciesDatabase.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 28,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "core/databases/SpeciesDatabase.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 72,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/SpeciesDefinition.gd",
+    "target": "core/databases/BehaviorProfile.gd",
+    "kind": "class_use",
+    "line": 98,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/SpeciesDefinition.gd",
+    "target": "core/databases/EnemyDatabase.gd",
+    "kind": "autoload_use",
+    "line": 131,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/databases/SpeciesDefinition.gd",
+    "target": "core/databases/EnemyStats.gd",
+    "kind": "class_use",
+    "line": 126,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/SpeciesDefinition.gd",
+    "target": "core/databases/GenusDefinition.gd",
+    "kind": "class_use",
+    "line": 17,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/databases/SpeciesDefinition.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 51,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/BioRegionDefinition.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 33,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/BioRegionInstance.gd",
+    "target": "core/systems/ecology/BioRegionDefinition.gd",
+    "kind": "class_use",
+    "line": 11,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/BioRegionInstance.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 40,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 159,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/databases/BiomeDatabase.gd",
+    "kind": "autoload_use",
+    "line": 922,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/databases/MapDatabase.gd",
+    "kind": "autoload_use",
+    "line": 184,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/databases/MapDatabase.gd",
+    "kind": "preload",
+    "line": 185,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 145,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "preload",
+    "line": 146,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 10,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/BioRegionDefinition.gd",
+    "kind": "class_use",
+    "line": 111,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/BioRegionInstance.gd",
+    "kind": "class_use",
+    "line": 111,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/EcologySerializer.gd",
+    "kind": "class_use",
+    "line": 906,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/EcologySimulation.gd",
+    "kind": "class_use",
+    "line": 72,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 10,
+    "detail": "",
+    "count": 21
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/GroupPoisonState.gd",
+    "kind": "class_use",
+    "line": 796,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/GroupSkillState.gd",
+    "kind": "class_use",
+    "line": 908,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 195,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "preload",
+    "line": 196,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/SpawnRequest.gd",
+    "kind": "class_use",
+    "line": 173,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/SpeciesRelation.gd",
+    "kind": "class_use",
+    "line": 907,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 164,
+    "detail": "",
+    "count": 11
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "scenes/Systems/SpawnController.gd",
+    "kind": "class_use",
+    "line": 71,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "scenes/Systems/SpawnController.gd",
+    "kind": "signal",
+    "line": 22,
+    "detail": "spawn_request_object",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "scenes/Systems/SpawnController.gd",
+    "kind": "signal",
+    "line": 20,
+    "detail": "spawn_requested",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "scenes/UI/EcologyObservationUI.gd",
+    "kind": "signal",
+    "line": 30,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "scenes/World/EcologyTraceFeedback.gd",
+    "kind": "signal",
+    "line": 37,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "scenes/World/WorldMap/WorldMap.gd",
+    "kind": "signal",
+    "line": 27,
+    "detail": "swarm_event_requested",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologySerializer.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 37,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologySerializer.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 47,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/databases/EnemyStats.gd",
+    "kind": "class_use",
+    "line": 297,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 69,
+    "detail": "",
+    "count": 10
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 59,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/systems/ecology/GeneticDriftCalculator.gd",
+    "kind": "class_use",
+    "line": 287,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/systems/ecology/GroupPoisonState.gd",
+    "kind": "class_use",
+    "line": 773,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/systems/ecology/PopulationCalculator.gd",
+    "kind": "class_use",
+    "line": 189,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/systems/ecology/SpawnRequest.gd",
+    "kind": "class_use",
+    "line": 861,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/systems/ecology/SpeciesRelation.gd",
+    "kind": "class_use",
+    "line": 714,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 68,
+    "detail": "",
+    "count": 8
+  },
+  {
+    "source": "core/systems/ecology/EcologySimulation.gd",
+    "target": "scenes/Quest/QuestGenerator.gd",
+    "kind": "autoload_use",
+    "line": 319,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/ForestBioRegionDefinition.gd",
+    "target": "core/systems/ecology/BioRegionDefinition.gd",
+    "kind": "extends",
+    "line": 6,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/GeneticDriftCalculator.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 11,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "core/systems/ecology/GroupPoisonState.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 74,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/GroupPoisonState.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 32,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "core/systems/ecology/MountainForestBioRegionDefinition.gd",
+    "target": "core/systems/ecology/ForestBioRegionDefinition.gd",
+    "kind": "extends",
+    "line": 6,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/NutrientCycle.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 26,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/NutrientCycle.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 27,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/PoisonAvoidance.gd",
+    "target": "core/systems/ecology/GroupPoisonState.gd",
+    "kind": "class_use",
+    "line": 42,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/PoisonAvoidance.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "class_use",
+    "line": 17,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/PoisonAvoidance.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "group_call",
+    "line": 16,
+    "detail": "poison_areas",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/PopulationCalculator.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 21,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/PopulationCalculator.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 21,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/PopulationCalculator.gd",
+    "target": "core/systems/ecology/GeneticDriftCalculator.gd",
+    "kind": "class_use",
+    "line": 27,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/PopulationCalculator.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 21,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/SpatialRegionResolver.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 135,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/SpatialRegionResolver.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 14,
+    "detail": "",
+    "count": 6
+  },
+  {
+    "source": "core/systems/ecology/SpatialRegionResolver.gd",
+    "target": "scenes/World/SpatialArea3D.gd",
+    "kind": "class_use",
+    "line": 16,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "core/systems/ecology/SpawnRequest.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 15,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/SpawnRequest.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 16,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/SpawnRequest.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 17,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "core/systems/ecology/SpeciesRelation.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 68,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/SpeciesRelation.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 71,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/SpeciesRelation.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 211,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/SpeciesRelation.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_check",
+    "line": 179,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/SpeciesRelation.gd",
+    "target": "scenes/Systems/Combat/DamageEvent.gd",
+    "kind": "class_use",
+    "line": 91,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "core/systems/ecology/UtilityScoringEngine.gd",
+    "target": "core/systems/ecology/SpeciesRelation.gd",
+    "kind": "class_use",
+    "line": 35,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Camera/WorldCamera.tscn",
+    "target": "scenes/Camera/WorldCamera.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/BehaviorRegistry.gd",
+    "target": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "kind": "preload",
+    "line": 16,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Corpse.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 204,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Corpse.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 70,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/Corpse.gd",
+    "target": "core/components/Targetable.gd",
+    "kind": "class_use",
+    "line": 42,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/Corpse.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 231,
+    "detail": "get_node",
+    "count": 5
+  },
+  {
+    "source": "scenes/Characters/Enemies/Corpse.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 232,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "scenes/Characters/Enemies/Corpse.gd",
+    "target": "core/systems/ecology/NutrientCycle.gd",
+    "kind": "class_use",
+    "line": 147,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/Corpse.tscn",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/databases/EnemySkill.gd",
+    "kind": "class_use",
+    "line": 223,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 19,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 22,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/systems/ecology/GroupSkillState.gd",
+    "kind": "class_use",
+    "line": 247,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/systems/ecology/PoisonAvoidance.gd",
+    "kind": "class_use",
+    "line": 112,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 126,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/systems/ecology/SpeciesRelation.gd",
+    "kind": "class_use",
+    "line": 41,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 128,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "core/systems/ecology/UtilityScoringEngine.gd",
+    "kind": "class_use",
+    "line": 311,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "class_use",
+    "line": 8,
+    "detail": "",
+    "count": 12
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "preload",
+    "line": 8,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "scenes/Characters/Enemies/EnemySkillSystem.gd",
+    "kind": "class_use",
+    "line": 9,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_check",
+    "line": 275,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 14,
+    "detail": "",
+    "count": 13
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "class_use",
+    "line": 90,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/DefaultEnemyBehavior.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "group_call",
+    "line": 89,
+    "detail": "poison_areas",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 354,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "core/components/Targetable.gd",
+    "kind": "class_use",
+    "line": 46,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "core/databases/EnemyDatabase.gd",
+    "kind": "autoload_use",
+    "line": 69,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "core/databases/EnemySkill.gd",
+    "kind": "class_use",
+    "line": 35,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "core/databases/EnemyStats.gd",
+    "kind": "class_use",
+    "line": 85,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 171,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "class_use",
+    "line": 320,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "scenes/Characters/Enemies/EnemyAI.gd",
+    "kind": "class_use",
+    "line": 47,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 276,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "extends",
+    "line": 6,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.tscn",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 128,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "core/databases/EnemySkill.gd",
+    "kind": "class_use",
+    "line": 227,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "core/systems/ecology/NutrientCycle.gd",
+    "kind": "class_use",
+    "line": 207,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "core/systems/ecology/PoisonAvoidance.gd",
+    "kind": "class_use",
+    "line": 236,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 81,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 76,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "class_use",
+    "line": 42,
+    "detail": "",
+    "count": 10
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "group_call",
+    "line": 291,
+    "detail": "Corpses",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "class_use",
+    "line": 15,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "preload",
+    "line": 15,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "scenes/Characters/Enemies/EnemyBehavior.gd",
+    "kind": "class_use",
+    "line": 19,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 132,
+    "detail": "player",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 24,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyBehavior.gd",
+    "target": "scenes/Characters/Enemies/BehaviorRegistry.gd",
+    "kind": "preload",
+    "line": 16,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyBehavior.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "class_use",
+    "line": 14,
+    "detail": "",
+    "count": 8
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyBehavior.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "preload",
+    "line": 14,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyBehavior.gd",
+    "target": "scenes/Characters/Enemies/EnemySkillSystem.gd",
+    "kind": "class_use",
+    "line": 15,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyBehavior.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 22,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemySkillSystem.gd",
+    "target": "scenes/Characters/Enemies/SkillRegistry.gd",
+    "kind": "preload",
+    "line": 10,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemySkillSystem.gd",
+    "target": "scenes/Systems/Combat/DamageEvent.gd",
+    "kind": "class_use",
+    "line": 12,
+    "detail": "",
+    "count": 8
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemySkillSystem.gd",
+    "target": "scenes/Systems/Combat/DamageSystem.gd",
+    "kind": "autoload_use",
+    "line": 48,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Enemies/SkillRegistry.gd",
+    "target": "core/databases/EnemySkill.gd",
+    "kind": "class_use",
+    "line": 33,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Characters/NPC/LogisticsNPC.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "autoload_use",
+    "line": 89,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/NPC/LogisticsNPC.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 31,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.gd",
+    "target": "scenes/Characters/Player/Spell/SpellUI.gd",
+    "kind": "group_call",
+    "line": 28,
+    "detail": "spell_ui",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "extends",
+    "line": 1,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.gd",
+    "target": "scenes/Map/Cart.gd",
+    "kind": "group_call",
+    "line": 156,
+    "detail": "carts",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.gd",
+    "target": "scenes/Systems/Interaction/InteractionSystem.gd",
+    "kind": "autoload_use",
+    "line": 190,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.gd",
+    "target": "scenes/Systems/Targeting/TargetSystem.gd",
+    "kind": "autoload_use",
+    "line": 53,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Characters/Player/Player.gd",
+    "target": "scenes/Utils/CarryHelper.gd",
+    "kind": "class_use",
+    "line": 176,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/PlayerCombat.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/PlayerDodge.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/PlayerLook.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/PlayerMesh.tscn",
+    "kind": "scene_ref",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/PlayerMovement.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/PlayerMovementInput.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Player.tscn",
+    "target": "scenes/Characters/Player/PlayerSpell.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "autoload_use",
+    "line": 289,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "autoload_use",
+    "line": 43,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "core/components/Targetable.gd",
+    "kind": "group_call",
+    "line": 50,
+    "detail": "targetable",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "group_call",
+    "line": 98,
+    "detail": "enemies",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Characters/Player/PlayerMovement.gd",
+    "kind": "signal",
+    "line": 31,
+    "detail": "crafting_interrupted",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 44,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Map/Cart.gd",
+    "kind": "group_call",
+    "line": 198,
+    "detail": "carts",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Systems/Combat/AttachSystem.gd",
+    "kind": "autoload_use",
+    "line": 28,
+    "detail": "",
+    "count": 15
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Systems/Combat/DamageEvent.gd",
+    "kind": "class_use",
+    "line": 44,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Systems/Combat/DamageSystem.gd",
+    "kind": "autoload_use",
+    "line": 44,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Systems/Targeting/TargetSystem.gd",
+    "kind": "autoload_use",
+    "line": 35,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/UI/Crafting/CraftingUI.gd",
+    "kind": "signal",
+    "line": 23,
+    "detail": "crafting_interrupted",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/Utils/CraftingSystem.gd",
+    "kind": "signal",
+    "line": 23,
+    "detail": "crafting_interrupted",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerCombat.gd",
+    "target": "scenes/World/TreeWood.gd",
+    "kind": "group_call",
+    "line": 50,
+    "detail": "targetable",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerMovement.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "autoload_use",
+    "line": 29,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerMovement.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 30,
+    "detail": "crafting_completed",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerMovement.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 31,
+    "detail": "crafting_interrupted",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerMovement.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 29,
+    "detail": "crafting_started",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerMovement.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "autoload_use",
+    "line": 72,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerMovement.gd",
+    "target": "scenes/Systems/Combat/AttachSystem.gd",
+    "kind": "autoload_use",
+    "line": 110,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerSpell.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "autoload_use",
+    "line": 36,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerSpell.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "signal_listen",
+    "line": 36,
+    "detail": "spell_discovered",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerSpell.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "group_call",
+    "line": 248,
+    "detail": "enemies",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerSpell.gd",
+    "target": "scenes/Systems/Combat/DamageEvent.gd",
+    "kind": "class_use",
+    "line": 258,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerSpell.gd",
+    "target": "scenes/Systems/Combat/DamageSystem.gd",
+    "kind": "autoload_use",
+    "line": 258,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerSpell.gd",
+    "target": "scenes/Systems/FireAgent.gd",
+    "kind": "class_use",
+    "line": 314,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Characters/Player/PlayerSpell.gd",
+    "target": "scenes/Systems/FireAgent.gd",
+    "kind": "group_call",
+    "line": 313,
+    "detail": "FireAgents",
+    "count": 1
+  },
+  {
+    "source": "scenes/Characters/Player/Spell/SpellUI.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "autoload_use",
+    "line": 101,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/Spell/SpellUI.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 50,
+    "detail": "player",
+    "count": 2
+  },
+  {
+    "source": "scenes/Characters/Player/Spell/SpellUI.tscn",
+    "target": "scenes/Characters/Player/Spell/SpellUI.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Core/Entity.gd",
+    "target": "core/components/PoisonStatusEffect.gd",
+    "kind": "class_use",
+    "line": 101,
+    "detail": "",
+    "count": 12
+  },
+  {
+    "source": "scenes/Core/Entity.gd",
+    "target": "core/components/StatusComponent.gd",
+    "kind": "class_use",
+    "line": 35,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Core/Entity.gd",
+    "target": "core/components/StatusEffect.gd",
+    "kind": "class_use",
+    "line": 126,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Core/Entity.gd",
+    "target": "core/systems/ecology/GroupPoisonState.gd",
+    "kind": "class_use",
+    "line": 114,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Map/Cart.gd",
+    "target": "scenes/Map/InteractionObject.gd",
+    "kind": "extends",
+    "line": 2,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/EnemySpawner.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 34,
+    "detail": "",
+    "count": 6
+  },
+  {
+    "source": "scenes/Map/EnemySpawner.gd",
+    "target": "core/databases/MapDatabase.gd",
+    "kind": "autoload_use",
+    "line": 206,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/EnemySpawner.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 27,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/EnemySpawner.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 27,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/EnemySpawner.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 26,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "scenes/Map/InteractionObject.gd",
+    "target": "core/components/Targetable.gd",
+    "kind": "class_use",
+    "line": 25,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Map/InteractionObject.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 51,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/InteractionObject.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "extends",
+    "line": 6,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/InteractionObject.gd",
+    "target": "scenes/Systems/Combat/DamageEvent.gd",
+    "kind": "class_use",
+    "line": 51,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Map/InteractionObject.gd",
+    "target": "scenes/Systems/Combat/DamageSystem.gd",
+    "kind": "autoload_use",
+    "line": 54,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/ObjectGenerator.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 30,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Map/ObjectGenerator.gd",
+    "target": "scenes/Map/InteractionObject.gd",
+    "kind": "preload",
+    "line": 72,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 162,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/databases/EnemyDatabase.gd",
+    "kind": "autoload_use",
+    "line": 51,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/databases/EnemyStats.gd",
+    "kind": "class_use",
+    "line": 44,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/databases/MapDatabase.gd",
+    "kind": "autoload_use",
+    "line": 34,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 43,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 43,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 36,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 40,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Quest/QuestGenerator.gd",
+    "target": "scenes/Quest/QuestManager.gd",
+    "kind": "autoload_use",
+    "line": 69,
+    "detail": "",
+    "count": 10
+  },
+  {
+    "source": "scenes/Quest/QuestManager.gd",
+    "target": "core/autoload/EconomyManager.gd",
+    "kind": "autoload_use",
+    "line": 136,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/Quest/QuestManager.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "autoload_use",
+    "line": 98,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Systems/Combat/DamageSystem.gd",
+    "target": "core/systems/ecology/SpeciesRelation.gd",
+    "kind": "class_use",
+    "line": 65,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/Combat/DamageSystem.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "group_check",
+    "line": 27,
+    "detail": "enemies",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/Combat/DamageSystem.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_check",
+    "line": 25,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/Combat/DamageSystem.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 18,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/Combat/DamageSystem.gd",
+    "target": "scenes/Systems/Combat/DamageEvent.gd",
+    "kind": "class_use",
+    "line": 14,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "scenes/Systems/FireAgent.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 53,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/FireAgent.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 55,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Systems/Indicator/Indicator.tscn",
+    "target": "scenes/Systems/Indicator/Indicator.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/Indicator/IndicatorManager.gd",
+    "target": "scenes/Systems/Indicator/Indicator.tscn",
+    "kind": "preload_scene",
+    "line": 3,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/Indicator/IndicatorManager.gd",
+    "target": "scenes/Systems/Indicator/IndicatorFactory.gd",
+    "kind": "preload",
+    "line": 4,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/Interaction/InteractionSystem.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "class_use",
+    "line": 24,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/Interaction/InteractionSystem.gd",
+    "target": "scenes/Map/InteractionObject.gd",
+    "kind": "class_use",
+    "line": 28,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/Interaction/InteractionSystem.gd",
+    "target": "scenes/Systems/Combat/AttachSystem.gd",
+    "kind": "autoload_use",
+    "line": 25,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "scenes/Systems/SaveSystem.gd",
+    "target": "core/autoload/GameState.gd",
+    "kind": "autoload_use",
+    "line": 73,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SaveSystem.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 29,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SaveSystem.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 26,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SaveSystem.gd",
+    "target": "core/autoload/WorldState.gd",
+    "kind": "autoload_use",
+    "line": 25,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SaveSystem.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 28,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SaveSystem.gd",
+    "target": "scenes/Quest/QuestGenerator.gd",
+    "kind": "autoload_use",
+    "line": 30,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SaveSystem.gd",
+    "target": "scenes/Quest/QuestManager.gd",
+    "kind": "autoload_use",
+    "line": 27,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 58,
+    "detail": "get_node",
+    "count": 3
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/databases/EnemyDatabase.gd",
+    "kind": "autoload_use",
+    "line": 77,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/databases/EnemyStats.gd",
+    "kind": "class_use",
+    "line": 78,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 43,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 134,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 17,
+    "detail": "get_node",
+    "count": 3
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "signal_listen",
+    "line": 22,
+    "detail": "spawn_request_object",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "signal_listen",
+    "line": 20,
+    "detail": "spawn_requested",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 43,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 49,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/Systems/SpawnController.gd",
+    "target": "scenes/Systems/SpawnLocationResolver.gd",
+    "kind": "class_use",
+    "line": 14,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnLocationResolver.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 21,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "scenes/Systems/SpawnLocationResolver.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 125,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnLocationResolver.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 54,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SpawnLocationResolver.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 287,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnLocationResolver.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "preload",
+    "line": 290,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/SpawnLocationResolver.gd",
+    "target": "core/systems/ecology/SpawnGroundResolver.gd",
+    "kind": "class_use",
+    "line": 16,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/SpawnLocationResolver.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 73,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Systems/Targeting/TargetSystem.gd",
+    "target": "core/components/Targetable.gd",
+    "kind": "class_use",
+    "line": 142,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "scenes/Systems/Targeting/TargetSystem.gd",
+    "target": "core/components/Targetable.gd",
+    "kind": "group_call",
+    "line": 215,
+    "detail": "targetable",
+    "count": 2
+  },
+  {
+    "source": "scenes/Systems/Targeting/TargetSystem.gd",
+    "target": "scenes/Systems/Indicator/IndicatorManager.gd",
+    "kind": "autoload_use",
+    "line": 44,
+    "detail": "",
+    "count": 8
+  },
+  {
+    "source": "scenes/Systems/Targeting/TargetSystem.gd",
+    "target": "scenes/World/TreeWood.gd",
+    "kind": "group_call",
+    "line": 215,
+    "detail": "targetable",
+    "count": 2
+  },
+  {
+    "source": "scenes/UI/Crafting/CraftingUI.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "autoload_use",
+    "line": 20,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/UI/Crafting/CraftingUI.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 22,
+    "detail": "crafting_completed",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/Crafting/CraftingUI.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 23,
+    "detail": "crafting_interrupted",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/Crafting/CraftingUI.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 21,
+    "detail": "crafting_started",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/Crafting/CraftingUI.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 20,
+    "detail": "recipe_discovered",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/Crafting/CraftingUI.gd",
+    "target": "scenes/Utils/CraftingSystem.gd",
+    "kind": "autoload_use",
+    "line": 50,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/EcologyObservationUI.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 143,
+    "detail": "",
+    "count": 8
+  },
+  {
+    "source": "scenes/UI/EcologyObservationUI.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 29,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "scenes/UI/EcologyObservationUI.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "signal_listen",
+    "line": 30,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/EcologyObservationUI.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 252,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/EcologyObservationUI.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 155,
+    "detail": "",
+    "count": 11
+  },
+  {
+    "source": "scenes/UI/EcologyObservationUI.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 295,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/EcologyObservationUI.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 349,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/Map/MapReadingModeUI.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "autoload_use",
+    "line": 19,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/UI/Map/MapReadingModeUI.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 19,
+    "detail": "map_reading_toggled",
+    "count": 1
+  },
+  {
+    "source": "scenes/UI/Map/MapReadingModeUI.gd",
+    "target": "scenes/Utils/MapKnowledgeManager.gd",
+    "kind": "autoload_use",
+    "line": 58,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/CraftingSystem.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "autoload_use",
+    "line": 23,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/Utils/CraftingSystem.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 23,
+    "detail": "crafting_interrupted",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/CraftingSystem.gd",
+    "target": "scenes/Characters/Player/PlayerMovement.gd",
+    "kind": "signal",
+    "line": 30,
+    "detail": "crafting_completed",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/CraftingSystem.gd",
+    "target": "scenes/Characters/Player/PlayerMovement.gd",
+    "kind": "signal",
+    "line": 29,
+    "detail": "crafting_started",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/CraftingSystem.gd",
+    "target": "scenes/UI/Crafting/CraftingUI.gd",
+    "kind": "signal",
+    "line": 22,
+    "detail": "crafting_completed",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/CraftingSystem.gd",
+    "target": "scenes/UI/Crafting/CraftingUI.gd",
+    "kind": "signal",
+    "line": 21,
+    "detail": "crafting_started",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/CraftingSystem.gd",
+    "target": "scenes/UI/Crafting/CraftingUI.gd",
+    "kind": "signal",
+    "line": 20,
+    "detail": "recipe_discovered",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/MapKnowledgeManager.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "autoload_use",
+    "line": 38,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/Utils/MapKnowledgeManager.gd",
+    "target": "core/autoload/EventBus.gd",
+    "kind": "signal_listen",
+    "line": 38,
+    "detail": "map_changed",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 428,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 43,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 60,
+    "detail": "",
+    "count": 16
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 60,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 578,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 76,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 578,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEcologyView.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 16,
+    "detail": "",
+    "count": 124
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "core/systems/ecology/GroupPoisonState.gd",
+    "kind": "class_use",
+    "line": 85,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "class_use",
+    "line": 68,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "group_call",
+    "line": 49,
+    "detail": "Corpses",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "class_use",
+    "line": 82,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "group_call",
+    "line": 46,
+    "detail": "enemies",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 19,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_check",
+    "line": 77,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 71,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugObservationView.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 13,
+    "detail": "",
+    "count": 21
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 294,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 285,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 285,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 535,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 229,
+    "detail": "player",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 342,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/Systems/Targeting/TargetSystem.gd",
+    "kind": "autoload_use",
+    "line": 314,
+    "detail": "get_node",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugEcologyView.gd",
+    "kind": "class_use",
+    "line": 72,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "kind": "class_use",
+    "line": 9,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "kind": "preload",
+    "line": 9,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugObservationView.gd",
+    "kind": "class_use",
+    "line": 321,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugPanelActions.gd",
+    "kind": "preload",
+    "line": 7,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugPanelNavigation.gd",
+    "kind": "preload",
+    "line": 5,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugPoisonView.gd",
+    "kind": "class_use",
+    "line": 73,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "kind": "preload",
+    "line": 6,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugTerritoryOverlay.gd",
+    "kind": "preload",
+    "line": 8,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 238,
+    "detail": "",
+    "count": 6
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.tscn",
+    "target": "scenes/World/Debug/DebugPanel.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 317,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 19,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 193,
+    "detail": "",
+    "count": 15
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 18,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 193,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "core/systems/ecology/SpeciesState.gd",
+    "kind": "class_use",
+    "line": 294,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 165,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/Systems/Targeting/TargetSystem.gd",
+    "kind": "autoload_use",
+    "line": 21,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/UI/EcologyObservationUI.gd",
+    "kind": "signal",
+    "line": 30,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/World/Debug/DebugEcologyView.gd",
+    "kind": "class_use",
+    "line": 333,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/World/Debug/DebugPoisonActions.gd",
+    "kind": "class_use",
+    "line": 162,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/World/Debug/DebugSpawnView.gd",
+    "kind": "class_use",
+    "line": 555,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/World/EcologyTraceFeedback.gd",
+    "kind": "signal",
+    "line": 37,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "class_use",
+    "line": 379,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelActions.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "group_call",
+    "line": 374,
+    "detail": "poison_areas",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelNavigation.gd",
+    "target": "scenes/World/Debug/DebugPoisonView.gd",
+    "kind": "class_use",
+    "line": 116,
+    "detail": "",
+    "count": 6
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "core/components/StatusComponent.gd",
+    "kind": "class_use",
+    "line": 406,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 63,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 63,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "core/systems/ecology/GroupPoisonState.gd",
+    "kind": "class_use",
+    "line": 317,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "class_use",
+    "line": 274,
+    "detail": "",
+    "count": 10
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "group_call",
+    "line": 276,
+    "detail": "Corpses",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "class_use",
+    "line": 313,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "group_call",
+    "line": 255,
+    "detail": "enemies",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 147,
+    "detail": "player",
+    "count": 5
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 256,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/Systems/Targeting/TargetSystem.gd",
+    "kind": "autoload_use",
+    "line": 47,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/UI/EcologyObservationUI.gd",
+    "kind": "signal",
+    "line": 30,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/World/Debug/DebugEntityOverlay.gd",
+    "kind": "class_use",
+    "line": 22,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 38,
+    "detail": "",
+    "count": 45
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/World/EcologyTraceFeedback.gd",
+    "kind": "signal",
+    "line": 37,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "class_use",
+    "line": 75,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonActions.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "group_call",
+    "line": 193,
+    "detail": "poison_areas",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "core/components/PoisonStatusEffect.gd",
+    "kind": "class_use",
+    "line": 377,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "core/components/StatusComponent.gd",
+    "kind": "class_use",
+    "line": 379,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 177,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 177,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "core/systems/ecology/GroupPoisonState.gd",
+    "kind": "class_use",
+    "line": 128,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "core/systems/ecology/PoisonAvoidance.gd",
+    "kind": "class_use",
+    "line": 205,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "class_use",
+    "line": 98,
+    "detail": "",
+    "count": 9
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "group_call",
+    "line": 97,
+    "detail": "Corpses",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "class_use",
+    "line": 121,
+    "detail": "",
+    "count": 11
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "group_call",
+    "line": 91,
+    "detail": "enemies",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 19,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 92,
+    "detail": "",
+    "count": 16
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/Systems/Targeting/TargetSystem.gd",
+    "kind": "autoload_use",
+    "line": 202,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/World/Debug/DebugPoisonActions.gd",
+    "kind": "class_use",
+    "line": 114,
+    "detail": "",
+    "count": 5
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 36,
+    "detail": "",
+    "count": 103
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "class_use",
+    "line": 20,
+    "detail": "",
+    "count": 27
+  },
+  {
+    "source": "scenes/World/Debug/DebugPoisonView.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "group_call",
+    "line": 359,
+    "detail": "poison_areas",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugEcologyView.gd",
+    "kind": "class_use",
+    "line": 29,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugObservationView.gd",
+    "kind": "class_use",
+    "line": 25,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugPoisonView.gd",
+    "kind": "class_use",
+    "line": 32,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugSpawnView.gd",
+    "kind": "class_use",
+    "line": 34,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugTimeView.gd",
+    "kind": "class_use",
+    "line": 27,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 40,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugUtilityView.gd",
+    "kind": "class_use",
+    "line": 36,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugRightViewRefresh.gd",
+    "target": "scenes/World/Debug/DebugWorldView.gd",
+    "kind": "class_use",
+    "line": 24,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 104,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 57,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "core/databases/SpeciesDefinition.gd",
+    "kind": "class_use",
+    "line": 60,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 14,
+    "detail": "",
+    "count": 14
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 56,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 107,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "scenes/Systems/SpawnController.gd",
+    "kind": "signal",
+    "line": 20,
+    "detail": "spawn_requested",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "scenes/UI/EcologyObservationUI.gd",
+    "kind": "signal",
+    "line": 30,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 8,
+    "detail": "",
+    "count": 17
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "scenes/World/EcologyTraceFeedback.gd",
+    "kind": "signal",
+    "line": 37,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugTerritoryOverlay.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 27,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugTerritoryOverlay.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 104,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/Debug/DebugTerritoryOverlay.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 117,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/Debug/DebugTimeView.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 6,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "scenes/World/Debug/DebugTimeView.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 5,
+    "detail": "",
+    "count": 11
+  },
+  {
+    "source": "scenes/World/Debug/DebugUIHelpers.gd",
+    "target": "scenes/World/Debug/Components/DebugActionButton.tscn",
+    "kind": "preload_scene",
+    "line": 7,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugUIHelpers.gd",
+    "target": "scenes/World/Debug/Components/DebugMessage.tscn",
+    "kind": "preload_scene",
+    "line": 8,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugUIHelpers.gd",
+    "target": "scenes/World/Debug/Components/DebugSectionTitle.tscn",
+    "kind": "preload_scene",
+    "line": 5,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugUIHelpers.gd",
+    "target": "scenes/World/Debug/Components/DebugValueRow.tscn",
+    "kind": "preload_scene",
+    "line": 6,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugUtilityView.gd",
+    "target": "scenes/Systems/Targeting/TargetSystem.gd",
+    "kind": "autoload_use",
+    "line": 21,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugUtilityView.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 6,
+    "detail": "",
+    "count": 8
+  },
+  {
+    "source": "scenes/World/Debug/DebugWorldView.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 12,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/Debug/DebugWorldView.gd",
+    "target": "scenes/World/Debug/DebugUIHelpers.gd",
+    "kind": "class_use",
+    "line": 6,
+    "detail": "",
+    "count": 7
+  },
+  {
+    "source": "scenes/World/EcologyTraceFeedback.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "signal_listen",
+    "line": 37,
+    "detail": "ecology_updated",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/PoisonArea.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 13,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/PoisonArea.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "class_use",
+    "line": 58,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/PoisonArea.gd",
+    "target": "scenes/Characters/Enemies/Corpse.gd",
+    "kind": "group_call",
+    "line": 57,
+    "detail": "Corpses",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/PoisonArea.gd",
+    "target": "scenes/Characters/Enemies/Enemy.gd",
+    "kind": "group_call",
+    "line": 54,
+    "detail": "enemies",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/PoisonArea.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 51,
+    "detail": "player",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/PoisonArea.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "class_use",
+    "line": 52,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/SpatialArea3D.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 27,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/SpatialBioRegion3D.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 36,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/SpatialBioRegion3D.gd",
+    "target": "scenes/World/SpatialArea3D.gd",
+    "kind": "class_use",
+    "line": 15,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/TreeWood.gd",
+    "target": "core/components/Targetable.gd",
+    "kind": "class_use",
+    "line": 27,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/TreeWood.gd",
+    "target": "scenes/Core/Entity.gd",
+    "kind": "extends",
+    "line": 2,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 152,
+    "detail": "",
+    "count": 4
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/databases/SpeciesDatabase.gd",
+    "kind": "autoload_use",
+    "line": 87,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 86,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 25,
+    "detail": "get_node",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "signal_listen",
+    "line": 27,
+    "detail": "swarm_event_requested",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/systems/ecology/SpatialRegionResolver.gd",
+    "kind": "autoload_use",
+    "line": 42,
+    "detail": "get_node",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/systems/ecology/SpawnRequest.gd",
+    "kind": "preload",
+    "line": 89,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/systems/ecology/SpeciesRelation.gd",
+    "kind": "class_use",
+    "line": 254,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "core/systems/ecology/TerritoryState.gd",
+    "kind": "class_use",
+    "line": 48,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "scenes/Map/EnemySpawner.gd",
+    "kind": "preload",
+    "line": 197,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "scenes/Map/InteractionObject.gd",
+    "kind": "class_use",
+    "line": 212,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "scenes/Systems/SpawnController.gd",
+    "kind": "signal",
+    "line": 20,
+    "detail": "spawn_requested",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "scenes/Systems/SpawnLocationResolver.gd",
+    "kind": "class_use",
+    "line": 85,
+    "detail": "",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "scenes/World/MapProvider.gd",
+    "kind": "extends",
+    "line": 8,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.tscn",
+    "target": "scenes/World/SpatialArea3D.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.tscn",
+    "target": "scenes/World/SpatialBioRegion3D.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.tscn",
+    "target": "scenes/World/WorldMap/WorldMap.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "core/autoload/TimeSystem.gd",
+    "kind": "autoload_use",
+    "line": 205,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "autoload_use",
+    "line": 89,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "core/autoload/WorldManager.gd",
+    "kind": "signal_listen",
+    "line": 176,
+    "detail": "region_changed",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "core/systems/ecology/EcologyManager.gd",
+    "kind": "autoload_use",
+    "line": 74,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "core/systems/ecology/EnvironmentState.gd",
+    "kind": "class_use",
+    "line": 114,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/Characters/Player/Player.gd",
+    "kind": "group_call",
+    "line": 132,
+    "detail": "player",
+    "count": 2
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/Map/EnemySpawner.gd",
+    "kind": "preload",
+    "line": 107,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/Map/ObjectGenerator.gd",
+    "kind": "preload",
+    "line": 111,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/Systems/SpawnController.gd",
+    "kind": "preload",
+    "line": 102,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/UI/EcologyObservationUI.gd",
+    "kind": "preload",
+    "line": 50,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/World/EcologyTraceFeedback.gd",
+    "kind": "preload",
+    "line": 65,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/World/MapProvider.gd",
+    "kind": "class_use",
+    "line": 18,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes/World/PoisonArea.gd",
+    "kind": "class_use",
+    "line": 26,
+    "detail": "",
+    "count": 3
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.tscn",
+    "target": "scenes/Camera/WorldCamera.tscn",
+    "kind": "scene_ref",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.tscn",
+    "target": "scenes/Characters/Player/Player.tscn",
+    "kind": "scene_ref",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.tscn",
+    "target": "scenes/Characters/Player/Spell/SpellUI.tscn",
+    "kind": "scene_ref",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.tscn",
+    "target": "scenes/World/Debug/DebugPanel.tscn",
+    "kind": "scene_ref",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.tscn",
+    "target": "scenes/World/WorldRoot/WorldRoot.gd",
+    "kind": "scene_script",
+    "line": 0,
+    "detail": "",
+    "count": 1
+  }
+]

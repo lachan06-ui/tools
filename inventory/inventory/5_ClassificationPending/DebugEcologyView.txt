@@ -1,0 +1,7 @@
+DebugEcologyView
+f=scenes/World/Debug/DebugEcologyView.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh(content: VBoxContainer, selected_item: String, region_id: String) -> void,get_runtime_species_count(tree: SceneTree, species_id: String) -> int
+dep=DebugUIHelpers,WorldManager,EnvironmentState,EcologyManager,SpeciesState,TimeSystem
+use=DebugPanel

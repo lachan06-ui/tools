@@ -1,0 +1,8 @@
+BehaviorProfile
+f=core/databases/BehaviorProfile.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=apply_personality_modifiers_once() -> void,set_territorial_expansion(value: float) -> void,set_group_combat_tendency(value: float) -> void,set_approach_tendency(target_species: String, value: float) -> void,set_attack_intent(target_species: String, value: float) -> void,get_approach_tendency(target_species: String) -> float,get_attack_intent(target_species: String) -> float,get_experience_sensitivity() -> float,get_territorial_expansion() -> float,get_group_combat_tendency() -> float
+prop=personality_tags: Array[String],approach_tendency_by_species: Dictionary[String, float],attack_intent_by_species: Dictionary[String, float]
+data=_personality_modifiers_applied: bool
+use=SpeciesDefinition

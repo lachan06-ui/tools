@@ -1,0 +1,9 @@
+SpatialBioRegion3D
+f=scenes/World/SpatialBioRegion3D.gd
+p=Represents an ecological Bio Region boundary in the Godot editor for spatial lookup without continuous physics monitoring.
+r=Registering and unregistering with the SpatialRegionResolver autoload.,Providing point containment checks within defined collision shapes (Box, Sphere, Cylinder).
+api=contains_point(pos: Vector3) -> bool
+prop=bio_region_id: String,area_id: String,definition: Resource
+dep=SpatialArea3D,SpatialRegionResolver
+use=SpatialRegionResolver
+note=Explicitly disables monitoring and monitorable for performance.

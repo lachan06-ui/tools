@@ -1,0 +1,8 @@
+GroupPoisonState
+f=core/systems/ecology/GroupPoisonState.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=add_exposure(group_id: String, species_id: String, applied_amount: float) -> void,set_exposure(group_id: String, species_id: String, value: float) -> void,get_exposure(group_id: String, species_id: String) -> float,get_resistance(group_id: String, species_id: String) -> float,get_tolerance(group_id: String, species_id: String) -> float,commit_daily_adaptation() -> void,get_avoidance_weight(group_id: String, species_id: String) -> float,reset() -> void
+data=DEFAULT_ADAPTATION_SCALE: float,DAILY_ADAPTATION_RETENTION: float
+dep=SpeciesDefinition,SpeciesDatabase
+use=DebugEntityOverlay,DebugPoisonActions,DebugPoisonView,EcologyManager,EcologySimulation,Enemy,Entity,PoisonAvoidance

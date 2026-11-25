@@ -1,0 +1,7 @@
+IndicatorFactory
+f=scenes/Systems/Indicator/IndicatorFactory.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=create_circle(radius: float, color: Color) -> Mesh,create_target_circle(radius: float, color: Color) -> Mesh,create_sector(radius: float, angle_deg: float, color: Color) -> Mesh,create_line(length: float, color: Color) -> Mesh
+data=SEGMENTS: unmarked
+use=IndicatorManager

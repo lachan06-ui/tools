@@ -1,0 +1,492 @@
+[
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "crafting_completed",
+    "declared_line": 41,
+    "emitters": [
+      "scenes/Utils/CraftingSystem.gd"
+    ],
+    "listeners": [
+      "scenes/Characters/Player/PlayerMovement.gd",
+      "scenes/UI/Crafting/CraftingUI.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": []
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "crafting_interrupted",
+    "declared_line": 42,
+    "emitters": [
+      "scenes/Characters/Player/PlayerCombat.gd"
+    ],
+    "listeners": [
+      "scenes/Characters/Player/PlayerMovement.gd",
+      "scenes/UI/Crafting/CraftingUI.gd",
+      "scenes/Utils/CraftingSystem.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": []
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "crafting_started",
+    "declared_line": 40,
+    "emitters": [
+      "scenes/Utils/CraftingSystem.gd"
+    ],
+    "listeners": [
+      "scenes/Characters/Player/PlayerMovement.gd",
+      "scenes/UI/Crafting/CraftingUI.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": []
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "damage_dealt",
+    "declared_line": 15,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "day_passed",
+    "declared_line": 30,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "distress_signal_triggered",
+    "declared_line": 17,
+    "emitters": [
+      "scenes/Characters/NPC/LogisticsNPC.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "entity_died",
+    "declared_line": 11,
+    "emitters": [
+      "scenes/Characters/Enemies/Enemy.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 1,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "entity_spawned",
+    "declared_line": 12,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "hud_refresh_requested",
+    "declared_line": 33,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "map_changed",
+    "declared_line": 23,
+    "emitters": [],
+    "listeners": [
+      "scenes/Utils/MapKnowledgeManager.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "map_reading_toggled",
+    "declared_line": 36,
+    "emitters": [
+      "scenes/UI/Map/MapReadingModeUI.gd"
+    ],
+    "listeners": [
+      "scenes/UI/Map/MapReadingModeUI.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": []
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "player_died",
+    "declared_line": 16,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "quest_completed",
+    "declared_line": 26,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "quest_failed",
+    "declared_line": 27,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "recipe_discovered",
+    "declared_line": 39,
+    "emitters": [
+      "scenes/Utils/CraftingSystem.gd"
+    ],
+    "listeners": [
+      "scenes/UI/Crafting/CraftingUI.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": []
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "settlement_upgraded",
+    "declared_line": 45,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/EventBus.gd",
+    "signal": "species_population_changed",
+    "declared_line": 20,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/GameState.gd",
+    "signal": "global_event_received",
+    "declared_line": 27,
+    "emitters": [
+      "core/autoload/GameState.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/GameState.gd",
+    "signal": "spell_discovered",
+    "declared_line": 26,
+    "emitters": [
+      "core/autoload/GameState.gd",
+      "core/autoload/SpellMasteryManager.gd"
+    ],
+    "listeners": [
+      "scenes/Characters/Player/PlayerSpell.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": []
+  },
+  {
+    "owner": "core/autoload/GameState.gd",
+    "signal": "spell_unlocked",
+    "declared_line": 25,
+    "emitters": [
+      "core/autoload/GameState.gd",
+      "core/autoload/SpellMasteryManager.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/TimeSystem.gd",
+    "signal": "day_changed",
+    "declared_line": 9,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/TimeSystem.gd",
+    "signal": "evening_started",
+    "declared_line": 12,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/TimeSystem.gd",
+    "signal": "morning_started",
+    "declared_line": 10,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/TimeSystem.gd",
+    "signal": "night_started",
+    "declared_line": 13,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/TimeSystem.gd",
+    "signal": "noon_started",
+    "declared_line": 11,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/TimeSystem.gd",
+    "signal": "time_changed",
+    "declared_line": 8,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/WorldManager.gd",
+    "signal": "map_changed",
+    "declared_line": 8,
+    "emitters": [
+      "core/autoload/WorldManager.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "core/autoload/WorldManager.gd",
+    "signal": "region_changed",
+    "declared_line": 9,
+    "emitters": [
+      "core/autoload/WorldManager.gd"
+    ],
+    "listeners": [
+      "scenes/World/WorldRoot/WorldRoot.gd"
+    ],
+    "resolved_by_name_only": 0,
+    "note": []
+  },
+  {
+    "owner": "core/systems/ecology/EcologyManager.gd",
+    "signal": "ecology_updated",
+    "declared_line": 12,
+    "emitters": [
+      "core/systems/ecology/EcologyManager.gd",
+      "scenes/World/Debug/DebugPanelActions.gd",
+      "scenes/World/Debug/DebugPoisonActions.gd",
+      "scenes/World/Debug/DebugSpawnView.gd"
+    ],
+    "listeners": [
+      "scenes/UI/EcologyObservationUI.gd",
+      "scenes/World/EcologyTraceFeedback.gd"
+    ],
+    "resolved_by_name_only": 1,
+    "note": []
+  },
+  {
+    "owner": "core/systems/ecology/EcologyManager.gd",
+    "signal": "spawn_request_object",
+    "declared_line": 11,
+    "emitters": [
+      "core/systems/ecology/EcologyManager.gd"
+    ],
+    "listeners": [
+      "scenes/Systems/SpawnController.gd"
+    ],
+    "resolved_by_name_only": 1,
+    "note": []
+  },
+  {
+    "owner": "core/systems/ecology/EcologyManager.gd",
+    "signal": "spawn_requested",
+    "declared_line": 10,
+    "emitters": [
+      "core/systems/ecology/EcologyManager.gd",
+      "scenes/World/Debug/DebugSpawnView.gd",
+      "scenes/World/WorldMap/WorldMap.gd"
+    ],
+    "listeners": [
+      "scenes/Systems/SpawnController.gd"
+    ],
+    "resolved_by_name_only": 2,
+    "note": []
+  },
+  {
+    "owner": "core/systems/ecology/EcologyManager.gd",
+    "signal": "swarm_event_requested",
+    "declared_line": 13,
+    "emitters": [
+      "core/systems/ecology/EcologyManager.gd"
+    ],
+    "listeners": [
+      "scenes/World/WorldMap/WorldMap.gd"
+    ],
+    "resolved_by_name_only": 1,
+    "note": []
+  },
+  {
+    "owner": "scenes/Characters/Player/Player.gd",
+    "signal": "mode_changed",
+    "declared_line": 3,
+    "emitters": [
+      "scenes/Characters/Player/Player.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "scenes/Core/Entity.gd",
+    "signal": "on_global_event_received",
+    "declared_line": 32,
+    "emitters": [],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "発行元が検出されない",
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "scenes/Core/Entity.gd",
+    "signal": "poison_received",
+    "declared_line": 15,
+    "emitters": [
+      "scenes/Core/Entity.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "scenes/Systems/Combat/DamageSystem.gd",
+    "signal": "damage_applied",
+    "declared_line": 14,
+    "emitters": [
+      "scenes/Systems/Combat/DamageSystem.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "scenes/Systems/FireAgent.gd",
+    "signal": "extinguished",
+    "declared_line": 11,
+    "emitters": [
+      "scenes/Systems/FireAgent.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  },
+  {
+    "owner": "scenes/Systems/FireAgent.gd",
+    "signal": "ignited",
+    "declared_line": 10,
+    "emitters": [
+      "scenes/Systems/FireAgent.gd"
+    ],
+    "listeners": [],
+    "resolved_by_name_only": 0,
+    "note": [
+      "受信側が検出されない"
+    ]
+  }
+]

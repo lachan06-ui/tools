@@ -1,0 +1,10 @@
+Entity
+f=scenes/Core/Entity.gd
+p=Base class for all world entities providing fundamental properties and lifecycle signals.
+r=Managing health, damage handling, and death signaling.
+api=take_damage(_amount: float) -> void,freeze(_duration: float) -> void,die() -> void,is_alive() -> bool,heal(amount: float) -> void,apply_poison_stacks(stacks: int, duration: float = 0.0) -> void,add_poison_amount(amount: float, duration: float = PoisonStatusEffect.POISON_DOSE_DURATION) -> float,get_poison_amount() -> float,get_poison_stacks() -> int,get_poison_damage_multiplier() -> float,get_poison_performance_multiplier() -> float,get_poison_resistance() -> float,get_hp_ratio() -> float,get_poison_attack_multiplier() -> float,get_poison_speed_multiplier() -> float,get_poison_defense_multiplier() -> float,get_poison_level() -> int,is_poison_aggressive() -> bool,has_poison_dependency() -> bool
+sig=poison_received(applied_amount: float),on_global_event_received(event_type: String, data: Dictionary)
+prop=max_hp: float,_gravity_ray: RayCast3D,status_component: StatusComponent
+data=hp: float,is_dead: bool,POISON_COLOR_MAX: Color,POISON_VISUAL_MAX_AMOUNT: float,POISON_OVERLAY_MAX_ALPHA: float,POISON_VISUAL_INTERVAL: float,_poison_overlay: StandardMaterial3D,_poison_visual_timer: float,_poison_visual_ratio: float,entity_id: String,map_id: String,status_component: StatusComponent,GROUND_OFFSET: unmarked
+dep=Enemy,Player,StatusComponent,PoisonStatusEffect,GroupPoisonState,StatusEffect
+use=DamageSystem,DebugEntityOverlay,DebugObservationView,DebugPanel,DebugPoisonActions,DebugPoisonView,DefaultEnemyBehavior,Enemy,EnemyAI,EnemyBehavior,EventBus,InteractionObject,Player,PlayerCombat,PoisonArea,TreeWood,WorldManager

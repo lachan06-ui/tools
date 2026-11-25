@@ -1,0 +1,7 @@
+CraftingUI
+f=scenes/UI/Crafting/CraftingUI.gd
+r=User interface for selecting recipes and managing crafting buttons in both settlement and field modes.
+api=open_crafting(field_mode: bool = true) -> void,close_crafting() -> void
+prop=recipe_container: VBoxContainer,craft_button: Button
+data=selected_recipe_id: String,is_field_mode: bool
+dep=CraftingSystem,EventBus

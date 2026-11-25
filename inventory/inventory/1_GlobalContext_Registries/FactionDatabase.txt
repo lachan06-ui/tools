@@ -1,0 +1,6 @@
+FactionDatabase
+f=core/databases/FactionDatabase.gd
+p=Manages relationships between factions.
+r=Checking faction relationships and hostility status.
+api=get_entry(id: String) -> Dictionary,get_value(id: String, key: String, default = null),has_entry(id: String) -> bool,get_all_ids() -> Array,get_all() -> Array,are_hostile(faction_a: String, faction_b: String) -> bool
+data=DATA_PATH: unmarked,_factions: Dictionary

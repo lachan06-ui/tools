@@ -1,0 +1,9 @@
+Enemy
+f=scenes/Characters/Enemies/Enemy.gd
+p=Base class for enemy entities handling health and basic lifecycle.
+r=Managing health, damage reception, and death signaling.
+api=get_effective_atk() -> float,get_effective_def() -> float,get_effective_spd() -> float,apply_knockback(force: Vector3) -> void,swing_melee_attack() -> void,take_damage(amount: float) -> void,die() -> void,freeze(duration: float) -> void,configure(new_speed: float, new_hp: float) -> void
+prop=speed: float,knockback_damping: float,attack_range: float,attack_cooldown: float,is_dummy: bool,is_boss: bool,enemy_id: String,territory_radius: float,visual_container: Node3D,_ai: EnemyAI
+data=species_id: String,area_id: String,bio_region_id: String,territory_id: String,group_id: String,base_atk: float,base_def: float,atk: float,def: float,_archetype_skills: Array[EnemySkill],freeze_timer: float,discovered: bool,knockback_velocity: Vector3,is_swinging: bool,targetable: Targetable,genetic_scale_modifier: Vector3,genetic_part_scales: Dictionary
+dep=EnemyAI,QuestManager,GameState,EcologyManager,EnemyDatabase,Entity,EnemySkill,EnemyStats,DefaultEnemyBehavior,Targetable,SpeciesDefinition,SpeciesDatabase,EventBus,Corpse,TargetSystem,WorldManager
+use=DebugEntityOverlay,DebugPoisonActions,DebugPoisonView,DefaultEnemyBehavior,EnemyAI,EnemyBehavior,EnemySpawner,EnemyStats,Entity,SpawnController,SpeciesDefinition,StatusComponent,WorldManager,WorldMap,WorldRoot

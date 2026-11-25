@@ -1,0 +1,8 @@
+SaveSystem
+f=scenes/Systems/SaveSystem.gd
+p=Handles the serialization and deserialization of the game's global state and the state of various interconnected subsystems.
+r=Persisting game state to a JSON file at `user://savegame.json`.,Loading and parsing existing save data from storage.,Aggregating state from `WorldState`, `QuestManager`, `EcologyManager`, `TimeSystem`, and `QuestGenerator`.,Synchronizing `GameState` properties (e.g., gold, reputation, spells, weapons) from the save file.
+api=save_game() -> void,load_game() -> bool
+data=SAVE_PATH: String
+dep=GameState,WorldState,QuestManager,TimeSystem,QuestGenerator,WorldManager,EcologyManager
+note=Uses JSON format with tab indentation.,Data extraction for `GameState` includes `gold`, `reputation`, `current_day`, `spell_mastery`, `unlocked_spells`, `discovered_spells`, `weapon_history`, `weapon_kills`, `current_weapon`, `monster_codex`, `monster_kill_counts`, and `environment`.,During loading, handles the clearing and repopulation of arrays and dictionaries (e.g., `unlocked_spells`, `monster_codex`).

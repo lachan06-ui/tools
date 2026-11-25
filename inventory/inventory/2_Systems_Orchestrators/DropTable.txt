@@ -1,0 +1,7 @@
+DropTable
+f=core/databases/DropTable.gd
+p=Manages weighted random selection for item drops.
+r=Calculating weights and performing randomized selection of drops.
+prop=drops: Array[DropEntry]
+dep=DropEntry
+use=EnemyStats

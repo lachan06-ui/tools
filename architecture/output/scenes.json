@@ -1,0 +1,808 @@
+{
+  "scenes/Camera/WorldCamera.tscn": {
+    "root_type": "Node3D",
+    "root_script": "scenes/Camera/WorldCamera.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/Camera/WorldCamera.gd"
+    ],
+    "scene_refs": [],
+    "node_count": 4,
+    "nodes": {
+      ".": {
+        "script": "scenes/Camera/WorldCamera.gd",
+        "instance": null,
+        "groups": []
+      },
+      "CameraPivot": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "CameraPivot/SpringArm3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "CameraPivot/SpringArm3D/Camera3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/Characters/Enemies/Corpse.tscn": {
+    "root_type": "Node3D",
+    "root_script": "scenes/Characters/Enemies/Corpse.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/Characters/Enemies/Corpse.gd"
+    ],
+    "scene_refs": [],
+    "node_count": 2,
+    "nodes": {
+      ".": {
+        "script": "scenes/Characters/Enemies/Corpse.gd",
+        "instance": null,
+        "groups": []
+      },
+      "PlaneMesh": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/Characters/Enemies/Enemy.tscn": {
+    "root_type": "CharacterBody3D",
+    "root_script": "scenes/Characters/Enemies/Enemy.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/Characters/Enemies/Enemy.gd"
+    ],
+    "scene_refs": [],
+    "node_count": 3,
+    "nodes": {
+      ".": {
+        "script": "scenes/Characters/Enemies/Enemy.gd",
+        "instance": null,
+        "groups": []
+      },
+      "CollisionShape3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "VisualContainer": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/Characters/Player/Dick.tscn": {
+    "root_type": "",
+    "root_script": null,
+    "root_instance": null,
+    "scripts": [],
+    "scene_refs": [],
+    "node_count": 3,
+    "nodes": {
+      ".": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Armature/Skeleton3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "AnimationPlayer": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/Characters/Player/Player.tscn": {
+    "root_type": "CharacterBody3D",
+    "root_script": "scenes/Characters/Player/Player.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/Characters/Player/Player.gd",
+      "scenes/Characters/Player/PlayerMovement.gd",
+      "scenes/Characters/Player/PlayerDodge.gd",
+      "scenes/Characters/Player/PlayerMovementInput.gd",
+      "scenes/Characters/Player/PlayerCombat.gd",
+      "scenes/Characters/Player/PlayerLook.gd",
+      "scenes/Characters/Player/PlayerSpell.gd"
+    ],
+    "scene_refs": [
+      "scenes/Characters/Player/PlayerMesh.tscn"
+    ],
+    "node_count": 9,
+    "nodes": {
+      ".": {
+        "script": "scenes/Characters/Player/Player.gd",
+        "instance": null,
+        "groups": []
+      },
+      "CollisionShape3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Body": {
+        "script": null,
+        "instance": "scenes/Characters/Player/PlayerMesh.tscn",
+        "groups": []
+      },
+      "PlayerMovement": {
+        "script": "scenes/Characters/Player/PlayerMovement.gd",
+        "instance": null,
+        "groups": []
+      },
+      "PlayerMovement/PlayerDodge": {
+        "script": "scenes/Characters/Player/PlayerDodge.gd",
+        "instance": null,
+        "groups": []
+      },
+      "PlayerMovement/PlayerMovementInput": {
+        "script": "scenes/Characters/Player/PlayerMovementInput.gd",
+        "instance": null,
+        "groups": []
+      },
+      "PlayerCombat": {
+        "script": "scenes/Characters/Player/PlayerCombat.gd",
+        "instance": null,
+        "groups": []
+      },
+      "PlayerLook": {
+        "script": "scenes/Characters/Player/PlayerLook.gd",
+        "instance": null,
+        "groups": []
+      },
+      "PlayerSpell": {
+        "script": "scenes/Characters/Player/PlayerSpell.gd",
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/Characters/Player/PlayerMesh.tscn": {
+    "root_type": "MeshInstance3D",
+    "root_script": null,
+    "root_instance": null,
+    "scripts": [],
+    "scene_refs": [],
+    "node_count": 11,
+    "nodes": {
+      ".": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Leg_L": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Leg_R": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Head": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Head/Weapon": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Head/Weapon/MeshInstance3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Head/Eye_L": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Head/Eye_R": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Head/Back": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Skeleton3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Skeleton3D/BoneAttachment3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/Characters/Player/Spell/SpellCard.tscn": {
+    "root_type": "Panel",
+    "root_script": null,
+    "root_instance": null,
+    "scripts": [],
+    "scene_refs": [],
+    "node_count": 5,
+    "nodes": {
+      ".": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "NameLabel": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "DescriptionLabel": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "WordLabel": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "CostLabel": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/Characters/Player/Spell/SpellUI.tscn": {
+    "root_type": "CanvasLayer",
+    "root_script": "scenes/Characters/Player/Spell/SpellUI.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/Characters/Player/Spell/SpellUI.gd"
+    ],
+    "scene_refs": [],
+    "node_count": 4,
+    "nodes": {
+      ".": {
+        "script": "scenes/Characters/Player/Spell/SpellUI.gd",
+        "instance": null,
+        "groups": [
+          "spell_ui"
+        ]
+      },
+      "Background": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "SpellInput": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "SpellCards": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": [
+      "spell_card_scene"
+    ]
+  },
+  "scenes/Systems/Indicator/Indicator.tscn": {
+    "root_type": "Node3D",
+    "root_script": "scenes/Systems/Indicator/Indicator.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/Systems/Indicator/Indicator.gd"
+    ],
+    "scene_refs": [],
+    "node_count": 2,
+    "nodes": {
+      ".": {
+        "script": "scenes/Systems/Indicator/Indicator.gd",
+        "instance": null,
+        "groups": []
+      },
+      "MeshInstance3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/World/Debug/Components/DebugActionButton.tscn": {
+    "root_type": "Button",
+    "root_script": null,
+    "root_instance": null,
+    "scripts": [],
+    "scene_refs": [],
+    "node_count": 1,
+    "nodes": {
+      ".": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/World/Debug/Components/DebugMessage.tscn": {
+    "root_type": "Label",
+    "root_script": null,
+    "root_instance": null,
+    "scripts": [],
+    "scene_refs": [],
+    "node_count": 1,
+    "nodes": {
+      ".": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/World/Debug/Components/DebugSectionTitle.tscn": {
+    "root_type": "Label",
+    "root_script": null,
+    "root_instance": null,
+    "scripts": [],
+    "scene_refs": [],
+    "node_count": 1,
+    "nodes": {
+      ".": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/World/Debug/Components/DebugValueRow.tscn": {
+    "root_type": "HBoxContainer",
+    "root_script": null,
+    "root_instance": null,
+    "scripts": [],
+    "scene_refs": [],
+    "node_count": 3,
+    "nodes": {
+      ".": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Label": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Value": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/World/Debug/DebugPanel.tscn": {
+    "root_type": "CanvasLayer",
+    "root_script": "scenes/World/Debug/DebugPanel.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/World/Debug/DebugPanel.gd"
+    ],
+    "scene_refs": [],
+    "node_count": 31,
+    "nodes": {
+      ".": {
+        "script": "scenes/World/Debug/DebugPanel.gd",
+        "instance": null,
+        "groups": []
+      },
+      "Panel": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Left": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Left/Margin": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Left/Margin/VBox": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Left/Margin/VBox/Title": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Left/Margin/VBox/Navigation": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Center": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Center/Margin": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Center/Margin/WorkbenchTabs": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/WORLD": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/WORLD/Content": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/TIME": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/TIME/Content": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/ECOLOGY": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/ECOLOGY/Content": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/POISON": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/POISON/Content": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/SPAWN": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/SPAWN/Content": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/UTILITY": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/UTILITY/Content": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/OBSERVATION": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Diagnostic/OBSERVATION/Content": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Panel/Margin/HBox/Right/Margin/VBox/Status": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/World/WorldMap/WorldMap.tscn": {
+    "root_type": "Node3D",
+    "root_script": "scenes/World/WorldMap/WorldMap.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/World/WorldMap/WorldMap.gd",
+      "scenes/World/SpatialArea3D.gd",
+      "scenes/World/SpatialBioRegion3D.gd"
+    ],
+    "scene_refs": [
+      "assets/object/QuestBoard.tscn",
+      "assets/object/Tree1_S.tscn",
+      "assets/object/Tree1_M.tscn",
+      "assets/object/Tree1_L.tscn"
+    ],
+    "node_count": 25,
+    "nodes": {
+      ".": {
+        "script": "scenes/World/WorldMap/WorldMap.gd",
+        "instance": null,
+        "groups": []
+      },
+      "Main": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "DirectionalLight3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Water": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Water/Chou_Pond": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Water/River1": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "VillageSpawn": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "pointer": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "QuestBoard": {
+        "script": null,
+        "instance": "assets/object/QuestBoard.tscn",
+        "groups": []
+      },
+      "KamikochiArea": {
+        "script": "scenes/World/SpatialArea3D.gd",
+        "instance": null,
+        "groups": []
+      },
+      "KamikochiArea/CollisionShape3D": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "KamikochiArea/YokooArea": {
+        "script": "scenes/World/SpatialArea3D.gd",
+        "instance": null,
+        "groups": []
+      },
+      "KamikochiArea/YokooArea/AreaShape": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "KamikochiArea/YokooArea/YokooForestBioRegion": {
+        "script": "scenes/World/SpatialBioRegion3D.gd",
+        "instance": null,
+        "groups": []
+      },
+      "KamikochiArea/YokooArea/YokooForestBioRegion/BioRegionShape": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "Brigde": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "TreeGenerator": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "TreeGenerator/Tree1_S": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "TreeGenerator/Tree1_M": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "TreeGenerator/Tree1_L": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "ProtonScatter": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "ProtonScatter/ScatterShape2": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "ProtonScatter/ScatterItem": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "ProtonScatter/ScatterShape": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "RockIcosphere": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": []
+  },
+  "scenes/World/WorldRoot/WorldRoot.tscn": {
+    "root_type": "Node3D",
+    "root_script": "scenes/World/WorldRoot/WorldRoot.gd",
+    "root_instance": null,
+    "scripts": [
+      "scenes/World/WorldRoot/WorldRoot.gd"
+    ],
+    "scene_refs": [
+      "scenes/Characters/Player/Player.tscn",
+      "scenes/Camera/WorldCamera.tscn",
+      "scenes/Characters/Player/Spell/SpellUI.tscn",
+      "scenes/World/Debug/DebugPanel.tscn"
+    ],
+    "node_count": 9,
+    "nodes": {
+      ".": {
+        "script": "scenes/World/WorldRoot/WorldRoot.gd",
+        "instance": null,
+        "groups": []
+      },
+      "WorldCamera": {
+        "script": null,
+        "instance": "scenes/Camera/WorldCamera.tscn",
+        "groups": []
+      },
+      "Map": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "SpawnPoints": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "SpawnPoints/VillageSpawn": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "SpellUI": {
+        "script": null,
+        "instance": "scenes/Characters/Player/Spell/SpellUI.tscn",
+        "groups": []
+      },
+      "DebugHUD": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "DebugHUD/PlayerPositionLabel": {
+        "script": null,
+        "instance": null,
+        "groups": []
+      },
+      "DebugPanel": {
+        "script": null,
+        "instance": "scenes/World/Debug/DebugPanel.tscn",
+        "groups": []
+      }
+    },
+    "connections": [],
+    "assigned_scene_props": [
+      "player_scene"
+    ]
+  }
+}

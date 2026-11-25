@@ -1,0 +1,8 @@
+EnemyDatabase
+f=core/databases/EnemyDatabase.gd
+p=Repository for enemy configurations, stats, and skill associations.
+r=Providing enemy data retrieval by species.
+api=get_resource(id: String) -> EnemyStats,get_entry(id: String) -> Dictionary,get_value(id: String, key: String, default = null),has_entry(id: String) -> bool,get_all_ids() -> Array,get_all() -> Array,get_species_default_population(species_id: String) -> int,get_default_population(species_id: String) -> int,get_species_definition(enemy_id: String) -> SpeciesDefinition,get_weight(enemy_id: String) -> float,get_nutrition(enemy_id: String) -> int,get_faction_id(id: String) -> String,get_group_id(id: String) -> String,get_species_ids() -> Array,get_by_tier(tier: int) -> Array,get_by_species(species_id: String) -> Array,get_enemy(id: String) -> Dictionary,get_monster(id: String) -> Dictionary,has_monster(id: String) -> bool,get_all_monster_ids() -> Array,get_all_monsters() -> Array,get_monsters_by_tier(tier: int) -> Array,get_monsters_by_species(species_id: String) -> Array
+data=RESOURCES_DIR: unmarked,_enemies_resources: Dictionary
+dep=EnemyStats,SpeciesDatabase,SpeciesDefinition
+use=Enemy,QuestGenerator,SpawnController,SpeciesDatabase,SpeciesDefinition,WorldMap

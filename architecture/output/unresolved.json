@@ -1,0 +1,182 @@
+[
+  {
+    "source": "scenes/Characters/NPC/LogisticsNPC.gd",
+    "target": "res://scenes/Map/CargoCrate.tscn",
+    "kind": "preload_missing",
+    "line": 72
+  },
+  {
+    "source": "core/autoload/GameState.gd",
+    "target": "path",
+    "kind": "dynamic_load",
+    "line": 582
+  },
+  {
+    "source": "core/databases/EnemyDatabase.gd",
+    "target": "path",
+    "kind": "dynamic_load",
+    "line": 27
+  },
+  {
+    "source": "core/databases/ItemDatabase.gd",
+    "target": "path",
+    "kind": "dynamic_load",
+    "line": 25
+  },
+  {
+    "source": "core/databases/SpeciesDatabase.gd",
+    "target": "path",
+    "kind": "dynamic_load",
+    "line": 27
+  },
+  {
+    "source": "core/databases/SpeciesDefinition.gd",
+    "target": "visual_scene",
+    "kind": "export_scene_in_resource",
+    "line": 102
+  },
+  {
+    "source": "core/systems/ecology/EcologyManager.gd",
+    "target": "full_path",
+    "kind": "dynamic_load",
+    "line": 110
+  },
+  {
+    "source": "scenes/Characters/Enemies/Boss.gd",
+    "target": "swarm_spawner_path",
+    "kind": "dynamic_get_node_or_null",
+    "line": 40
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "autoload_name",
+    "kind": "dynamic_get_node",
+    "line": 211
+  },
+  {
+    "source": "scenes/Characters/Enemies/Enemy.gd",
+    "target": "corpse_path",
+    "kind": "dynamic_load",
+    "line": 318
+  },
+  {
+    "source": "scenes/Characters/Enemies/EnemyAI.gd",
+    "target": "autoload_name",
+    "kind": "dynamic_get_node",
+    "line": 254
+  },
+  {
+    "source": "scenes/Characters/Enemies/SkillRegistry.gd",
+    "target": "path",
+    "kind": "dynamic_load",
+    "line": 32
+  },
+  {
+    "source": "scenes/Characters/NPC/LogisticsNPC.gd",
+    "target": "allies",
+    "kind": "group_no_member",
+    "line": 62,
+    "similar": []
+  },
+  {
+    "source": "scenes/Map/EnemySpawner.gd",
+    "target": "ENEMY_SCENE",
+    "kind": "dynamic_load",
+    "line": 122
+  },
+  {
+    "source": "scenes/Map/GenerateMapFromDEM.gd",
+    "target": "dem_image_path",
+    "kind": "dynamic_load",
+    "line": 20
+  },
+  {
+    "source": "scenes/Map/ObjectGenerator.gd",
+    "target": "scene_path",
+    "kind": "dynamic_load",
+    "line": 69
+  },
+  {
+    "source": "scenes/Utils/SwarmSpawner.gd",
+    "target": "Player",
+    "kind": "group_no_member",
+    "line": 114,
+    "similar": [
+      "player"
+    ]
+  },
+  {
+    "source": "scenes/Utils/SwarmSpawner.gd",
+    "target": "fast_enemy_scene",
+    "kind": "export_scene_not_in_tscn",
+    "line": 12
+  },
+  {
+    "source": "scenes/Utils/SwarmSpawner.gd",
+    "target": "tank_enemy_scene",
+    "kind": "export_scene_not_in_tscn",
+    "line": 13
+  },
+  {
+    "source": "scenes/Utils/SwarmSpawner.gd",
+    "target": "balanced_enemy_scene",
+    "kind": "export_scene_not_in_tscn",
+    "line": 14
+  },
+  {
+    "source": "scenes/Utils/SwarmSpawner.gd",
+    "target": "boss_scene",
+    "kind": "export_scene_not_in_tscn",
+    "line": 119
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanel.gd",
+    "target": "view_name",
+    "kind": "dynamic_get_node_or_null",
+    "line": 378
+  },
+  {
+    "source": "scenes/World/Debug/DebugPanelNavigation.gd",
+    "target": "folder.name.replace(\"Folder\"",
+    "kind": "dynamic_get_node_or_null",
+    "line": 262
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "spawn_controller",
+    "kind": "group_no_member",
+    "line": 17,
+    "similar": []
+  },
+  {
+    "source": "scenes/World/Debug/DebugSpawnView.gd",
+    "target": "spawn_controller",
+    "kind": "group_no_member",
+    "line": 25,
+    "similar": []
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "path",
+    "kind": "dynamic_load",
+    "line": 210
+  },
+  {
+    "source": "scenes/World/WorldMap/WorldMap.gd",
+    "target": "path",
+    "kind": "dynamic_load",
+    "line": 225
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "scenes_list[target_scene]",
+    "kind": "dynamic_load",
+    "line": 92
+  },
+  {
+    "source": "scenes/World/WorldRoot/WorldRoot.gd",
+    "target": "enemy_scene",
+    "kind": "export_scene_not_in_tscn",
+    "line": 13
+  }
+]

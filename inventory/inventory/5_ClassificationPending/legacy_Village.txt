@@ -1,0 +1,8 @@
+legacy_Village
+f=scenes/World/Village/legacy_Village.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=show_ui() -> void,hide_ui() -> void,populate_quests() -> void,select_quest(quest: Dictionary) -> void,update_accept_button_state() -> void
+prop=quest_list_container: VBoxContainer,details_panel: Panel,details_title: Label,details_desc: Label,details_objective: Label,details_deadline: Label,accept_button: Button,status_label: Label,gold_label: Label
+data=selected_quest: Dictionary
+dep=Village,WorldManager,GameState,QuestManager

@@ -1,0 +1,8 @@
+DebugPoisonActions
+f=scenes/World/Debug/DebugPoisonActions.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=build_controls(parent: VBoxContainer, item_name: String, tree: SceneTree, get_region: Callable, spawn_position: Callable, refresh: Callable) -> void,is_debug_area(node: Node) -> bool,get_locked_target(tree: SceneTree) -> Node,set_last_action(text: String) -> void,set_env_poison(get_region: Callable, value: float, refresh: Callable) -> void,create_area(tree: SceneTree, get_region: Callable, linked: bool, at_feet: bool, spawn_position: Callable, refresh: Callable) -> void,apply_settings_to_debug_areas(tree: SceneTree, refresh: Callable) -> void,remove_debug_areas(tree: SceneTree, refresh: Callable) -> void,dose_player(tree: SceneTree, refresh: Callable) -> void,clear_player(tree: SceneTree, refresh: Callable) -> void,dose_target(tree: SceneTree, refresh: Callable) -> void,clear_target(tree: SceneTree, refresh: Callable) -> void,dose_enemies(tree: SceneTree, refresh: Callable) -> void,clear_enemies(tree: SceneTree, refresh: Callable) -> void,poison_nearest_corpse(tree: SceneTree, refresh: Callable) -> void,dose_corpses(tree: SceneTree, refresh: Callable) -> void,clear_corpses(tree: SceneTree, refresh: Callable) -> void,add_tolerance_exposure(tree: SceneTree, refresh: Callable) -> void,commit_tolerance_adaptation(refresh: Callable) -> void,reset_tolerance(refresh: Callable) -> void,set_overlay_enabled(tree: SceneTree, enabled: bool, refresh: Callable) -> void
+data=DEBUG_META: StringName,LINKED_PREFIX: String,MANUAL_PREFIX: String,ENV_PRESETS: Array[float]
+dep=DebugEntityOverlay,DebugUIHelpers,TargetSystem,EnvironmentState,EcologyManager,PoisonArea,Player,Enemy,Corpse,StatusComponent,Entity,GroupPoisonState
+use=DebugPanelActions,DebugPoisonView

@@ -1,0 +1,7 @@
+SpawnRequest
+f=core/systems/ecology/SpawnRequest.gd
+p=Lightweight data structure for passing spawn requests through the pipeline.
+r=Carrying species, count, and environmental context for a spawn event.
+data=area_id: StringName,bio_region_id: StringName,territory_id: StringName,species_id: StringName,count: int,species_def: SpeciesDefinition,env: EnvironmentState,species_state: SpeciesState
+dep=SpeciesDefinition,EnvironmentState,SpeciesState
+use=EcologyManager,EcologySimulation,WorldMap

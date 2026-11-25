@@ -1,0 +1,9 @@
+WorldCamera
+f=scenes/Camera/WorldCamera.gd
+p=A 3D camera system providing orbit, follow, and zoom capabilities, including a specialized mode for typing-related viewpoints.
+r=Execute orbit rotation based on mouse input.,Implement spring-arm/zoom functionality via wheel input.,Follow a target node at controlled heights and speeds.,Handle camera transition into "typing mode" with localized constraints.,Provide raycasting for viewporting (get_aim_ray).
+api=get_aim_ray() -> Dictionary,set_typing_camera_mode(enabled_bool: bool) -> void,set_debug_console_mode(enabled_bool: bool) -> void
+prop=pivot: Node3D,spring_arm: SpringArm3D,cam: Camera3D,target: Node3D,follow_speed: float,follow_height: float,mouse_sensitivity: float,rotation_smoothing: float,min_pitch: float,max_pitch: float,zoom_speed: float,min_spring_length: float,max_spring_length: float,zoom_smoothing: float,target_zoom_length: float,target_focus_weight: float,target_camera_smoothing: float
+data=_target_rotation_x: float,_target_rotation_y: float,_target_spring_length: float,_is_target_mode: bool,_current_target: Node3D,_is_typing_camera_mode: bool,_typing_anchor_y: float,_typing_anchor_x: float,_debug_console_mode: bool
+dep=PlayerLook,TargetSystem
+use=DebugPanel,WorldRoot

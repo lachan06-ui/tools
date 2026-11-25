@@ -1,0 +1,7 @@
+Targetable
+f=core/components/Targetable.gd
+p=Provides an interface for identifying entities that can be targeted in combat.
+r=Determining targetability and retrieving target position.
+prop=target_type: String,weight: float,alive: bool,is_targetable: bool,can_attach: unmarked,can_throw: unmarked,can_shield: unmarked,attach_priority: unmarked
+dep=TargetSystem
+use=Corpse,Enemy,InteractionObject,PlayerCombat,PlayerMovement,TargetSystem,TreeWood

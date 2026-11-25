@@ -1,0 +1,9 @@
+DamageSystem
+f=scenes/Systems/Combat/DamageSystem.gd
+p=Central damage pipeline for applying and resolving damage between entities.
+r=Manages the damage lifecycle from attacker to target.,Resolves and tags the damage source (PLAYER, ENEMY, or ENVIRONMENT) based on attacker group.,Delivers damage to valid targets via `take_damage`.,Emits damage events via signal.,Notifies the `SpeciesRelation` system of combat events.
+api=apply_damage(attacker: Entity, target: Entity, amount: float, type: int = DamageEvent.Type.PHYSICAL, skill_id: String = "") -> DamageEvent
+sig=damage_applied(event: DamageEvent)
+dep=DamageEvent,StatusComponent,Entity,SpeciesRelation
+use=DamageEvent,EnemySkillSystem,InteractionObject,PlayerCombat,PlayerSpell,SpeciesRelation
+note=Resolves `DamageEvent.Source` based on whether the attacker is in the "player" or "enemies" group, or is null.,Implementation relies on the `take_damage` method existing on the target `Entity`.

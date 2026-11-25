@@ -1,0 +1,9 @@
+SpatialArea3D
+f=scenes/World/SpatialArea3D.gd
+p=Represents an Area boundary in the Godot editor for spatial lookup without continuous physics monitoring.
+r=Registering and unregistering with the SpatialRegionResolver autoload.,Providing point containment checks within defined collision shapes (Box, Sphere, Cylinder).
+api=contains_point(position: Vector3) -> bool
+prop=area_id: StringName,area_priority: int,definition: Resource,altitude_override_enabled: bool,altitude_override: float,spawn_allowed: bool,spawn_blocked: bool
+dep=SpatialRegionResolver
+use=SpatialBioRegion3D,SpatialRegionResolver,WorldMap
+note=Explicitly disables monitoring and monitorable for performance.

@@ -1,0 +1,8 @@
+DebugPanelNavigation
+f=scenes/World/Debug/DebugPanelNavigation.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=build_navigation() -> void,refresh_navigation_selection() -> void,build_tabs() -> void,resolve_diagnostic_selection(group_name: String, item_name: String) -> Dictionary,create_expandable_subtab(parent: VBoxContainer, group_name: String, item_name: String) -> void,refresh_subtab_buttons() -> void,collapse_all_subtabs() -> void,rebuild_expanded_subtab() -> void,on_group_tab_changed(tab_index: int) -> void
+data=NAVIGATION_SELECTED_COLOR: Color,PARENT_BUTTON_COLOR: Color,_panel: Node
+dep=Entity,DebugPoisonView
+use=DebugPanel

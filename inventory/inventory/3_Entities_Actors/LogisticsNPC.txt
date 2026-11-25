@@ -1,0 +1,8 @@
+LogisticsNPC
+f=scenes/Characters/NPC/LogisticsNPC.gd
+p=A CharacterBody3D representing a logistics NPC that travels along predefined paths and reacts to low health by fleeing and dropping resources.
+r=Path navigation, health-based fleeing, resource dropping, combat alerting, damage reception, and distress signaling.
+api=take_damage(amount: float) -> void,alert_escorts() -> void,drop_resources_and_flee() -> void
+prop=max_hp: float,hp: float,speed: float,nav_agent: NavigationAgent3D
+data=current_path_idx: int,current_pt_idx: int,is_fleeing: bool,has_dropped_resources: bool
+dep=WorldManager,EventBus

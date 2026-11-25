@@ -1,0 +1,7 @@
+VillageFacilityUI
+f=scenes/World/Village/VillageFacilityUI.gd
+r=Interface for players to contribute resources at settlement facilities.
+api=open_facility(settlement_id: String) -> void,close_facility() -> void
+prop=settlement_name_label: Label,tier_label: Label,contribution_input: SpinBox,submit_button: Button
+data=active_settlement_id: String
+dep=SettlementManager,EventBus,GameState

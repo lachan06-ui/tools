@@ -1,0 +1,8 @@
+SpeciesDatabase
+f=core/databases/SpeciesDatabase.gd
+p=Repository for species definitions and biological traits.
+r=Providing species info and listing all registered species.
+api=get_species(id: String) -> SpeciesDefinition,has_species(id: String) -> bool,get_all_species() -> Array,get_all_ids() -> Array,get_by_biome(biome_id: String) -> Array,get_suitable_species(biome_id: String, env_humidity: float, env_temperature: float) -> Array,get_compatible_candidates(env: EnvironmentState, bio_def: Resource = null) -> Array[SpeciesDefinition]
+data=RESOURCES_DIR: unmarked,_species: Dictionary
+dep=SpeciesDefinition,EnemyDatabase,EnvironmentState
+use=DebugSpawnView,DefaultEnemyBehavior,EcologyManager,Enemy,EnemyDatabase,EnemySpawner,GameState,GroupPoisonState,QuestGenerator,SpeciesRelation,WorldManager,WorldMap

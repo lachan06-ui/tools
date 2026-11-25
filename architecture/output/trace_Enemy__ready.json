@@ -1,0 +1,60 @@
+[
+  {
+    "id": "Enemy._ready",
+    "file": "scenes/Characters/Enemies/Enemy.gd",
+    "line": 52,
+    "sig": "func _ready():",
+    "doc": "",
+    "callees": [
+      "Enemy._assemble_dynamic_visuals",
+      "Enemy._setup_stats_from_database",
+      "Enemy._setup_targetable"
+    ]
+  },
+  {
+    "id": "Enemy._assemble_dynamic_visuals",
+    "file": "scenes/Characters/Enemies/Enemy.gd",
+    "line": 162,
+    "sig": "func _assemble_dynamic_visuals():",
+    "doc": "💡 SpeciesDefinition.visual_scene からモデルをインスタンス化する。 / visual_scene が null の場合はプリミティブフォールバックを使用。",
+    "callees": [
+      "Enemy._get_autoload"
+    ]
+  },
+  {
+    "id": "Enemy._setup_stats_from_database",
+    "file": "scenes/Characters/Enemies/Enemy.gd",
+    "line": 81,
+    "sig": "func _setup_stats_from_database():",
+    "doc": "",
+    "callees": [
+      "Enemy._get_enemy_db"
+    ]
+  },
+  {
+    "id": "Enemy._setup_targetable",
+    "file": "scenes/Characters/Enemies/Enemy.gd",
+    "line": 72,
+    "sig": "func _setup_targetable():",
+    "doc": "",
+    "callees": [
+      "Enemy._get_enemy_db"
+    ]
+  },
+  {
+    "id": "Enemy._get_autoload",
+    "file": "scenes/Characters/Enemies/Enemy.gd",
+    "line": 208,
+    "sig": "func _get_autoload(autoload_name: String) -> Node:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "Enemy._get_enemy_db",
+    "file": "scenes/Characters/Enemies/Enemy.gd",
+    "line": 66,
+    "sig": "func _get_enemy_db() -> Node:",
+    "doc": "",
+    "callees": []
+  }
+]

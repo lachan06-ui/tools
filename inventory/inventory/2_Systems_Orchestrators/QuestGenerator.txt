@@ -1,0 +1,9 @@
+QuestGenerator
+f=scenes/Quest/QuestGenerator.gd
+p=Procedurally generates new quests using templates or parameters.
+r=Procedural generation of quests using templates or parameters.
+api=evaluate_map(map_id: String) -> void,generate_population_quests(map_id: String) -> Array,generate_investigation_quests(map_id: String) -> Array,generate_event_quests(_map_id: String) -> Array,get_available_generated_quests() -> Array,debug_generated_quests() -> void,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void,debug_generate()
+data=OVERPOP_RATIO: float,UNDERPOP_RATIO: float,DANGER_EXTERMINATION_THRESHOLD: float,DANGER_ELITE_THRESHOLD: float,REWARD_GOLD_BASE: int,REWARD_REP_BASE: int,TARGET_KILL_COUNT: int,_pending_quests: Array
+dep=EcologyManager,MapDatabase,QuestManager,EnemyDatabase,SpeciesState,SpeciesDefinition,SpeciesDatabase,EnemyStats,TimeSystem
+use=EcologySimulation,SaveSystem,TimeSystem,WorldRoot
+save=Provides get_save_data,Provides load_save_data

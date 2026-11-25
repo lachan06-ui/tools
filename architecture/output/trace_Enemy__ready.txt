@@ -1,0 +1,6 @@
+Enemy._assemble_dynamic_visuals -call-> Enemy._get_autoload @scenes/Characters/Enemies/Enemy.gd:170
+Enemy._ready -call-> Enemy._assemble_dynamic_visuals @scenes/Characters/Enemies/Enemy.gd:64
+Enemy._ready -call-> Enemy._setup_stats_from_database @scenes/Characters/Enemies/Enemy.gd:63
+Enemy._ready -call-> Enemy._setup_targetable @scenes/Characters/Enemies/Enemy.gd:62
+Enemy._setup_stats_from_database -call-> Enemy._get_enemy_db @scenes/Characters/Enemies/Enemy.gd:84
+Enemy._setup_targetable -call-> Enemy._get_enemy_db @scenes/Characters/Enemies/Enemy.gd:76

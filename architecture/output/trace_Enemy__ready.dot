@@ -1,0 +1,19 @@
+digraph "trace" {
+  rankdir="LR";
+  bgcolor="white";
+  graph [fontname="Noto Sans CJK JP", pad="0.3"];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK JP", fontsize=11];
+  edge [fontname="Noto Sans CJK JP", fontsize=9];
+  "Enemy._ready" [label="Enemy._ready", fillcolor="#DCEBFA", penwidth=3];
+  "Enemy._assemble_dynamic_visuals" [label="Enemy._assemble_dynamic_visuals", fillcolor="#DCEBFA"];
+  "Enemy._setup_stats_from_database" [label="Enemy._setup_stats_from_database", fillcolor="#DCEBFA"];
+  "Enemy._setup_targetable" [label="Enemy._setup_targetable", fillcolor="#DCEBFA"];
+  "Enemy._get_autoload" [label="Enemy._get_autoload", fillcolor="#DCEBFA"];
+  "Enemy._get_enemy_db" [label="Enemy._get_enemy_db", fillcolor="#DCEBFA"];
+  "Enemy._assemble_dynamic_visuals" -> "Enemy._get_autoload" [color="#64748B"];
+  "Enemy._ready" -> "Enemy._assemble_dynamic_visuals" [color="#64748B"];
+  "Enemy._ready" -> "Enemy._setup_stats_from_database" [color="#64748B"];
+  "Enemy._ready" -> "Enemy._setup_targetable" [color="#64748B"];
+  "Enemy._setup_stats_from_database" -> "Enemy._get_enemy_db" [color="#64748B"];
+  "Enemy._setup_targetable" -> "Enemy._get_enemy_db" [color="#64748B"];
+}

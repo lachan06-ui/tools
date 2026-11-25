@@ -1,0 +1,7 @@
+UtilityScoringEngine
+f=core/systems/ecology/UtilityScoringEngine.gd
+p=Stateless utility for computing AI decision-making scores (attack vs flee) based on biological and learned data.
+r=Calculating attack desire, flee desire, diet scaling, and threat penalty integration.
+api=calculate_flee_desire(group_id: String, observer_id: String, observer_power: float, target_id: String, target_power: float) -> float
+dep=SpeciesRelation
+use=DefaultEnemyBehavior,EnemyAI

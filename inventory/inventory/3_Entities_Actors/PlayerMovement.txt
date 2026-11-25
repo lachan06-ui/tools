@@ -1,0 +1,9 @@
+PlayerMovement
+f=scenes/Characters/Player/PlayerMovement.gd
+p=Handles player locomotion including walking, running, dashing, and rolling, while managing movement constraints (slopes, weight-based speed debuffs). Enforces a movement lock during the crafting state.
+r=Managing click-to-move navigation, speed modes, dash/roll mechanics, slope restrictions, and weight-based speed penalties.
+api=process_movement() -> void,update_run_mode() -> void,get_current_speed() -> float,apply_gravity() -> void,process_dodge(delta: float) -> bool,process_step_detection(input_dir: Vector3) -> void,update_timers(delta: float) -> void
+prop=player: CharacterBody3D,input_handler: unmarked,dodge_handler: unmarked,walk_speed: float,run_speed: float
+data=is_run_mode: bool,posture_state: PostureState,is_running: bool,is_dodgeing: bool,dodge_timer: float,dodge_cooldown_timer: float
+dep=PlayerMovementInput,PlayerDodge,EventBus,GameState,Cart,PlayerStats,StatusComponent,AttachSystem,Targetable
+use=Player

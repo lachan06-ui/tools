@@ -1,0 +1,71 @@
+[
+  {
+    "id": "Entity.add_poison_amount",
+    "file": "scenes/Core/Entity.gd",
+    "line": 102,
+    "sig": "func add_poison_amount(amount: float, duration: float = PoisonStatusEffect.POISON_DOSE_DURATION) -> float:",
+    "doc": "",
+    "callees": [
+      "Entity.get_poison_resistance",
+      "GroupPoisonState.add_exposure",
+      "シグナル Entity.poison_received"
+    ]
+  },
+  {
+    "id": "Entity.get_poison_resistance",
+    "file": "scenes/Core/Entity.gd",
+    "line": 144,
+    "sig": "func get_poison_resistance() -> float:",
+    "doc": "",
+    "callees": [
+      "GroupPoisonState.get_tolerance"
+    ]
+  },
+  {
+    "id": "GroupPoisonState.add_exposure",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 13,
+    "sig": "static func add_exposure(group_id: String, species_id: String, applied_amount: float) -> void:",
+    "doc": "",
+    "callees": [
+      "GroupPoisonState._key"
+    ]
+  },
+  {
+    "id": "GroupPoisonState.get_tolerance",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 28,
+    "sig": "static func get_tolerance(group_id: String, species_id: String) -> float:",
+    "doc": "",
+    "callees": [
+      "GroupPoisonState._get_species",
+      "GroupPoisonState._key"
+    ]
+  },
+  {
+    "id": "GroupPoisonState._key",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 64,
+    "sig": "static func _key(group_id: String, species_id: String) -> String:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "Enemy._on_poison_received",
+    "file": "scenes/Characters/Enemies/Enemy.gd",
+    "line": 161,
+    "sig": "func _on_poison_received(applied_amount: float) -> void:",
+    "doc": "",
+    "callees": [
+      "GroupPoisonState.add_exposure"
+    ]
+  },
+  {
+    "id": "GroupPoisonState._get_species",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 67,
+    "sig": "static func _get_species(species_id: String) -> SpeciesDefinition:",
+    "doc": "",
+    "callees": []
+  }
+]

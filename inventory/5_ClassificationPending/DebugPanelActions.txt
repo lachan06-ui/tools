@@ -1,0 +1,8 @@
+DebugPanelActions
+f=scenes/World/Debug/DebugPanelActions.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=build_subtab_actions(parent: VBoxContainer, group_name: String, item_name: String) -> void
+data=_panel: Node,_debug_species_option: OptionButton,_debug_consequence_option: OptionButton,_debug_consequence_selected_type: String,ecology_manger: Node,world_manager: Node,observation_ui: Node,target_system: Node
+dep=EcologyManager,WorldManager,EcologyObservationUI,TargetSystem,Player,Entity,TimeSystem,DebugPoisonActions,EnvironmentState,SpeciesState,DebugEcologyView,PoisonArea,DebugSpawnView
+use=DebugPanel

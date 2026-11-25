@@ -1,0 +1,7 @@
+DamageEvent
+f=scenes/Systems/Combat/DamageEvent.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+data=amount: float,type: int,source: int,attacker: Node,victim: Node,knockback: Vector3,is_critical: bool,skill_id: String
+dep=DamageSystem
+use=DamageSystem,EnemySkillSystem,EventBus,InteractionObject,PlayerCombat,PlayerSpell,SpeciesRelation

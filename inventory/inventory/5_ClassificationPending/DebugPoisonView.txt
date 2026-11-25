@@ -1,0 +1,8 @@
+DebugPoisonView
+f=scenes/World/Debug/DebugPoisonView.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh(content: VBoxContainer, tree: SceneTree, region_id: String) -> void
+data=LIST_LIMIT: int,DOSE_LIST_LIMIT: int,EPSILON: float,RATE_MIN_INTERVAL_SEC: float,RATE_MAX_INTERVAL_SEC: float
+dep=PoisonArea,DebugUIHelpers,DebugPoisonActions,EnvironmentState,EcologyManager,Player,Entity,PoisonStatusEffect,StatusComponent,TargetSystem,Enemy,PoisonAvoidance,GroupPoisonState,Corpse
+use=DebugPanel

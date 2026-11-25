@@ -1,0 +1,7 @@
+DropEntry
+f=core/databases/DropEntry.gd
+p=Data structure for a single loot entry in a drop table.
+r=Storing item ID and weight metadata.
+prop=item: ItemData,weight: int,min_quantity: int,max_quantity: int
+dep=ItemData
+use=DropTable

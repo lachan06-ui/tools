@@ -1,0 +1,9 @@
+PlayerCombat
+f=scenes/Characters/Player/PlayerCombat.gd
+p=Manages player offensive and defensive combat actions including auto-attacks, weapon throwing, and blocking.
+r=Handling auto-attack timers and execution.,Detecting nearby enemies for melee attacks.,Managing weapon throwing logic (left/right).,Processing player blocking state.,Executing target attachment/detachment during combat.,Processing damage reception including damage reduction via blocking and effects triggering.
+api=process_manual_attack() -> void,manual_attack() -> void,process_auto_attack(delta),auto_attack(),process_weapon_throw(),throw_weapon(),process_block(),find_attach_candidate() -> Node,try_attach_target() -> int,process_attach(),process_attach_throw(),process_attach_block(),update_attached_target() -> void,take_damage(amount: float),update_timers(delta)
+prop=player: Node,melee_damage: float,knockback_force: float,throw_force: float,auto_attack_interval: float
+data=is_blocking: bool,auto_attack_timer: float,e_was_pressed: bool,lmb_was_pressed: bool,ATTACH_RANGE: unmarked
+dep=AttachSystem,TargetSystem,GameState,DamageSystem,Entity,DamageEvent,Targetable,Player,EventBus,Effects
+use=Player,TargetSystem

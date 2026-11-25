@@ -1,0 +1,10 @@
+SwarmSpawner
+f=scenes/Utils/SwarmSpawner.gd
+p=Controls spawning of ant‑style swarm enemies and the hornet boss.
+r=Spawning different enemy types (fast, tank, balanced) via timer or explicit command.,Managing a collection of active swarm enemies up to a maximum size.,Spawning a boss when the swarm reaches a specific size threshold.,Configuring spawned enemies with speed, health, target references, and attraction strength if methods are available.
+api=spawn_swarm(boss_type: String, spawn_center: Vector3, count: int, enemy_type: String = "balanced") -> void
+prop=fast_enemy_scene: PackedScene    # Fast, low hp enemy prefab,tank_enemy_scene: PackedScene    # High hp, slow enemy prefab,balanced_enemy_scene: PackedScene    # Balanced enemy prefab,max_swarm_size: int,spawn_interval: float,spawn_radius: float,pheromone_attraction_strength: float,boss_scene: PackedScene,boss_trigger_size: int
+data=_spawn_timer: Timer,_current_swarm: Array[Node]
+dep=Player,Boss
+use=Boss,WorldMap,WorldRoot
+note=Periodically spawns random enemy types via an internal Timer.

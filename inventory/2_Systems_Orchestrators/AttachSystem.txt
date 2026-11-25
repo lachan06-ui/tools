@@ -1,0 +1,8 @@
+AttachSystem
+f=scenes/Systems/Combat/AttachSystem.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=attach(target: Node) -> void,detach() -> void,has_attached_target() -> bool,get_attached_target() -> Node,set_carried(obj: Node) -> void,get_carried() -> Node,drop_carried() -> void
+data=attached_target: Node,_carried_object: Node
+dep=InteractionSystem
+use=EnemyAI,InteractionSystem,PlayerCombat,PlayerMovement

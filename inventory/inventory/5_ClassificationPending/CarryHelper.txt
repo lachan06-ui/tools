@@ -1,0 +1,6 @@
+CarryHelper
+f=scenes/Utils/CarryHelper.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=can_be_carried(strength: float, weight: float) -> bool
+use=Player,PlayerCombat

@@ -1,0 +1,6 @@
+Village
+f=scenes/World/Village/Village.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+dep=MapProvider
+use=GameState,TrainingGround,WorldRoot,legacy_Village

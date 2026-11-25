@@ -1,0 +1,7 @@
+PopulationCalculator
+f=core/systems/ecology/PopulationCalculator.gd
+p=Stateless utility that computes target population, growth delta, and spawn needs based on environmental and biological factors.
+r=Calculating population dynamics, habitat suitability, carrying capacity, and mortality factor integration.
+api=calculate(env: EnvironmentState, def: SpeciesDefinition, state: SpeciesState, competition_factor: float = 0.0) -> Result
+dep=EnvironmentState,SpeciesDefinition,SpeciesState,GeneticDriftCalculator
+use=EcologyManager,EcologySimulation

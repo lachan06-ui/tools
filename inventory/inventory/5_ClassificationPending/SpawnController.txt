@@ -1,0 +1,7 @@
+SpawnController
+f=scenes/Systems/SpawnController.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+data=ENEMY_SCENE: unmarked,MAX_PER_REQUEST: int,GROUP_SCATTER: float,resolver: RefCounted
+dep=EcologyManager,EnvironmentState,SpeciesDefinition,WorldManager,SpawnLocationResolver,Enemy,SpeciesState,SpeciesRelation,EnemyDatabase,EnemyStats
+use=DebugPanel,EcologyManager,EnemySpawner,WorldRoot

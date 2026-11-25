@@ -1,0 +1,8 @@
+SpeciesDefinition
+f=core/databases/SpeciesDefinition.gd
+p=Definition of biological parameters for species.
+r=Layer 1 (Biological Template) of the 3-layer Enemy hierarchy,Defining species identity and hierarchical tiering.,Storing habitat constraints (altitude, humidity, temperature).,Managing dietary ecology (predation, prey, diet type).,Determining environmental compatibility based on habitat ranges.
+api=is_environment_compatible(env: EnvironmentState, bio_def: Resource = null) -> bool,calculate_compatibility_score(env: EnvironmentState, bio_def: Resource = null) -> float,get_approach_tendency(target_species: String) -> float,get_attack_intent(target_species: String) -> float,get_experience_sensitivity() -> float,get_enemy_stats() -> EnemyStats
+prop=genus_definition: GenusDefinition,species_id: String,display_name: String,tier: int,monster_type: String,preferred_biomes: Array[String],altitude_range: Vector2,humidity_range: Vector2,temperature_range: Vector2,preferred_habitat_tags: Array[String],max_spawn_slope_degrees: float,poison_adaptation_scale: float,diet_type: String,reproduction_rate: float,migration_rate: float,default_population: int,group_size_min: int,group_size_max: int,enemy_id: String,taxonomic_order: String,behavior_profile: BehaviorProfile,visual_scene: PackedScene
+dep=Enemy,EnemyStats,GenusDefinition,EnvironmentState,BehaviorProfile,EnemyDatabase
+use=BehaviorRegistry,DebugSpawnView,DefaultEnemyBehavior,EcologyManager,EcologySimulation,Enemy,EnemyDatabase,EnemySpawner,EnemyStats,GameState,GenusDefinition,GroupPoisonState,PopulationCalculator,QuestGenerator,SpawnController,SpawnLocationResolver,SpawnRequest,SpeciesDatabase,SpeciesRelation,WorldManager

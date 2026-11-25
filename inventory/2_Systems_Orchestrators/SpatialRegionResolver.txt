@@ -1,0 +1,8 @@
+SpatialRegionResolver
+f=core/systems/ecology/SpatialRegionResolver.gd
+p=Centralized resolver mapping Vector3 positions to Area ID, Bio Region ID, and Territory ID.
+r=Resolving 3D positions to spatial identifiers.,Managing registration of area nodes, bio-region nodes, and territories.
+api=get_instance() -> Node,register_area_node(area: SpatialArea3D) -> void,unregister_area_node(node: Node3D) -> void,register_bio_region_node(node: Node3D) -> void,unregister_bio_region_node(node: Node3D) -> void,register_territory(territory: TerritoryState) -> void,unregister_territory(territory: TerritoryState) -> void,get_territory(territory_id: String) -> TerritoryState,get_area_node(area_id: String) -> SpatialArea3D,get_bio_region_node(bio_region_id: String) -> Node3D,has_area_nodes() -> bool,has_bio_region_nodes() -> bool,resolve_area(position: Vector3) -> String,resolve_bio_region(position: Vector3) -> String,resolve_territory(position: Vector3, species_id: String) -> String,get_group_territory_state(map_id: String, species_id: String, group_id: String) -> Dictionary,is_spawn_blocked(position: Vector3) -> bool
+data=_bio_region_nodes: Array,_territories: Array[TerritoryState],area_nodes: Array[SpatialArea3D],spawn_blocker_nodes: Array[SpatialArea3D]
+dep=TerritoryState,SpatialArea3D,SpatialBioRegion3D,WorldManager
+use=DebugEcologyView,DebugPanel,DefaultEnemyBehavior,EcologyManager,EcologyObservationUI,EnemyAI,SpatialArea3D,SpatialBioRegion3D,SpawnLocationResolver,SpeciesRelation,TerritoryState,WorldMap

@@ -1,0 +1,7 @@
+DebugUtilityView
+f=scenes/World/Debug/DebugUtilityView.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=refresh(content: VBoxContainer, selected_item: String) -> void
+dep=DebugUIHelpers,TargetSystem
+use=DebugRightViewRefresh

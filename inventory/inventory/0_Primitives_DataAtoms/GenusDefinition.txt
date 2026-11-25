@@ -1,0 +1,8 @@
+GenusDefinition
+f=core/databases/GenusDefinition.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=apply_to_species(def: SpeciesDefinition) -> void
+prop=genus_id: String,display_name: String,preferred_biomes: Array[String],diet_type: String,reproduction_rate: float,migration_rate: float,group_size_min: int,group_size_max: int,taxonomic_order: String,default_skill_slots: Array[String]
+dep=SpeciesDefinition
+use=SpeciesDefinition

@@ -1,0 +1,7 @@
+DebugPanel
+f=scenes/World/Debug/DebugPanel.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+data=DEBUG_KEY: Key,DEBUG_REFRESH_INTERVAL: float,_debug_refresh_timer: float,_panel: PanelContainer,_tab_container: TabContainer,_status_label: Label,_right_panel: PanelContainer,_observation_ui: Control,_world_camera: Node,_selected_group: String,_selected_item: String,_console_visible: bool,_previous_mouse_mode: Input.MouseMode,_right_views: Dictionary,_active_right_view: Control,_right_lock_overlay: Control,_right_lock_button: Button,_right_view_locked: bool,_expanded_subtab: String,_subtab_contents: Dictionary
+dep=WorldCamera,EnvironmentState,EcologyManager,TimeSystem,Player,SpeciesState,SpawnGroundResolver,WorldManager,SpawnController,EcologyObservationUI,SpatialRegionResolver
+use=WorldRoot

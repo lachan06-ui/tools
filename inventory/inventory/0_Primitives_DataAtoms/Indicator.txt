@@ -1,0 +1,7 @@
+Indicator
+f=scenes/Systems/Indicator/Indicator.gd
+p=Provides visual 3D indicators (circles, lines, sectors) for gameplay feedback.
+r=Rendering meshes and materials on indicator nodes.,Generating geometric primitives (circles, target circles, sectors, lines) using ImmediateMesh.
+api=set_mesh(mesh: Mesh) -> void,set_material(material: Material) -> void
+prop=mesh_instance: MeshInstance3D
+use=IndicatorManager

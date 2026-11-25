@@ -1,0 +1,8 @@
+WorldMap
+f=scenes/World/WorldMap/WorldMap.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=setup(owner: Node) -> void,generate() -> void,clear() -> void,regenerate() -> void,spawn_enemy(enemy_id: String, pos: Vector3) -> Node,spawn_object(object_id: String, pos: Vector3) -> Node,spawn_item(item_id: String, pos: Vector3) -> Node,clear_spawned() -> void
+data=ENEMY_SCENE: unmarked,_swarm_spawner: Node,_spawned: Array,_spawned_dicts: Array
+dep=SwarmSpawner,SpawnRequest,EnemySpawner,EnemyDatabase,ItemDatabase,ObjectDatabase,MapProvider,Enemy,EcologyManager,SpatialRegionResolver,TerritoryState,SpatialArea3D,SpawnLocationResolver,SpeciesDatabase,WorldManager,InteractionObject,SpeciesRelation
+use=WorldRoot

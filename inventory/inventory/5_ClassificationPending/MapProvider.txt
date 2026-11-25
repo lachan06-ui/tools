@@ -1,0 +1,7 @@
+MapProvider
+f=scenes/World/MapProvider.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=setup(owner: Node) -> void,generate() -> void,regenerate() -> void,clear() -> void,spawn_enemy(_enemy_id: String, _pos: Vector3) -> Node,spawn_object(_object_id: String, _pos: Vector3) -> Node,spawn_item(_item_id: String, _pos: Vector3) -> Node
+data=dungeon: Node
+use=Village,WorldMap,WorldRoot

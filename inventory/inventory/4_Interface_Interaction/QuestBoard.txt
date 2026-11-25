@@ -1,0 +1,8 @@
+QuestBoard
+f=assets/object/QuestBoard.gd
+p=Interactive 3D object for viewing quests via physical proximity and interaction.
+r=Detect player proximity using an Area3D.,Toggle the "on board" state when the user interacts.,Notify external systems of board opening or closing.
+sig=quest_board_opened,quest_board_closed
+prop=billboard_text: The text displayed on the board.,player_near: Boolean indicating if a player is within the interaction area.,on_board: Boolean indicating if the board interface is currently active.
+dep=Area3D node,Input action: "interact"
+note=Only implementation facts.,---

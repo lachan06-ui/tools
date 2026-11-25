@@ -1,0 +1,5 @@
+SpecialRoomGenerator
+f=scenes/Map/SpecialRoomGenerator.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=process_special_room(_room: Node3D, _index: int) -> void

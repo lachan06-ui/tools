@@ -1,0 +1,9 @@
+QuestManager
+f=scenes/Quest/QuestManager.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=get_available_quests() -> Array[Dictionary],get_quest_definition(id: String) -> Dictionary,accept_quest(id: String) -> bool,abandon_quest(id: String) -> void,register_kill(enemy_id: String) -> void,is_completed(id: String) -> bool,claim_reward(id: String) -> bool,get_active_quest(id: String) -> Dictionary,get_all_active_quests() -> Dictionary,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void
+data=available_quests: Array[Dictionary],active_quests: Dictionary,completed_quests: Array[String],claimed_quests: Dictionary
+dep=GameState,EconomyManager
+use=Enemy,QuestGenerator,SaveSystem
+save=Provides get_save_data,Provides load_save_data

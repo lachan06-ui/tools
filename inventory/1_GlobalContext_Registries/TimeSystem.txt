@@ -1,0 +1,10 @@
+TimeSystem
+f=core/autoload/TimeSystem.gd
+p=Day/Night cycle progression with time segments and calculates astronomical values like sun angle and moon phase.
+r=Managing time accumulation and providing time of day interfaces.,Calculating astronomical values like sun angle and moon phase.
+api=advance_time(minutes: float) -> void,advance_real_delta(delta: float, scale: float) -> void,get_total_minutes() -> float,next_day() -> void,force_next_day() -> void,get_time_of_day() -> String,is_morning() -> bool,is_noon() -> bool,is_evening() -> bool,is_night() -> bool,get_save_data() -> Dictionary,load_save_data(data: Dictionary) -> void,get_sun_angle() -> float,get_moon_phase() -> float
+sig=time_changed(minutes: float),day_changed(new_day: int),morning_started(),noon_started(),evening_started(),night_started()
+data=DAY_LENGTH_MINUTES: float,MORNING_START: float,NOON_START: float,EVENING_START: float,NIGHT_START: float,current_day: int,current_time_minutes: float,time_scale_village: float,time_scale_dungeon: float
+dep=QuestGenerator,MapDatabase,EcologyManager
+use=Corpse,DebugEcologyView,DebugPanel,DebugPanelActions,DebugTimeView,EcologyManager,QuestGenerator,SaveSystem,WorldRoot
+save=Provides get_save_data,Provides load_save_data

@@ -1,0 +1,7 @@
+MapDatabase
+f=core/databases/MapDatabase.gd
+p=Static registry for map metadata and species associations.
+r=Retrieving map entries and mapping species to maps.
+api=get_entry(map_id: String) -> Dictionary,get_value(map_id: String, key: String, default = null),has_entry(map_id: String) -> bool,get_all_ids() -> Array,get_all() -> Array,get_species_for_map(map_id: String) -> Array,get_map_data(map_id: String) -> Dictionary,get_map_ids() -> Array,map_exists(map_id: String) -> bool
+data=MAPS: Dictionary
+use=EcologyManager,EnemySpawner,QuestGenerator,TimeSystem

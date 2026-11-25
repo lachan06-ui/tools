@@ -1,0 +1,7 @@
+EnemyStats
+f=core/databases/EnemyStats.gd
+p=Data structure for base enemy attributes. aka. EnemyArchetype
+r=Layer 2 of the 3-layer hierarchy: Biological Template → Species → Individual,Owns combat/runtime parameters for a specific enemy variant.,Population and group_size are owned exclusively by SpeciesDefinition (Layer 1).
+prop=id: String,species_id: String,name: String,monster_type: String,weight: float,nutrition: int,tier: int,description: String,ecology: Array[String],max_hp: float,speed: float,base_atk: float,base_def: float,behavior_script: Script,skills: Array[EnemySkill],drop_table: DropTable
+dep=SpeciesDefinition,EnemySkill,Enemy,DropTable
+use=EcologySimulation,Enemy,EnemyDatabase,GameState,QuestGenerator,SkillRegistry,SpawnController,SpeciesDefinition

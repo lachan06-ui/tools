@@ -1,0 +1,265 @@
+[
+  {
+    "id": "EnemyAI.tick",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 48,
+    "sig": "func tick(delta: float) -> void:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._acquire_food_source",
+      "EnemyAI._acquire_target",
+      "EnemyAI._apply_poison_steering",
+      "EnemyAI._is_attached",
+      "EnemyAI._is_frozen",
+      "EnemyAI._is_knockbacked",
+      "EnemyAI._stop_movement",
+      "EnemyAI._transition_state",
+      "EnemyAI._update_attack",
+      "EnemyAI._update_feed",
+      "EnemyAI._update_movement",
+      "EnemyAI._update_return",
+      "EnemyAI._validate_owner"
+    ]
+  },
+  {
+    "id": "EnemyAI._acquire_food_source",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 286,
+    "sig": "func _acquire_food_source() -> Corpse:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._acquire_target",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 124,
+    "sig": "func _acquire_target() -> Entity:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._apply_poison_steering",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 230,
+    "sig": "func _apply_poison_steering() -> void:",
+    "doc": "",
+    "callees": [
+      "PoisonAvoidance.steer"
+    ]
+  },
+  {
+    "id": "EnemyAI._is_attached",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 257,
+    "sig": "func _is_attached() -> bool:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._get_autoload"
+    ]
+  },
+  {
+    "id": "EnemyAI._is_frozen",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 263,
+    "sig": "func _is_frozen() -> bool:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._is_knockbacked",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 266,
+    "sig": "func _is_knockbacked() -> bool:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._stop_movement",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 213,
+    "sig": "func _stop_movement() -> void:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._transition_state",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 98,
+    "sig": "func _transition_state(target: Entity, food_source: Corpse) -> void:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._get_return_target",
+      "EnemyAI._get_territory_radius"
+    ]
+  },
+  {
+    "id": "EnemyAI._update_attack",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 217,
+    "sig": "func _update_attack(delta: float, target: Entity) -> void:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._update_feed",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 174,
+    "sig": "func _update_feed(food_source: Corpse) -> void:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._consume_food",
+      "EnemyAI._stop_movement"
+    ]
+  },
+  {
+    "id": "EnemyAI._update_movement",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 140,
+    "sig": "func _update_movement(target: Entity) -> void:",
+    "doc": "--- Per-state behaviours ---",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._update_return",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 157,
+    "sig": "func _update_return() -> void:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._get_return_target",
+      "EnemyAI._stop_movement"
+    ]
+  },
+  {
+    "id": "EnemyAI._validate_owner",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 248,
+    "sig": "func _validate_owner() -> bool:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "PoisonAvoidance.steer",
+    "file": "core/systems/ecology/PoisonAvoidance.gd",
+    "line": 47,
+    "sig": "static func steer(owner: Node3D, base_direction: Vector3) -> Vector3:",
+    "doc": "base_direction に毒回避を混ぜた移動方向を返す。",
+    "callees": [
+      "PoisonAvoidance.compute"
+    ]
+  },
+  {
+    "id": "EnemyAI._get_autoload",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 251,
+    "sig": "func _get_autoload(autoload_name: String) -> Node:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "EnemyAI._get_return_target",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 86,
+    "sig": "func _get_return_target() -> Vector3:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._get_territory_state"
+    ]
+  },
+  {
+    "id": "EnemyAI._get_territory_radius",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 92,
+    "sig": "func _get_territory_radius() -> float:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._get_territory_state"
+    ]
+  },
+  {
+    "id": "EnemyAI._consume_food",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 192,
+    "sig": "func _consume_food(food_source: Corpse) -> void:",
+    "doc": "",
+    "callees": [
+      "EnemyAI._get_territory_radius",
+      "NutrientCycle.excrete"
+    ]
+  },
+  {
+    "id": "PoisonAvoidance.compute",
+    "file": "core/systems/ecology/PoisonAvoidance.gd",
+    "line": 9,
+    "sig": "static func compute(owner: Node3D) -> Dictionary:",
+    "doc": "",
+    "callees": [
+      "GroupPoisonState.get_avoidance_weight",
+      "GroupPoisonState.get_tolerance"
+    ]
+  },
+  {
+    "id": "EnemyAI._get_territory_state",
+    "file": "scenes/Characters/Enemies/EnemyAI.gd",
+    "line": 76,
+    "sig": "func _get_territory_state() -> TerritoryState:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "NutrientCycle.excrete",
+    "file": "core/systems/ecology/NutrientCycle.gd",
+    "line": 14,
+    "sig": "static func excrete(region_id: String, _center: Vector3, _radius: float, units: float) -> void:",
+    "doc": "食べた栄養 -> フンとして活動範囲に平均配分。 / TODO: Chunkプールができたら radius 内のChunkへ配分する(今はRegion単位)。",
+    "callees": [
+      "NutrientCycle._add_detritus"
+    ]
+  },
+  {
+    "id": "GroupPoisonState.get_avoidance_weight",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 54,
+    "sig": "static func get_avoidance_weight(group_id: String, species_id: String) -> float:",
+    "doc": "正: 毒域を避ける強さ / 負: 毒域へ寄る強さ",
+    "callees": [
+      "GroupPoisonState._get_species",
+      "GroupPoisonState.get_tolerance"
+    ]
+  },
+  {
+    "id": "GroupPoisonState.get_tolerance",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 28,
+    "sig": "static func get_tolerance(group_id: String, species_id: String) -> float:",
+    "doc": "",
+    "callees": [
+      "GroupPoisonState._get_species",
+      "GroupPoisonState._key"
+    ]
+  },
+  {
+    "id": "NutrientCycle._add_detritus",
+    "file": "core/systems/ecology/NutrientCycle.gd",
+    "line": 17,
+    "sig": "static func _add_detritus(region_id: String, units: float) -> void:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "GroupPoisonState._get_species",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 67,
+    "sig": "static func _get_species(species_id: String) -> SpeciesDefinition:",
+    "doc": "",
+    "callees": []
+  },
+  {
+    "id": "GroupPoisonState._key",
+    "file": "core/systems/ecology/GroupPoisonState.gd",
+    "line": 64,
+    "sig": "static func _key(group_id: String, species_id: String) -> String:",
+    "doc": "",
+    "callees": []
+  }
+]

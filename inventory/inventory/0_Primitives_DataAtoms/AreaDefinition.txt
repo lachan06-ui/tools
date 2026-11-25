@@ -1,0 +1,5 @@
+AreaDefinition
+f=core/systems/ecology/AreaDefinition.gd
+p=Resource describing a gameplay/world Area.
+r=Storing spatial metadata for an area.
+prop=area_id: String,display_name: String,description: String

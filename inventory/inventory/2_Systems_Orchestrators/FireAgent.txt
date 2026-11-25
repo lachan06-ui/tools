@@ -1,0 +1,10 @@
+FireAgent
+f=scenes/Systems/FireAgent.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=ignite() -> void,extinguish() -> void,try_ignite(applied_heat: float) -> bool
+sig=ignited(),extinguished()
+prop=ignition_temperature_threshold: float,burn_duration: float,heat_radius: float,heat_emission: float
+data=is_burning: bool,current_temperature: float,_burn_timer: float,region_id: String
+dep=EnvironmentState,EcologyManager
+use=PlayerSpell

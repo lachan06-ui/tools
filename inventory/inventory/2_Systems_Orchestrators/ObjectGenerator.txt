@@ -1,0 +1,8 @@
+ObjectGenerator
+f=scenes/Map/ObjectGenerator.gd
+p=Instantiates interactable world objects at specific coordinates within a map.
+r=Handling object instantiation and spatial distribution.
+api=register_objects(map_id: String, config: Dictionary = {}) -> void,generate_objects_in_room(room: Node3D, config: Dictionary = {}) -> void,serialize_object(node: Node) -> Dictionary,deserialize_object(data: Dictionary, container: Node) -> Node
+data=INTERACTION_SCENE_BASE: unmarked
+dep=InteractionObject,WorldManager
+use=WorldManager,WorldRoot

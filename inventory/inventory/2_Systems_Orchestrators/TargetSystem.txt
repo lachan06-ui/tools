@@ -1,0 +1,9 @@
+TargetSystem
+f=scenes/Systems/Targeting/TargetSystem.gd
+p=PLACEHOLDER
+r=PLACEHOLDER
+api=toggle_screen_center_target() -> void,is_attached_target_locked() -> bool,set_target_volume(radius: float, length: float) -> void,set_target(target: Node) -> void,clear_target() -> void,has_target() -> bool,get_target() -> Node,get_target_volume() -> Dictionary,get_preferred_attach_target() -> Node3D,is_target_volume_debug_visible() -> bool,set_target_volume_debug_visible(enabled: bool) -> void
+prop=max_target_distance: float,target_screen_radius: float,target_ray_radius: float,target_indicator_camera_offset: float,target_indicator_fallback_height: float,target_ray_length: float,debug_target_ray_duration: float
+data=_debug_ray_handle: int,player: Node,current_target: Node,attached_target: Node,_attach_range_handle: int,_target_handle: int,_debug_target_volume: MeshInstance3D,_target_volume_debug_visible: bool
+dep=IndicatorManager,Targetable,PlayerCombat
+use=DebugPanel,DebugPoisonActions,DebugPoisonView,DebugUtilityView,Enemy,Player,PlayerCombat,PlayerLook,Targetable,WorldCamera

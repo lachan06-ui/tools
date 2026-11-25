@@ -1,0 +1,8 @@
+PlayerLook
+f=scenes/Characters/Player/PlayerLook.gd
+p=Manages procedural rotation of the player's head and body towards targets or movement direction.
+r=Rotating the body node toward target positions.,Rotating the head node toward camera view or TargetSystem targets.,Clamping head rotation within defined yaw and pitch limits.
+api=process_look(delta: float) -> bool,update_head_look(delta: float) -> bool
+prop=player: CharacterBody3D,body_node: Node3D,head_node: Node3D,body_rotation_speed: float,head_rotation_speed: float,head_max_yaw: float,head_max_pitch: float
+dep=TargetSystem
+use=Player,WorldCamera

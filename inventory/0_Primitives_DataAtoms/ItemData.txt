@@ -1,0 +1,6 @@
+ItemData
+f=core/databases/ItemData.gd
+p=Data structure for individual item attributes.
+r=Storing item ID, weight, and value metadata.
+prop=id: String,name: String,description: String,value: int
+use=DropEntry,ItemDatabase

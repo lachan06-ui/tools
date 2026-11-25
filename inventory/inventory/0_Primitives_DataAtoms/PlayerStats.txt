@@ -1,0 +1,6 @@
+PlayerStats
+f=scenes/Characters/Player/PlayerStats.gd
+p=A simple data container for the player's physical attributes, specifically providing strength values used by movement and interaction systems.
+r=Storing strength/STR redundancy and compatibility values.
+prop=player: Node,strength: float,STR: float
+use=Player,PlayerMovement

@@ -1,0 +1,8 @@
+SkillRegistry
+f=scenes/Characters/Enemies/SkillRegistry.gd
+p=Single registry loaded from .tres for enemy skill definitions
+r=Providing skill retrieval and registration interfaces.
+api=get_skill(skill_id: String) -> Dictionary,has_skill(skill_id: String) -> bool,get_skill_resource(skill_id: String) -> EnemySkill,get_all_ids() -> Array
+data=RESOURCES_DIR: unmarked,skills: Dictionary
+dep=EnemySkill,EnemyStats
+use=EnemySkillSystem
